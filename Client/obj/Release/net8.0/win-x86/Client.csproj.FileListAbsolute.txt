@@ -1,0 +1,400 @@
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.exe
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.deps.json
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.runtimeconfig.json
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.pdb
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.CodeDom.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Management.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.CSharp.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.VisualBasic.Core.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.VisualBasic.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.Win32.Primitives.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.Win32.Registry.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.AppContext.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Buffers.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.Concurrent.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.Immutable.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.NonGeneric.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.Specialized.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.Annotations.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.DataAnnotations.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.EventBasedAsync.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.Primitives.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.TypeConverter.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Configuration.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Console.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Core.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Data.Common.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Data.DataSetExtensions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Data.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Contracts.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Debug.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.DiagnosticSource.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.FileVersionInfo.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Process.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.StackTrace.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Tools.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.TraceSource.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Tracing.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Drawing.Primitives.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Drawing.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Dynamic.Runtime.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Formats.Asn1.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Formats.Tar.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Globalization.Calendars.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Globalization.Extensions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Globalization.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.Brotli.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.FileSystem.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.ZipFile.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.AccessControl.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.DriveInfo.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.Primitives.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.Watcher.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.IsolatedStorage.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.MemoryMappedFiles.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Pipes.AccessControl.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Pipes.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.UnmanagedMemoryStream.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Linq.Expressions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Linq.Parallel.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Linq.Queryable.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Linq.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Memory.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Http.Json.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Http.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.HttpListener.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Mail.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.NameResolution.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.NetworkInformation.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Ping.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Primitives.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Quic.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Requests.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Security.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.ServicePoint.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Sockets.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebClient.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebHeaderCollection.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebProxy.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebSockets.Client.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebSockets.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Numerics.Vectors.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Numerics.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ObjectModel.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.CoreLib.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.DataContractSerialization.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.Uri.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.Xml.Linq.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.Xml.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.DispatchProxy.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Emit.ILGeneration.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Emit.Lightweight.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Emit.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Extensions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Metadata.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Primitives.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.TypeExtensions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Resources.Reader.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Resources.ResourceManager.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Resources.Writer.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Extensions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Handles.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.InteropServices.JavaScript.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.InteropServices.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Intrinsics.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Loader.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Numerics.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.Formatters.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.Json.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.Primitives.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.Xml.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.AccessControl.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Claims.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Algorithms.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Cng.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Csp.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Encoding.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.OpenSsl.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Primitives.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.X509Certificates.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Principal.Windows.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Principal.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.SecureString.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ServiceModel.Web.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ServiceProcess.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Encoding.CodePages.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Encoding.Extensions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Encoding.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Encodings.Web.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Json.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.RegularExpressions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Channels.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Overlapped.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Tasks.Dataflow.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Tasks.Extensions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Tasks.Parallel.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Tasks.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Thread.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.ThreadPool.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Timer.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Transactions.Local.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Transactions.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ValueTuple.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Web.HttpUtility.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Web.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Windows.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.Linq.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.ReaderWriter.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.Serialization.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XDocument.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XPath.XDocument.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XPath.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XmlDocument.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XmlSerializer.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\WindowsBase.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscorlib.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\netstandard.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.Native.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\clretwrc.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\clrgc.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\clrjit.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\coreclr.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\createdump.exe
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\hostfxr.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\hostpolicy.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscordaccore.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscordaccore_x86_x86_8.0.724.31311.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscordbi.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscorrc.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\win-x86\msquic.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.csproj.AssemblyReference.cache
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.AssemblyInfoInputs.cache
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.AssemblyInfo.cs
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.csproj.CoreCompileInputs.cache
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.csproj.Up2Date
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\refint\Client.dll
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.pdb
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.genruntimeconfig.cache
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\obj\Release\net8.0\win-x86\ref\Client.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.exe
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.deps.json
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.runtimeconfig.json
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Client.pdb
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.CodeDom.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Management.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.CSharp.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.VisualBasic.Core.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.VisualBasic.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.Win32.Primitives.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.Win32.Registry.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.AppContext.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Buffers.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.Concurrent.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.Immutable.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.NonGeneric.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.Specialized.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Collections.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.Annotations.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.DataAnnotations.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.EventBasedAsync.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.Primitives.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.TypeConverter.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ComponentModel.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Configuration.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Console.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Core.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Data.Common.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Data.DataSetExtensions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Data.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Contracts.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Debug.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.DiagnosticSource.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.FileVersionInfo.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Process.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.StackTrace.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.TextWriterTraceListener.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Tools.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.TraceSource.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Diagnostics.Tracing.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Drawing.Primitives.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Drawing.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Dynamic.Runtime.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Formats.Asn1.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Formats.Tar.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Globalization.Calendars.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Globalization.Extensions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Globalization.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.Brotli.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.FileSystem.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.ZipFile.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.AccessControl.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.DriveInfo.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.Primitives.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.Watcher.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.FileSystem.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.IsolatedStorage.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.MemoryMappedFiles.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Pipes.AccessControl.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Pipes.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.UnmanagedMemoryStream.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Linq.Expressions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Linq.Parallel.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Linq.Queryable.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Linq.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Memory.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Http.Json.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Http.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.HttpListener.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Mail.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.NameResolution.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.NetworkInformation.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Ping.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Primitives.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Quic.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Requests.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Security.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.ServicePoint.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.Sockets.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebClient.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebHeaderCollection.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebProxy.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebSockets.Client.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.WebSockets.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Net.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Numerics.Vectors.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Numerics.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ObjectModel.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.CoreLib.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.DataContractSerialization.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.Uri.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.Xml.Linq.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Private.Xml.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.DispatchProxy.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Emit.ILGeneration.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Emit.Lightweight.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Emit.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Extensions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Metadata.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.Primitives.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.TypeExtensions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Reflection.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Resources.Reader.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Resources.ResourceManager.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Resources.Writer.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.CompilerServices.Unsafe.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.CompilerServices.VisualC.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Extensions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Handles.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.InteropServices.JavaScript.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.InteropServices.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Intrinsics.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Loader.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Numerics.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.Formatters.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.Json.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.Primitives.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.Xml.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.Serialization.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Runtime.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.AccessControl.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Claims.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Algorithms.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Cng.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Csp.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Encoding.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.OpenSsl.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.Primitives.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.X509Certificates.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Cryptography.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Principal.Windows.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.Principal.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.SecureString.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Security.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ServiceModel.Web.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ServiceProcess.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Encoding.CodePages.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Encoding.Extensions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Encoding.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Encodings.Web.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.Json.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Text.RegularExpressions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Channels.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Overlapped.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Tasks.Dataflow.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Tasks.Extensions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Tasks.Parallel.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Tasks.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Thread.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.ThreadPool.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.Timer.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Threading.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Transactions.Local.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Transactions.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.ValueTuple.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Web.HttpUtility.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Web.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Windows.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.Linq.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.ReaderWriter.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.Serialization.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XDocument.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XPath.XDocument.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XPath.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XmlDocument.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.XmlSerializer.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.Xml.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\WindowsBase.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscorlib.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\netstandard.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\Microsoft.DiaSymReader.Native.x86.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\System.IO.Compression.Native.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\clretwrc.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\clrgc.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\clrjit.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\coreclr.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\createdump.exe
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\hostfxr.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\hostpolicy.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscordaccore.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscordaccore_x86_x86_8.0.624.26715.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscordbi.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\mscorrc.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\win-x86\msquic.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.csproj.AssemblyReference.cache
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.AssemblyInfoInputs.cache
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.AssemblyInfo.cs
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.csproj.CoreCompileInputs.cache
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.csproj.Up2Date
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\refint\Client.dll
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.pdb
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\Client.genruntimeconfig.cache
+D:\Descargas 2\TFG\ConsoleApp1\Client\obj\Release\net8.0\win-x86\ref\Client.dll

@@ -1,0 +1,2 @@
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\publish\win-x86\Client.pdb
+C:\Users\WDAGUtilityAccount\Desktop\ConsoleApp1\Client\bin\Release\net8.0\publish\win-x86\Client.exe

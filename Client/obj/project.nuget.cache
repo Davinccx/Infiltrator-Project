@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "HwKKaJ4okjo=",
+  "success": true,
+  "projectFilePath": "D:\\Descargas 2\\TFG\\ConsoleApp1\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.drawing.common\\8.0.7\\system.drawing.common.8.0.7.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

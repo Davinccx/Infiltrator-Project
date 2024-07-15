@@ -1,0 +1,2 @@
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\publish\win-x86\Client.pdb
+D:\Descargas 2\TFG\ConsoleApp1\Client\bin\Release\net8.0\publish\win-x86\Client.exe
