@@ -1,11 +1,6 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
+﻿using System.Diagnostics;
 using System.Net.Sockets;
 using System.Text;
-using System.Management;
-using System.Net.NetworkInformation;
-using Microsoft.Win32;
 using Client.Native;
 using Client.Commands;
 using Client.Util;

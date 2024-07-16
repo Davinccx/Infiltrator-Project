@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Descargas 2\\TFG\\ConsoleApp1\\ConsoleApp1\\Server.csproj",
+      "projectUniqueName": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\ConsoleApp1\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "D:\\Descargas 2\\TFG\\ConsoleApp1\\ConsoleApp1\\Server.csproj",
+      "projectPath": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\ConsoleApp1\\Server.csproj",
       "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "D:\\Descargas 2\\TFG\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",

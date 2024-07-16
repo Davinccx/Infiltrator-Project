@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Descargas 2\\TFG\\ConsoleApp1\\Client\\Client.csproj": {}
+    "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Client.csproj": {}
   },
   "projects": {
-    "D:\\Descargas 2\\TFG\\ConsoleApp1\\Client\\Client.csproj": {
+    "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Descargas 2\\TFG\\ConsoleApp1\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "D:\\Descargas 2\\TFG\\ConsoleApp1\\Client\\Client.csproj",
+        "projectPath": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Client.csproj",
         "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "D:\\Descargas 2\\TFG\\ConsoleApp1\\Client\\obj\\",
+        "outputPath": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",

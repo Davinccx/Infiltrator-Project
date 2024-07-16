@@ -40,3 +40,17 @@ D:\Descargas 2\TFG\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\refint\Server.dll
 D:\Descargas 2\TFG\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Server.pdb
 D:\Descargas 2\TFG\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Server.genruntimeconfig.cache
 D:\Descargas 2\TFG\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\Server.dll
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\bin\Debug\net8.0\Server.exe
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\bin\Debug\net8.0\Server.deps.json
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\bin\Debug\net8.0\Server.runtimeconfig.json
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\bin\Debug\net8.0\Server.dll
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\bin\Debug\net8.0\Server.pdb
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\Server.AssemblyInfoInputs.cache
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\Server.AssemblyInfo.cs
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\Server.csproj.CoreCompileInputs.cache
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\Server.dll
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\refint\Server.dll
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\Server.pdb
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\Server.genruntimeconfig.cache
+C:\Users\WDAGUtilityAccount\Desktop\Infiltrator-Project-main\ConsoleApp1\obj\Debug\net8.0\ref\Server.dll

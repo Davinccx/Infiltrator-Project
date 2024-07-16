@@ -27,7 +27,7 @@ namespace Server.GUI
             Console.SetWindowSize(100, 30);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(asciiArt);
-            Console.WriteLine("[*] Servidor iniciado exitosamente, utiliza help para ver comandos.");
+            Console.WriteLine("[+] Servidor iniciado exitosamente, utiliza help para ver comandos.");
 
 
         }
@@ -39,17 +39,17 @@ namespace Server.GUI
             Console.WriteLine("\t==================================================================================");
             Console.WriteLine("\t+--------------------------------------------------------------------------------+");
             Console.WriteLine("\t| help: Muestra esta lista de comandos.                                          |");
-            Console.WriteLine("\t| list_clients: Muestra los clientes que están conectados.                       |");
-            Console.WriteLine("\t| id_cliente exec <comando>: Ejecuta un comando en la máquina cliente.           |");
-            Console.WriteLine("\t| id_cliente list_processes: Lista todos los procesos en la máquina cliente.     |");
-            Console.WriteLine("\t| id_cliente get <archivo>: Obtiene un archivo de la máquina cliente.            |");
-            Console.WriteLine("\t| id_cliente browsers: Lista los navegadores instalados en la máquina cliente.   |");
-            Console.WriteLine("\t| id_cliente antivirus: Lista los antivirus instalados en la máquina cliente.    |");
-            Console.WriteLine("\t| id_cliente system_info: Obtiene información del sistema de la máquina cliente. |");
-            Console.WriteLine("\t| id_cliente network_info: Obtiene información de la red de la máquina cliente.  |");
-            Console.WriteLine("\t| id_cliente disconnect: Desconecta al cliente.                                  |");
-            Console.WriteLine("\t| id_cliente kill <PID>: Termina un proceso en la máquina cliente.               |");
-            Console.WriteLine("\t| id_cliente screenshot: Captura una captura de pantalla de la máquina cliente.  |");
+            Console.WriteLine("\t| clients: Muestra los clientes que están conectados.                            |");
+            Console.WriteLine("\t| ID_CLIENTE exec <comando>: Ejecuta un comando en la máquina cliente.           |");
+            Console.WriteLine("\t| ID_CLIENTE list_processes: Lista todos los procesos en la máquina cliente.     |");
+            Console.WriteLine("\t| ID_CLIENTE get <archivo>: Obtiene un archivo de la máquina cliente.            |");
+            Console.WriteLine("\t| ID_CLIENTE browsers: Lista los navegadores instalados en la máquina cliente.   |");
+            Console.WriteLine("\t| ID_CLIENTE antivirus: Lista los antivirus instalados en la máquina cliente.    |");
+            Console.WriteLine("\t| ID_CLIENTE system_info: Obtiene información del sistema de la máquina cliente. |");
+            Console.WriteLine("\t| ID_CLIENTE network_info: Obtiene información de la red de la máquina cliente.  |");
+            Console.WriteLine("\t| ID_CLIENTE disconnect: Desconecta al cliente.                                  |");
+            Console.WriteLine("\t| ID_CLIENTE kill <PID>: Termina un proceso en la máquina cliente.               |");
+            Console.WriteLine("\t| ID_CLIENTE screenshot: Captura una captura de pantalla de la máquina cliente.  |");
             Console.WriteLine("\t+--------------------------------------------------------------------------------+");
         }
     }
