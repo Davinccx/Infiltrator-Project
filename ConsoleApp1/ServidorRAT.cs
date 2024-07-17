@@ -13,9 +13,14 @@ namespace Server
             // Intentar cargar la configuración del servidor
             try
             {
-                Config.LoadConfig();
-                Console.WriteLine("[+] Configuración del servidor cargada correctamente.");
-                Console.WriteLine($"ServerIP from config: {Config.ServerIP}");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(Menu.asciiArt);
+                Console.WriteLine("[*] Cargando configuración del servidor..");
+                Menu.ShowLoadingProgressBar(() =>
+                {
+                    Config.LoadConfig();
+                });
+                Console.WriteLine("\n[+] Configuración del servidor cargada correctamente.");
 
             }
             catch (Exception ex)

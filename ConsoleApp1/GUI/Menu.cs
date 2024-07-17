@@ -8,7 +8,7 @@ namespace Server.GUI
 {
     static class Menu
     {
-        static string asciiArt = @"
+        public static string asciiArt = @"
       _____        __ _ _ _             _                _____                            __   ___  
      |_   _|      / _(_| | |           | |              / ____|                          /_ | / _ \ 
        | |  _ __ | |_ _| | |_ _ __ __ _| |_ ___  _ __  | (___   ___ _ ____   _____ _ __   | || | | |
@@ -47,10 +47,52 @@ namespace Server.GUI
             Console.WriteLine("\t| ID_CLIENTE antivirus: Lista los antivirus instalados en la máquina cliente.    |");
             Console.WriteLine("\t| ID_CLIENTE system_info: Obtiene información del sistema de la máquina cliente. |");
             Console.WriteLine("\t| ID_CLIENTE network_info: Obtiene información de la red de la máquina cliente.  |");
+            Console.WriteLine("\t| ID_CLIENTE shutdown: Apaga el ordenador del cliente.                           |");
+            Console.WriteLine("\t| ID_CLIENTE reboot: Reinicia el ordenador del cliente tras 10 seg.              |");
             Console.WriteLine("\t| ID_CLIENTE disconnect: Desconecta al cliente.                                  |");
             Console.WriteLine("\t| ID_CLIENTE kill <PID>: Termina un proceso en la máquina cliente.               |");
             Console.WriteLine("\t| ID_CLIENTE screenshot: Captura una captura de pantalla de la máquina cliente.  |");
             Console.WriteLine("\t+--------------------------------------------------------------------------------+");
+        }
+
+        public static void ShowLoadingProgressBar(Action action)
+        {
+            int total = 100;
+            int width = 50; // Width of the progress bar
+            Console.CursorVisible = false;
+            var thread = new Thread(() =>
+            {
+                for (int i = 0; i <= total; i++)
+                {
+                    DrawProgressBar(i, total, width);
+                    Thread.Sleep(30); // Adjust the speed of the progress bar
+                }
+            });
+            thread.Start();
+
+            try
+            {
+                action();
+            }
+            finally
+            {
+                thread.Join();
+                Console.CursorVisible = true;
+            }
+        }
+
+        public static void DrawProgressBar(int progress, int total, int width)
+        {
+            Console.SetCursorPosition(0, Console.CursorTop); // Reset the cursor position
+            Console.Write("[");
+            int pos = width * progress / total;
+            for (int i = 0; i < width; i++)
+            {
+                if (i < pos) Console.Write("=");
+                else if (i == pos) Console.Write(">");
+                else Console.Write(" ");
+            }
+            Console.Write($"] {progress * 100 / total}%");
         }
     }
 }

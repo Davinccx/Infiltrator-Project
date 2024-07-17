@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
-
+using Server.GUI;
 
 namespace Server.Conexion
 {
@@ -59,11 +55,15 @@ namespace Server.Conexion
                     if (data.StartsWith("FILE:"))
                     {
                         string fileName = data.Substring(5).Trim();
+                        Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Recibiendo archivo '{fileName}'...");
 
                         // Recibir datos del archivo
                         using (MemoryStream ms = new MemoryStream())
                         {
                             bool fileEndReceived = false;
+                            long totalBytesReceived = 0;
+                            int totalBytesToReceive = 0;
+
                             while (!fileEndReceived)
                             {
                                 bytesRead = stream.Read(buffer, 0, buffer.Length);
@@ -80,23 +80,28 @@ namespace Server.Conexion
                                     fileEndReceived = true;
                                     int endIndex = chunkAsString.IndexOf("FILE_END");
                                     ms.Write(buffer, 0, endIndex);
+                                    totalBytesReceived += endIndex;
                                 }
                                 else
                                 {
                                     ms.Write(buffer, 0, bytesRead);
+                                    totalBytesReceived += bytesRead;
                                 }
+
+                                // Actualizar la barra de progreso
+                                totalBytesToReceive += bytesRead;
+                                Menu.DrawProgressBar((int)totalBytesReceived, totalBytesToReceive, 50);
                             }
 
                             SaveFile(fileName, ms.ToArray());
+                            
                         }
                     }
                 }
-
             }
-
             catch (Exception ex)
             {
-                Console.WriteLine($"\nInfiltrator Server 1.0>[ERROR] Error al manejar al cliente {clientId}: {ex.Message}");
+                Console.WriteLine($"\nInfiltrator Server 1.0> [ERROR] Error al manejar al cliente {clientId}: {ex.Message}");
             }
 
             lock (clients)
