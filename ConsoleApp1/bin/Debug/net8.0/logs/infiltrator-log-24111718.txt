@@ -1,0 +1,13 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-07-19 11:17:23.336] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-07-19 11:17:25.387] - [INFO]: Servidor Infiltrator iniciado en 192.168.1.132:443
+[2024-07-19 11:17:29.986] - [INFO]: Comando introducido: clients
+[2024-07-19 11:17:31.746] - [INFO]: Comando introducido: help
+[2024-07-19 11:17:35.839] - [INFO]: Comando introducido: 1 screenshot
+[2024-07-19 11:17:35.840] - [ERROR]: Cliente 1 no encontrado.
+[2024-07-19 11:17:38.259] - [INFO]: Comando introducido: help
+[2024-07-19 11:17:38.976] - [INFO]: Comando introducido: exit
+[2024-07-19 11:17:38.981] - [INFO]: Deteniendo servidor Infiltrator...
+[2024-07-19 11:17:38.993] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

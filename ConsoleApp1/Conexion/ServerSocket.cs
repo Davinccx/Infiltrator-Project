@@ -12,7 +12,7 @@ namespace Server.Conexion
         private static int clientIdCounter = 0;
         private static bool isRunning;
         private static bool waitingForResponse = false;
-
+        private static Logger logger = Logger.getInstance();
 
         public static bool isWaiting()
         {
@@ -27,7 +27,7 @@ namespace Server.Conexion
         {
             listener = new TcpListener(IPAddress.Parse(Config.ServerIP), Config.ServerPort);
             listener.Start();
-
+            logger.Log($"Servidor Infiltrator iniciado en {Config.ServerIP}:{Config.ServerPort}",LogLevel.INFO);
             Thread acceptClientsThread = new Thread(AcceptClients);
             acceptClientsThread.Start();
             isRunning = true;
@@ -36,6 +36,7 @@ namespace Server.Conexion
         public static void stopServer()
         {
             listener.Stop();
+            logger.Log("Deteniendo servidor Infiltrator...", LogLevel.INFO);
             isRunning = false;  
         }
         public static void HandleClient(TcpClient client, int clientId)
@@ -56,7 +57,7 @@ namespace Server.Conexion
                     {
                         string fileName = data.Substring(5).Trim();
                         Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Recibiendo archivo '{fileName}'...");
-
+                        logger.Log($"Recibiendo archivo {fileName}", LogLevel.INFO);
                         // Recibir datos del archivo
                         using (MemoryStream ms = new MemoryStream())
                         {
@@ -102,6 +103,7 @@ namespace Server.Conexion
             catch (Exception ex)
             {
                 Console.WriteLine($"\nInfiltrator Server 1.0> [ERROR] Error al manejar al cliente {clientId}: {ex.Message}");
+                logger.Log($"Error al manejar al cliente {clientId}: {ex.Message}", LogLevel.ERROR);
             }
 
             lock (clients)
@@ -111,6 +113,7 @@ namespace Server.Conexion
 
             client.Close();
             Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Cliente {clientId} desconectado.");
+            logger.Log($"Cliente {clientId} desconectado.", LogLevel.INFO);
         }
 
         public static void SaveFile(string fileName, byte[] fileData)
@@ -119,10 +122,12 @@ namespace Server.Conexion
             {
                 File.WriteAllBytes(fileName, fileData);
                 Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Archivo '{fileName}' recibido y guardado correctamente.");
+                logger.Log($"Archivo '{fileName}' recibido y guardado correctamente.", LogLevel.INFO);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"\nInfiltrator Server 1.0> [ERROR] Error al guardar el archivo '{fileName}': {ex.Message}");
+                logger.Log($"Error al guardar el archivo '{fileName}': {ex.Message}", LogLevel.ERROR);
             }
         }
 
@@ -190,6 +195,7 @@ namespace Server.Conexion
                 else
                 {
                     Console.WriteLine($"\nInfiltrator Server 1.0> [!] Cliente {clientId} no encontrado.");
+                    logger.Log($"Cliente {clientId} no encontrado.",LogLevel.ERROR);
                 }
             }
 
@@ -210,14 +216,16 @@ namespace Server.Conexion
                     }
 
                     Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Cliente {clientId} conectado.");
+                    logger.Log($"Cliente {clientId} conectado.", LogLevel.INFO);
                     Thread clientThread = new Thread(() => HandleClient(client, clientId));
                     clientThread.Start();
                 }
             }
-            catch (SocketException)
+            catch (SocketException s)
             {
                 // Se produce cuando listener.Stop() es llamado
                 Console.WriteLine("\nInfiltrator Server 1.0> [INFO] El servidor ha sido detenido.");
+                logger.Log($"El servidor se ha detenido: {s.Message}", LogLevel.WARNING);
             }
         }
 
