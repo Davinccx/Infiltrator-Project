@@ -8,7 +8,7 @@ namespace Server
 {
     class ServidorRAT
     {
-        private static Logger logger = Logger.getInstance();
+        private static Logger _logger = Logger.getInstance();
         static void Main(string[] args)
         {
             // Intentar cargar la configuración del servidor
@@ -22,7 +22,7 @@ namespace Server
                     Config.LoadConfig();
                 });
                 Console.WriteLine("\n[+] Configuración del servidor cargada correctamente.");
-                logger.Log("Configuración del servidor cargada correctamente.", LogLevel.INFO);
+                _logger.Log("Configuración del servidor cargada correctamente.", LogLevel.INFO);
 
             }
             catch (Exception ex)
@@ -48,7 +48,7 @@ namespace Server
 
                 string input = Console.ReadLine();
                 string[] parts = input.Split(new char[] { ' ' }, 2);
-                logger.Log($"Comando introducido: {input}", LogLevel.INFO);
+                _logger.Log($"Comando introducido: {input}", LogLevel.INFO);
 
                 if (parts.Length < 2)
                 {
@@ -70,7 +70,7 @@ namespace Server
                     else
                     {
                         Console.WriteLine("\n[+] Infiltrator Server 1.0> [ERROR] Formato incorrecto. Usa: ID comando");
-                        logger.Log("Formato de comando incorrecto.", LogLevel.ERROR);
+                        _logger.Log("Formato de comando incorrecto.", LogLevel.ERROR);
                     }
                     continue;
                 }
@@ -84,7 +84,7 @@ namespace Server
                 else
                 {
                     Console.WriteLine("\n[+] Infiltrator Server 1.0> [ERROR] No hay ningún cliente conectado con ese ID.");
-                    logger.Log("No hay ningún cliente conectado con ese ID.", LogLevel.ERROR);
+                    _logger.Log("No hay ningún cliente conectado con ese ID.", LogLevel.ERROR);
                 }
             }
         }

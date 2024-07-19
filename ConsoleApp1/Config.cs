@@ -10,7 +10,7 @@ namespace Server
         public static int BufferLength { get; set; }
         public static string Version { get; set; }
 
-        private static Logger logger = Logger.getInstance();
+        private static Logger _logger = Logger.getInstance();
 
         public static void LoadConfig()
         {
@@ -22,7 +22,7 @@ namespace Server
             catch (Exception ex)
             {
                 Console.WriteLine($"\n[ERROR] Error al cargar la configuración: {ex.Message}");
-                logger.Log($"Error al cargar la configuración: {ex.Message}", LogLevel.ERROR);
+                _logger.Log($"Error al cargar la configuración: {ex.Message}", LogLevel.ERROR);
                 Environment.Exit(1);
             }
         }
@@ -37,7 +37,7 @@ namespace Server
                 // Validar que el JSON comience y termine correctamente
                 if (!json.StartsWith("{") || !json.EndsWith("}"))
                 {
-                    logger.Log("El archivo de configuración JSON no está en el formato esperado.", LogLevel.ERROR);
+                    _logger.Log("El archivo de configuración JSON no está en el formato esperado.", LogLevel.ERROR);
                     throw new FormatException("El archivo de configuración JSON no está en el formato esperado.");
                     
                 }
@@ -54,7 +54,7 @@ namespace Server
                     int colonIndex = pair.IndexOf(':');
                     if (colonIndex <= 0)
                     {
-                        logger.Log("Error al analizar el par key-value en el archivo de configuración.", LogLevel.ERROR);
+                        _logger.Log("Error al analizar el par key-value en el archivo de configuración.", LogLevel.ERROR);
                         throw new FormatException("Error al analizar el par key-value en el archivo de configuración.");
                     }
 
@@ -70,7 +70,7 @@ namespace Server
                         case "ServerPort":
                             if (!int.TryParse(value, out int port))
                             {
-                                logger.Log("El puerto del servidor no es un número válido.", LogLevel.ERROR);
+                                _logger.Log("El puerto del servidor no es un número válido.", LogLevel.ERROR);
                                 throw new FormatException("El puerto del servidor no es un número válido.");
                             }
                             ServerPort = port;
@@ -78,7 +78,7 @@ namespace Server
                         case "bufferLength":
                             if (!int.TryParse(value, out int bufferLength) || bufferLength >= 102400)
                             {
-                                logger.Log("Error en el tamaño del buffer (Máximo 100 MB).", LogLevel.ERROR);
+                                _logger.Log("Error en el tamaño del buffer (Máximo 100 MB).", LogLevel.ERROR);
                                 throw new FormatException("Error en el tamaño del buffer (Máximo 100 MB).");
                             }
                             BufferLength = bufferLength;
@@ -87,14 +87,14 @@ namespace Server
                             Version = value;
                             break;
                         default:
-                            logger.Log($"Clave desconocida en el archivo de configuración: {key}", LogLevel.ERROR);
+                            _logger.Log($"Clave desconocida en el archivo de configuración: {key}", LogLevel.ERROR);
                             throw new FormatException($"Clave desconocida en el archivo de configuración: {key}");
                     }
                 }
             }
             catch (Exception ex)
             {
-                logger.Log($"Error al analizar el archivo de configuración: {ex.Message}", LogLevel.ERROR);
+                _logger.Log($"Error al analizar el archivo de configuración: {ex.Message}", LogLevel.ERROR);
                 throw new FormatException($"Error al analizar el archivo de configuración: {ex.Message}");
             }
         }

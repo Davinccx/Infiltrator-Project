@@ -64,26 +64,6 @@ namespace Client.Util
         }
 
 
-        public static string GetSystemInfo()
-        {
-            StringBuilder systemInfo = new StringBuilder();
-
-            systemInfo.AppendLine("\n");
-            systemInfo.AppendLine("====================================================================");
-            systemInfo.AppendLine("|                     Información del Sistema                      |");
-            systemInfo.AppendLine("====================================================================");
-            systemInfo.AppendLine($" Nombre del equipo: {Environment.MachineName,-34} ");
-            systemInfo.AppendLine($" Usuario: {Environment.UserName,-34} ");
-            systemInfo.AppendLine($" Sistema operativo: {Environment.OSVersion,-34} ");
-            systemInfo.AppendLine($" Versión de .NET: {Environment.Version,-34} ");
-            systemInfo.AppendLine($" Número de procesadores: {Environment.ProcessorCount,-34} ");
-            systemInfo.AppendLine($" Arquitectura del SO: {(Environment.Is64BitOperatingSystem ? "64 bits" : "32 bits"),-34} ");
-            systemInfo.AppendLine($" Arquitectura del proceso: {(Environment.Is64BitProcess ? "64 bits" : "32 bits"),-34} ");
-            systemInfo.AppendLine("====================================================================");
-
-            return systemInfo.ToString();
-        }
-
 
         public static string KillProcess(int pid)
         {
@@ -110,43 +90,7 @@ namespace Client.Util
             }
         }
 
-        public static string GetNetworkInfo()
-        {
-            StringBuilder networkInfo = new StringBuilder();
-
-            networkInfo.AppendLine("\n");
-            networkInfo.AppendLine("====================================================================");
-            networkInfo.AppendLine("|                       Información de la Red                      |");
-            networkInfo.AppendLine("====================================================================");
-
-            NetworkInterface[] interfaces = NetworkInterface.GetAllNetworkInterfaces();
-            foreach (NetworkInterface netInterface in interfaces)
-            {
-                networkInfo.AppendLine($" Nombre: {netInterface.Name,-44} ");
-                networkInfo.AppendLine($" Descripción: {netInterface.Description,-39} ");
-                networkInfo.AppendLine($" Tipo de interfaz: {netInterface.NetworkInterfaceType,-34} ");
-                networkInfo.AppendLine($" Estado: {netInterface.OperationalStatus,-39} ");
-                networkInfo.AppendLine($" Velocidad: {netInterface.Speed} bps ");
-
-                IPInterfaceProperties ipProperties = netInterface.GetIPProperties();
-                foreach (UnicastIPAddressInformation ip in ipProperties.UnicastAddresses)
-                {
-                    networkInfo.AppendLine($" Dirección IP: {ip.Address,-43} ");
-                    networkInfo.AppendLine($" Máscara de subred: {ip.IPv4Mask,-37} ");
-                }
-
-                foreach (GatewayIPAddressInformation gateway in ipProperties.GatewayAddresses)
-                {
-                    networkInfo.AppendLine($" Puerta de enlace predeterminada: {gateway.Address,-34} ");
-                }
-
-                networkInfo.AppendLine("====================================================================");
-            }
-
-               
-
-            return networkInfo.ToString();
-        }
+       
 
         public static void AddPersistence()
         {
