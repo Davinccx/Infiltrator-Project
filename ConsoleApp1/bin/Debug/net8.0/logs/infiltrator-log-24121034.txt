@@ -1,0 +1,14 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-07-23 12:10:38.094] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-07-23 12:10:40.118] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-07-23 12:10:41.471] - [INFO]: Cliente 1 conectado.
+[2024-07-23 12:10:43.932] - [INFO]: Comando introducido: clients
+[2024-07-23 12:10:46.663] - [INFO]: Comando introducido: 1 exec calc.exe
+[2024-07-23 12:10:52.262] - [INFO]: Comando introducido: 1 exec notepad.exe
+[2024-07-23 12:11:10.318] - [INFO]: Comando introducido: 1 exec regedit.exe
+[2024-07-23 12:11:22.390] - [INFO]: Comando introducido: 1 reboot
+[2024-07-23 12:11:24.305] - [INFO]: Comando introducido: 
+[2024-07-23 12:11:24.306] - [ERROR]: Formato de comando incorrecto.
+[2024-07-23 12:11:32.824] - [INFO]: Cliente 1 desconectado.

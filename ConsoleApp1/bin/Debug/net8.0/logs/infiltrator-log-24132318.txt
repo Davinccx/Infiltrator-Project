@@ -1,0 +1,15 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-07-19 13:23:21.736] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-07-19 13:23:23.765] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-07-19 13:25:38.785] - [INFO]: Cliente 1 conectado.
+[2024-07-19 13:26:39.858] - [INFO]: Cliente 2 conectado.
+[2024-07-19 13:26:45.883] - [INFO]: Comando introducido: 1 disconnect
+[2024-07-19 13:26:45.967] - [INFO]: Cliente 1 desconectado.
+[2024-07-19 13:26:48.139] - [INFO]: Comando introducido: 2 disconnect
+[2024-07-19 13:26:48.224] - [INFO]: Cliente 2 desconectado.
+[2024-07-19 13:30:18.131] - [INFO]: Cliente 3 conectado.
+[2024-07-19 13:30:27.323] - [INFO]: Comando introducido: 3 network_info
+[2024-07-19 13:30:34.579] - [INFO]: Comando introducido: 3 exec notepad.exe
+[2024-07-19 13:35:34.610] - [INFO]: Cliente 3 desconectado.

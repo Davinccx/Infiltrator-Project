@@ -233,5 +233,34 @@ namespace Server.Conexion
 
             _waitingForResponse = status;
         }
+
+        public static void SendFileToClient(int clientId, string filePath)
+        {
+            if (!_clients.TryGetValue(clientId, out TcpClient client))
+            {
+                Console.WriteLine($"Cliente {clientId} no encontrado.");
+                _logger.Log($"Cliente {clientId} no encontrado.", LogLevel.ERROR);
+                return;
+            }
+
+            NetworkStream stream = client.GetStream();
+            try
+            {
+                // Leer los datos del archivo
+                byte[] fileData = File.ReadAllBytes(filePath);
+
+                // Enviar el archivo directamente sin marcas
+                stream.Write(fileData, 0, fileData.Length);
+
+                Console.WriteLine($"Archivo '{filePath}' enviado a cliente {clientId}.");
+                _logger.Log($"Archivo '{filePath}' enviado a cliente {clientId}.", LogLevel.INFO);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al enviar archivo: {ex.Message}");
+                _logger.Log($"Error al enviar archivo: {ex.Message}", LogLevel.ERROR);
+            }
+        }
+
     }
 }

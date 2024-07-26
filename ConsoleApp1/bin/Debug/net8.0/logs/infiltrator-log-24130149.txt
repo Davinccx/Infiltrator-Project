@@ -1,0 +1,10 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-07-26 13:01:52.539] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-07-26 13:01:54.563] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-07-26 13:01:56.400] - [INFO]: Cliente 1 conectado.
+[2024-07-26 13:02:05.026] - [INFO]: Comando introducido: 1 exec tree
+[2024-07-26 13:02:18.302] - [INFO]: Comando introducido: 1 senfile Server.dll
+[2024-07-26 13:02:23.176] - [INFO]: Comando introducido: 1 sendfile Server.dll
+[2024-07-26 13:02:55.647] - [INFO]: Comando introducido: 1 exec dir

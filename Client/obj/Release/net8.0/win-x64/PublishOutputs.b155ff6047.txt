@@ -1,0 +1,2 @@
+C:\Users\David\Desktop\Infiltrator\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\Client.pdb
+C:\Users\David\Desktop\Infiltrator\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\Client.exe

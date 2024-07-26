@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75DEEDDB-A3C2-456F-855C-2AA658A853BA}|ConsoleApp1\\Server.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\consoleapp1\\servidorrat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75DEEDDB-A3C2-456F-855C-2AA658A853BA}|ConsoleApp1\\Server.csproj|solutionrelative:consoleapp1\\servidorrat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\conexion\\clientsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\conexion\\clientsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteRAT.cs",
+              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\ClienteRAT.cs",
+              "RelativeDocumentMoniker": "Client\\ClienteRAT.cs",
+              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\ClienteRAT.cs",
+              "RelativeToolTip": "Client\\ClienteRAT.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAiwDMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T11:35:21.074Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClienteRAT.cs",
-              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\ClienteRAT.cs",
-              "RelativeDocumentMoniker": "Client\\ClienteRAT.cs",
-              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\ClienteRAT.cs",
-              "RelativeToolTip": "Client\\ClienteRAT.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "DocumentIndex": 3,
+              "Title": "HandleCommands.cs",
+              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
+              "RelativeDocumentMoniker": "Client\\Commands\\HandleCommands.cs",
+              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
+              "RelativeToolTip": "Client\\Commands\\HandleCommands.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAYwGYAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T10:12:56.947Z",
+              "WhenOpened": "2024-07-26T11:55:52.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServidorRAT.cs",
+              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\ConsoleApp1\\ServidorRAT.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\ServidorRAT.cs",
+              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\ConsoleApp1\\ServidorRAT.cs",
+              "RelativeToolTip": "ConsoleApp1\\ServidorRAT.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T11:49:21.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientSocket.cs",
+              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
+              "RelativeDocumentMoniker": "Client\\Conexion\\ClientSocket.cs",
+              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
+              "RelativeToolTip": "Client\\Conexion\\ClientSocket.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAIAwwFEAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T10:43:14.476Z",
               "EditorCaption": ""
             }
           ]

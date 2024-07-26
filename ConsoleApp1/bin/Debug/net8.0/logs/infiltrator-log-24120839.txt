@@ -1,0 +1,9 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-07-23 12:08:42.473] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-07-23 12:08:44.495] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-07-23 12:09:48.468] - [INFO]: Cliente 1 conectado.
+[2024-07-23 12:09:52.752] - [INFO]: Comando introducido: clients
+[2024-07-23 12:09:59.496] - [INFO]: Comando introducido: 1 disconnect
+[2024-07-23 12:09:59.572] - [INFO]: Cliente 1 desconectado.

@@ -1,0 +1,7 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-07-26 13:09:31.257] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-07-26 13:09:33.402] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-07-26 13:09:35.238] - [INFO]: Cliente 1 conectado.
+[2024-07-26 13:09:43.122] - [INFO]: Comando introducido: 1 sendfile hola.txt
