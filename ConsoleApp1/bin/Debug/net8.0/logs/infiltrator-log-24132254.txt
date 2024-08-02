@@ -1,0 +1,11 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-08-02 13:22:59.256] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-08-02 13:23:01.304] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-08-02 13:23:02.916] - [INFO]: Cliente 1 conectado.
+[2024-08-02 13:23:07.128] - [INFO]: Comando introducido: 1 edge_history
+[2024-08-02 13:23:07.305] - [INFO]: Recibiendo archivo edge_history.csv
+[2024-08-02 13:23:07.348] - [INFO]: Archivo 'edge_history.csv' recibido y guardado correctamente.
+[2024-08-02 13:23:36.206] - [INFO]: Comando introducido: 1 disconnect
+[2024-08-02 13:23:36.267] - [INFO]: Cliente 1 desconectado.

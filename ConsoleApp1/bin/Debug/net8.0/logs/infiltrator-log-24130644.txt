@@ -1,0 +1,10 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-08-02 13:06:49.097] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-08-02 13:06:51.154] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-08-02 13:07:16.052] - [INFO]: Cliente 1 conectado.
+[2024-08-02 13:07:20.541] - [INFO]: Comando introducido: help
+[2024-08-02 13:07:23.786] - [INFO]: Comando introducido: 1 browsers
+[2024-08-02 13:07:30.492] - [INFO]: Comando introducido: browsers_module
+[2024-08-02 13:07:40.604] - [INFO]: Comando introducido: 1 chrome_passwords

@@ -1,0 +1,10 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-08-02 11:02:22.029] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-08-02 11:02:24.132] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-08-02 11:03:03.646] - [INFO]: Cliente 1 conectado.
+[2024-08-02 11:03:06.882] - [INFO]: Comando introducido: 1 credentials
+[2024-08-02 11:03:07.228] - [INFO]: Recibiendo archivo decrypted_passwords.csv
+[2024-08-02 11:03:07.268] - [INFO]: Archivo 'decrypted_passwords.csv' recibido y guardado correctamente.
+[2024-08-02 11:03:27.505] - [INFO]: Cliente 1 desconectado.

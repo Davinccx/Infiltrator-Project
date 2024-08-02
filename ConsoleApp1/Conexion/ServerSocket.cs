@@ -238,7 +238,7 @@ namespace Server.Conexion
         {
             if (!_clients.TryGetValue(clientId, out TcpClient client))
             {
-                Console.WriteLine($"Cliente {clientId} no encontrado.");
+                Console.WriteLine($"[ERROR] Cliente {clientId} no encontrado.");
                 _logger.Log($"Cliente {clientId} no encontrado.", LogLevel.ERROR);
                 return;
             }

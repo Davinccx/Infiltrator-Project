@@ -1,0 +1,28 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-08-02 11:22:28.540] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-08-02 11:22:30.564] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-08-02 11:22:34.361] - [INFO]: Cliente 1 conectado.
+[2024-08-02 11:22:38.913] - [INFO]: Comando introducido: 1 credentials
+[2024-08-02 11:22:39.253] - [INFO]: Recibiendo archivo decrypted_passwords.csv
+[2024-08-02 11:22:39.294] - [INFO]: Archivo 'decrypted_passwords.csv' recibido y guardado correctamente.
+[2024-08-02 11:23:22.838] - [INFO]: Cliente 1 desconectado.
+[2024-08-02 11:26:55.837] - [INFO]: Cliente 2 conectado.
+[2024-08-02 11:26:58.677] - [INFO]: Comando introducido: 2 cc
+[2024-08-02 11:26:58.977] - [INFO]: Recibiendo archivo credit_cards.csv
+[2024-08-02 11:26:59.005] - [INFO]: Archivo 'credit_cards.csv' recibido y guardado correctamente.
+[2024-08-02 11:27:39.529] - [INFO]: Comando introducido: 2 cc
+[2024-08-02 11:27:39.613] - [INFO]: Recibiendo archivo credit_cards.csv
+[2024-08-02 11:27:39.644] - [ERROR]: Error al guardar el archivo 'credit_cards.csv': The process cannot access the file 'C:\Users\David\Desktop\Infiltrator\Infiltrator-Project\ConsoleApp1\bin\Debug\net8.0\credit_cards.csv' because it is being used by another process.
+[2024-08-02 11:27:58.101] - [INFO]: Comando introducido: 2 credentials
+[2024-08-02 11:27:58.207] - [INFO]: Recibiendo archivo decrypted_passwords.csv
+[2024-08-02 11:27:58.236] - [INFO]: Archivo 'decrypted_passwords.csv' recibido y guardado correctamente.
+[2024-08-02 11:28:00.845] - [INFO]: Comando introducido: 2 cc
+[2024-08-02 11:28:00.913] - [INFO]: Recibiendo archivo credit_cards.csv
+[2024-08-02 11:28:00.943] - [ERROR]: Error al guardar el archivo 'credit_cards.csv': The process cannot access the file 'C:\Users\David\Desktop\Infiltrator\Infiltrator-Project\ConsoleApp1\bin\Debug\net8.0\credit_cards.csv' because it is being used by another process.
+[2024-08-02 11:28:08.768] - [INFO]: Comando introducido: 2 cc
+[2024-08-02 11:28:08.859] - [INFO]: Recibiendo archivo credit_cards.csv
+[2024-08-02 11:28:08.891] - [INFO]: Archivo 'credit_cards.csv' recibido y guardado correctamente.
+[2024-08-02 11:32:51.611] - [INFO]: Comando introducido: 2 disconnect
+[2024-08-02 11:32:51.670] - [INFO]: Cliente 2 desconectado.

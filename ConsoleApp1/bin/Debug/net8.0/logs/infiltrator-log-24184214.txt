@@ -1,0 +1,10 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-07-31 18:42:17.341] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-07-31 18:42:19.517] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-07-31 18:42:20.428] - [INFO]: Cliente 1 conectado.
+[2024-07-31 18:42:26.609] - [INFO]: Comando introducido: 1 credentials
+[2024-07-31 18:42:44.080] - [INFO]: Comando introducido: 1 screenshot
+[2024-07-31 18:42:44.293] - [INFO]: Recibiendo archivo infiltrator-20240731-184244-screenshot.png
+[2024-07-31 18:42:44.458] - [INFO]: Archivo 'infiltrator-20240731-184244-screenshot.png' recibido y guardado correctamente.

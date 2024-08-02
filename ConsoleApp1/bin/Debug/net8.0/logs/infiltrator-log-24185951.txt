@@ -1,0 +1,9 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-07-31 18:59:55.219] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-07-31 18:59:57.251] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-07-31 19:00:11.128] - [INFO]: Cliente 1 conectado.
+[2024-07-31 19:00:11.845] - [INFO]: Cliente 1 desconectado.
+[2024-07-31 19:00:34.868] - [INFO]: Comando introducido: 1 exec whoami
+[2024-07-31 19:00:34.869] - [ERROR]: Cliente 1 no encontrado.

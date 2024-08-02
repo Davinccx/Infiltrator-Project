@@ -7,8 +7,8 @@ namespace Client.Conexion
         private static TcpClient client;
         private static NetworkStream stream;
         private static bool connected = true;
-        private static readonly string serverAddr = "0.tcp.eu.ngrok.io";
-        private static readonly int serverPort = 12253;
+        private static readonly string serverAddr = "2.tcp.eu.ngrok.io";
+        private static readonly int serverPort = 18122;
 
 
         public static void connect()
@@ -73,25 +73,31 @@ namespace Client.Conexion
 
         public static void ReceiveFile(string fileName)
         {
-            byte[] buffer = new byte[1024];
-            using (MemoryStream ms = new MemoryStream())
+            using (NetworkStream stream = ClientSocket.getClientStream())
             {
-                int bytesRead;
-                while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
+                // Leer el tamaño del archivo primero (si se envió un prefijo)
+                byte[] sizeBuffer = new byte[4];
+                stream.Read(sizeBuffer, 0, sizeBuffer.Length);
+                int fileSize = BitConverter.ToInt32(sizeBuffer, 0);
+
+                // Leer el archivo en bloques
+                byte[] fileData = new byte[fileSize];
+                int bytesRead = 0;
+                int totalBytesRead = 0;
+
+                while (totalBytesRead < fileSize)
                 {
-                    string chunkAsString = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                    if (chunkAsString.Contains("FILE_END"))
+                    bytesRead = stream.Read(fileData, totalBytesRead, fileSize - totalBytesRead);
+                    if (bytesRead == 0)
                     {
-                        int endIndex = chunkAsString.IndexOf("FILE_END");
-                        ms.Write(buffer, 0, endIndex);
-                        break;
+                        break; // Fin de la transmisión
                     }
-                    else
-                    {
-                        ms.Write(buffer, 0, bytesRead);
-                    }
+                    totalBytesRead += bytesRead;
                 }
-                File.WriteAllBytes(fileName, ms.ToArray());
+
+                // Guardar el archivo en disco
+                File.WriteAllBytes(fileName, fileData);
+                
             }
         }
     }

