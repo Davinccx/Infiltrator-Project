@@ -3,3 +3,5 @@
 -----------------------------------------------
 [2024-07-23 12:08:01.214] - [INFO]: Configuración del servidor cargada correctamente.
 [2024-07-23 12:08:03.243] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-08-05 12:08:03.009] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-08-05 12:08:11.211] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443

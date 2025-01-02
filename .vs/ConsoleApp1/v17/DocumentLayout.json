@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\stealers\\chromestealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\stealers\\chromestealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\stealers\\edgestealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\stealers\\edgestealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75DEEDDB-A3C2-456F-855C-2AA658A853BA}|ConsoleApp1\\Server.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\consoleapp1\\gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75DEEDDB-A3C2-456F-855C-2AA658A853BA}|ConsoleApp1\\Server.csproj|solutionrelative:consoleapp1\\gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EdgeStealer.cs",
-              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Stealers\\EdgeStealer.cs",
-              "RelativeDocumentMoniker": "Client\\Stealers\\EdgeStealer.cs",
-              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Stealers\\EdgeStealer.cs",
-              "RelativeToolTip": "Client\\Stealers\\EdgeStealer.cs",
-              "ViewState": "AQIAAP8AAAAAAAAAAAAUwAYBAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T11:10:58.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChromeStealer.cs",
-              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Stealers\\ChromeStealer.cs",
-              "RelativeDocumentMoniker": "Client\\Stealers\\ChromeStealer.cs",
-              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Stealers\\ChromeStealer.cs",
-              "RelativeToolTip": "Client\\Stealers\\ChromeStealer.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAiwIYAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T11:09:43.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClienteRAT.cs",
+              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\ClienteRAT.cs",
+              "RelativeDocumentMoniker": "Client\\ClienteRAT.cs",
+              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\ClienteRAT.cs",
+              "RelativeToolTip": "Client\\ClienteRAT.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T10:19:43.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HandleCommands.cs",
               "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
               "RelativeDocumentMoniker": "Client\\Commands\\HandleCommands.cs",
               "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
               "RelativeToolTip": "Client\\Commands\\HandleCommands.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowE0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T11:08:03.481Z",
+              "WhenOpened": "2024-09-04T10:18:09.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\ConsoleApp1\\GUI\\Menu.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\GUI\\Menu.cs",
-              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\ConsoleApp1\\GUI\\Menu.cs",
-              "RelativeToolTip": "ConsoleApp1\\GUI\\Menu.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAiwD4AAABZAAAA",
+              "DocumentIndex": 1,
+              "Title": "Keylogger.cs",
+              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Keylogger.cs",
+              "RelativeDocumentMoniker": "Client\\Keylogger.cs",
+              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Keylogger.cs",
+              "RelativeToolTip": "Client\\Keylogger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T10:36:45.436Z",
+              "WhenOpened": "2024-09-04T10:13:46.59Z",
               "EditorCaption": ""
             }
           ]

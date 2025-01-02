@@ -24,6 +24,16 @@ namespace Client.Native
         [DllImport("crypt32.dll", SetLastError = true, CharSet = CharSet.Auto)]
         public static extern bool CryptUnprotectData(ref DATA_BLOB pDataIn, string pszDataDescr, ref DATA_BLOB pOptionalEntropy, IntPtr pvReserved, ref CRYPTPROTECT_PROMPTSTRUCT pPrompt, int dwFlags, ref DATA_BLOB pDataOut);
 
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern IntPtr GetForegroundWindow();
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId);
+
+
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
         internal struct DATA_BLOB
         {
@@ -39,5 +49,7 @@ namespace Client.Native
             public IntPtr hwndApp;
             public string szPrompt;
         }
+
+        
     }
 }

