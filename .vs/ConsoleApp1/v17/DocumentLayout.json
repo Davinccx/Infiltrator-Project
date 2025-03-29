@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\",
+  "WorkspaceRootPath": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\conexion\\clientsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\conexion\\clientsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\david\\desktop\\infiltrator\\infiltrator-project\\client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +30,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ClienteRAT.cs",
-              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\ClienteRAT.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\ClienteRAT.cs",
               "RelativeDocumentMoniker": "Client\\ClienteRAT.cs",
-              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\ClienteRAT.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\ClienteRAT.cs",
               "RelativeToolTip": "Client\\ClienteRAT.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwD8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T10:19:43.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T20:08:13.778Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "HandleCommands.cs",
-              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
               "RelativeDocumentMoniker": "Client\\Commands\\HandleCommands.cs",
-              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
               "RelativeToolTip": "Client\\Commands\\HandleCommands.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowE0AAAAeAAAA",
+              "ViewState": "AgIAALcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T10:18:09.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T20:01:01.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Keylogger.cs",
-              "DocumentMoniker": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Keylogger.cs",
-              "RelativeDocumentMoniker": "Client\\Keylogger.cs",
-              "ToolTip": "C:\\Users\\David\\Desktop\\Infiltrator\\Infiltrator-Project\\Client\\Keylogger.cs",
-              "RelativeToolTip": "Client\\Keylogger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "ClientSocket.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
+              "RelativeDocumentMoniker": "Client\\Conexion\\ClientSocket.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
+              "RelativeToolTip": "Client\\Conexion\\ClientSocket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T10:13:46.59Z",
+              "WhenOpened": "2025-03-28T20:00:58.57Z",
               "EditorCaption": ""
             }
           ]

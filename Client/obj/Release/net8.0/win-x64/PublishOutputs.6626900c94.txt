@@ -1,0 +1,4 @@
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\Client.pdb
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\sni.dll
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\SQLite.Interop.dll
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\Client.exe

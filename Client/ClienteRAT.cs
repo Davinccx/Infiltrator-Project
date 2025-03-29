@@ -57,7 +57,7 @@ namespace Client
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error en la conexión: {ex.Message}");
+               Debug.WriteLine($"Error en la conexión: {ex.Message}");
             }
             finally
             {

@@ -1,6 +1,5 @@
-# 🔑 Keylogger & Client-Server File Transfer
-
-Este proyecto es una combinación de un **Keylogger** y un **Cliente-Servidor** para transferencia de archivos a través de **TCP** con `ngrok`. 🖥️💾
+# 🔑 Infiltrator Proyect 1.0
+Este proyecto es un troyano con múltiples funcionalidades, incluyendo transferencia de archivos y captura de información a través de TCP con ngrok. 🖥️💾
 
 ---
 
@@ -37,15 +36,27 @@ Este proyecto es una combinación de un **Keylogger** y un **Cliente-Servidor** 
 
 ## 📂 **Estructura del Proyecto**
 ```plaintext
-📦 Keylogger-ClientServer
+📦 Infiltrator Proyect
 ├── 📂 Client
-│   ├── 🔹 ClientSocket.cs  # Lógica de conexión y envío de archivos
-│   └── 🔹 Program.cs       # Punto de entrada del cliente
-├── 📂 Keylogger
-│   ├── 🔹 Program.cs       # Captura de teclas y almacenamiento en Log.txt
-└── 📂 Server
-    ├── 🔹 ServerSocket.cs  # Lógica de recepción de archivos
-    └── 🔹 Program.cs       # Punto de entrada del servidor
+│   ├── 📂 Commands
+│   ├── 📂 Conexion
+│   ├── 📂 Crypto
+│   ├── 📂 Native
+│   ├── 📂 Stealers
+│   ├── 📂 Util
+│   │   ├── 🔹 Functions.cs
+│   │   ├── 🔹 Log.cs
+│   │   ├── 🔹 Screenshot.cs
+│   │   ├── 🔹 SystemInfo.cs
+│   ├── 🔹 ClienteRAT.cs
+│   ├── 🔹 Keylogger.cs
+├── 📂 Server
+│   ├── 📂 Conexion
+│   ├── 📂 Crypto
+│   ├── 📂 GUI
+│   ├── 🔹 Config.cs
+│   ├── 🔹 Logger.cs
+│   ├── 🔹 ServidorRAT.cs
 ```
 
 ---
@@ -53,7 +64,7 @@ Este proyecto es una combinación de un **Keylogger** y un **Cliente-Servidor** 
 ## 🛠 **Uso**
 1. **Inicia el servidor** ejecutando el programa en la carpeta `Server/`
 2. **Ejecuta el cliente** en la máquina destino
-3. **El keylogger registrará las pulsaciones** y enviará archivos si es necesario.
+
 
 ---
 
@@ -64,7 +75,7 @@ Este proyecto es una combinación de un **Keylogger** y un **Cliente-Servidor** 
 ---
 
 ## 📌 **Créditos**
-Desarrollado con ❤️ por [Tu Nombre].
+Desarrollado con ❤️ por David Fernández Sanz.
 
 ---
 

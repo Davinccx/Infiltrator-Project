@@ -1,0 +1,17 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-03-28 20:45:05.699] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-03-28 20:45:07.721] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-03-28 20:45:24.069] - [INFO]: Cliente 1 conectado.
+[2025-03-28 20:45:39.443] - [INFO]: Cliente 1 desconectado.
+[2025-03-28 20:45:48.597] - [INFO]: Cliente 2 conectado.
+[2025-03-28 20:45:51.235] - [INFO]: Cliente 2 desconectado.
+[2025-03-28 20:46:00.199] - [INFO]: Comando introducido: cls
+[2025-03-28 20:46:00.205] - [ERROR]: Formato de comando incorrecto.
+[2025-03-28 20:46:02.031] - [INFO]: Comando introducido: clear
+[2025-03-28 20:46:02.032] - [ERROR]: Formato de comando incorrecto.
+[2025-03-28 20:46:04.539] - [INFO]: Comando introducido: clean
+[2025-03-28 20:46:04.540] - [ERROR]: Formato de comando incorrecto.
+[2025-03-28 20:46:07.733] - [INFO]: Comando introducido: help
+[2025-03-28 20:46:41.922] - [INFO]: Comando introducido: clients

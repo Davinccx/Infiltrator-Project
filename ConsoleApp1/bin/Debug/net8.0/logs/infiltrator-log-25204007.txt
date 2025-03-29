@@ -1,0 +1,7 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-03-28 20:40:11.071] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-03-28 20:40:13.091] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-03-28 20:40:28.622] - [INFO]: Comando introducido: clients
+[2025-03-28 20:40:43.000] - [INFO]: Comando introducido: clients

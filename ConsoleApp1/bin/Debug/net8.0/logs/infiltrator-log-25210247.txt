@@ -1,0 +1,21 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-03-28 21:02:50.972] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-03-28 21:02:52.993] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-03-28 21:03:13.428] - [INFO]: Comando introducido: clients
+[2025-03-28 21:04:37.856] - [INFO]: Cliente 1 conectado.
+[2025-03-28 21:04:45.632] - [ERROR]: Error al manejar al cliente 1: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-03-28 21:04:45.633] - [INFO]: Cliente 1 desconectado.
+[2025-03-28 21:05:21.805] - [INFO]: Cliente 2 conectado.
+[2025-03-28 21:05:22.056] - [INFO]: Cliente 3 conectado.
+[2025-03-28 21:05:28.223] - [INFO]: Comando introducido: clients
+[2025-03-28 21:05:37.821] - [INFO]: Comando introducido: clean
+[2025-03-28 21:05:37.821] - [ERROR]: Formato de comando incorrecto.
+[2025-03-28 21:05:42.898] - [INFO]: Comando introducido: help
+[2025-03-28 21:05:49.904] - [INFO]: Comando introducido: 2 system_info
+[2025-03-28 21:05:49.906] - [INFO]: Cliente 2 desconectado.
+[2025-03-28 21:05:56.674] - [INFO]: Comando introducido: 3 system_info
+[2025-03-28 21:05:56.675] - [INFO]: Cliente 3 desconectado.
+[2025-03-28 21:05:59.506] - [INFO]: Cliente 4 conectado.
+[2025-03-28 21:05:59.757] - [INFO]: Cliente 5 conectado.

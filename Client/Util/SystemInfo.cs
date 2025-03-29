@@ -209,7 +209,7 @@ namespace Client.Util
             systemInfo.AppendLine($" Sistema operativo: {GetSystemVersion(),-34} ");
             systemInfo.AppendLine($" Versión de .NET: {Environment.Version,-34} ");
             systemInfo.AppendLine($" Número de procesadores: {Environment.ProcessorCount,-34} ");
-            systemInfo.AppendLine($" Cantidad de RAM: {GetRamAmount(),-34} ");
+            systemInfo.AppendLine($" Memoria RAM: {GetRamAmount(),-34} ");
             systemInfo.AppendLine($" Procesador: {GetCpuName(),-34} ");
             systemInfo.AppendLine($" Tarjeta Gráfica: {GetGpuName(),-34} ");
             systemInfo.AppendLine("====================================================================");
