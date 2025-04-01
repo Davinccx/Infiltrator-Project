@@ -1,4 +1,4 @@
-# 🔑 Infiltrator Proyect 1.0
+# 🔑 Infiltrator Project 1.0
 Este proyecto es un troyano con múltiples funcionalidades, incluyendo transferencia de archivos y captura de información a través de TCP con ngrok. 🖥️💾
 
 ---
