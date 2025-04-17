@@ -1,0 +1,10 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-11 16:18:53.967] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-04-11 16:18:57.019] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-04-11 16:19:14.251] - [INFO]: Cliente 1 conectado.
+[2025-04-11 16:19:29.132] - [INFO]: Cliente 1 desconectado.
+[2025-04-11 16:19:35.381] - [INFO]: Cliente 2 conectado.
+[2025-04-11 16:19:45.351] - [ERROR]: [ERROR] No se pudo cargar la configuración del servidor: Object must be of type String.
+[2025-04-11 16:19:48.284] - [INFO]: Cliente 2 desconectado.

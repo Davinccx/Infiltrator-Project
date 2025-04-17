@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dextg\\source\\repos\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\source\\repos\\Server\\server\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\clientinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\clientinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\source\\repos\\Server\\server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientInfo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.Designer.cs",
+              "RelativeDocumentMoniker": "Server\\ClientInfo.Designer.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.Designer.cs",
+              "RelativeToolTip": "Server\\ClientInfo.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T08:41:07.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientInfo.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.cs",
+              "RelativeDocumentMoniker": "Server\\ClientInfo.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.cs",
+              "RelativeToolTip": "Server\\ClientInfo.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T08:03:54.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientInfo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.cs",
+              "RelativeDocumentMoniker": "Server\\ClientInfo.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Server\\ClientInfo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T22:41:06.25Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Shell.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs",
+              "RelativeDocumentMoniker": "Server\\Shell.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Server\\Shell.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T22:15:23.24Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\MainForm.cs",
+              "RelativeDocumentMoniker": "Server\\MainForm.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\MainForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Server\\MainForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T21:46:23.221Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

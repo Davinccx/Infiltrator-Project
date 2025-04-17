@@ -1,0 +1,12 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-12 00:56:41.891] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-04-12 00:56:44.966] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-04-12 00:56:52.892] - [INFO]: Cliente 1 conectado.
+[2025-04-12 00:56:55.467] - [INFO]: Cliente 1 desconectado.
+[2025-04-12 00:57:20.389] - [INFO]: Cliente 2 conectado.
+[2025-04-12 01:04:04.578] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-04-12 01:04:04.585] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
+[2025-04-12 01:04:04.603] - [ERROR]: Error al manejar al cliente 2: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-04-12 01:04:04.604] - [INFO]: Cliente 2 desconectado.

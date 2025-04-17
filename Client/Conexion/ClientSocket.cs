@@ -1,5 +1,6 @@
 ﻿using System.Net.Sockets;
 using System.Text;
+
 namespace Client.Conexion
 {
     static class ClientSocket
@@ -7,8 +8,8 @@ namespace Client.Conexion
         private static TcpClient client;
         private static NetworkStream stream;
         private static bool connected = true;
-        private static readonly string serverAddr = "0.tcp.eu.ngrok.io";
-        private static readonly int serverPort = 18766;
+        private static readonly string serverAddr = "2.tcp.eu.ngrok.io";
+        private static readonly int serverPort = 17542;
 
 
         public static void connect()
@@ -99,6 +100,11 @@ namespace Client.Conexion
                 File.WriteAllBytes(fileName, fileData);
                 
             }
+        }
+
+        internal static void SendResponse(Task<string> task)
+        {
+            throw new NotImplementedException();
         }
     }
 }

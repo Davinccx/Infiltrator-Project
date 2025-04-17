@@ -1,0 +1,4 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-11 11:50:53.120] - [INFO]: Configuración del servidor cargada correctamente.

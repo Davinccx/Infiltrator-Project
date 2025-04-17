@@ -1,0 +1,8 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-17 01:04:05.169] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-04-17 01:04:08.229] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-04-17 01:04:11.676] - [INFO]: Cliente 1 conectado.
+[2025-04-17 01:04:24.092] - [INFO]: Cliente 1 desconectado.
+[2025-04-17 01:04:26.137] - [WARNING]: No se encontró TcpClient con ID 1.

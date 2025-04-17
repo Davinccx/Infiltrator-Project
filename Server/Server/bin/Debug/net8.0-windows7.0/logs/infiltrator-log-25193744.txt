@@ -1,0 +1,6 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-11 19:37:44.400] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-04-11 19:37:47.458] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-04-11 19:38:45.707] - [ERROR]: [ERROR] No se pudo cargar la configuración del servidor: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')

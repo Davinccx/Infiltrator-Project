@@ -1,0 +1,7 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-12 00:54:09.131] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-04-12 00:54:12.193] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-04-12 00:54:26.927] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-04-12 00:54:26.933] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

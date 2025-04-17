@@ -196,24 +196,22 @@ namespace Client.Util
             return networkInfo.ToString();
         }
 
-        public static string GetSystemInfo()
+        public static async Task<string> GetSystemInfo()
         {
             StringBuilder systemInfo = new StringBuilder();
+            string publicIP = await GetPublicIpAsync();
 
-            systemInfo.AppendLine("\n");
-            systemInfo.AppendLine("====================================================================");
-            systemInfo.AppendLine("|                     Información del Sistema                      |");
-            systemInfo.AppendLine("====================================================================");
+            systemInfo.Append("SYSINFO:");
             systemInfo.AppendLine($" Nombre del equipo: {MachineName,-34} ");
             systemInfo.AppendLine($" Usuario: {User,-34} ");
+            systemInfo.AppendLine($" IP: {publicIP,-34} ");
             systemInfo.AppendLine($" Sistema operativo: {GetSystemVersion(),-34} ");
             systemInfo.AppendLine($" Versión de .NET: {Environment.Version,-34} ");
             systemInfo.AppendLine($" Número de procesadores: {Environment.ProcessorCount,-34} ");
             systemInfo.AppendLine($" Memoria RAM: {GetRamAmount(),-34} ");
             systemInfo.AppendLine($" Procesador: {GetCpuName(),-34} ");
             systemInfo.AppendLine($" Tarjeta Gráfica: {GetGpuName(),-34} ");
-            systemInfo.AppendLine("====================================================================");
-
+            systemInfo.Append("ENDSYSINFO:");
             return systemInfo.ToString();
         }
 

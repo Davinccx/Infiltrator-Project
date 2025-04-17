@@ -1,0 +1,14 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-11 17:04:10.480] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-04-11 17:04:13.526] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-04-11 17:04:32.853] - [INFO]: Cliente 1 conectado.
+[2025-04-11 17:04:34.149] - [ERROR]: Error al manejar al cliente 1: No se pueden agregar filas mediante programación a la colección de filas de DataGridView cuando el control está enlazado a datos.
+[2025-04-11 17:04:34.151] - [INFO]: Cliente 1 desconectado.
+[2025-04-11 17:04:38.215] - [INFO]: Cliente 2 conectado.
+[2025-04-11 17:04:39.386] - [ERROR]: Error al manejar al cliente 2: No se pueden agregar filas mediante programación a la colección de filas de DataGridView cuando el control está enlazado a datos.
+[2025-04-11 17:04:39.386] - [INFO]: Cliente 2 desconectado.
+[2025-04-11 17:04:46.775] - [INFO]: Cliente 3 conectado.
+[2025-04-11 17:04:47.966] - [ERROR]: Error al manejar al cliente 3: No se pueden agregar filas mediante programación a la colección de filas de DataGridView cuando el control está enlazado a datos.
+[2025-04-11 17:04:47.967] - [INFO]: Cliente 3 desconectado.

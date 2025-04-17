@@ -1,0 +1,20 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-17 01:06:22.129] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-04-17 01:06:25.192] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-04-17 01:06:30.261] - [INFO]: Cliente 1 conectado.
+[2025-04-17 01:06:36.040] - [INFO]: Cliente 1 desconectado.
+[2025-04-17 01:06:38.385] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-04-17 01:06:48.478] - [INFO]: Cliente 2 conectado.
+[2025-04-17 01:06:58.755] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-04-17 01:07:07.981] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-04-17 01:07:08.003] - [ERROR]: Cliente 1 no encontrado.
+[2025-04-17 01:07:10.648] - [ERROR]: Cliente 1 no encontrado.
+[2025-04-17 01:07:12.281] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-04-17 01:07:14.572] - [ERROR]: Cliente 1 no encontrado.
+[2025-04-17 01:07:20.251] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-04-17 01:07:27.020] - [INFO]: Cliente 2 desconectado.
+[2025-04-17 01:07:28.855] - [WARNING]: No se encontró TcpClient con ID 2.
+[2025-04-17 01:07:33.481] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-04-17 01:07:33.488] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

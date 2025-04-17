@@ -1,0 +1,8 @@
+{
+
+  "ServerIP": "127.0.0.1",
+  "ServerPort": "443",
+  "version": "1.0",
+  "bufferLength": "10400"
+
+}

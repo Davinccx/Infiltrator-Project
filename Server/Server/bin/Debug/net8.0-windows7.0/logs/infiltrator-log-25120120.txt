@@ -1,0 +1,4 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-04-11 12:01:20.052] - [ERROR]: Error al cargar la configuración: Could not find file 'C:\Users\dextg\source\repos\Server\Server\bin\Debug\net8.0-windows7.0\config.json'.

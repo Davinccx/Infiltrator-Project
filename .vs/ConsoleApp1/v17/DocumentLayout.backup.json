@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75DEEDDB-A3C2-456F-855C-2AA658A853BA}|ConsoleApp1\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\consoleapp1\\crypto\\cryptohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75DEEDDB-A3C2-456F-855C-2AA658A853BA}|ConsoleApp1\\Server.csproj|solutionrelative:consoleapp1\\crypto\\cryptohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\conexion\\clientsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\conexion\\clientsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\crypto\\cryptohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\crypto\\cryptohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\commands\\handlecommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CryptoHelper.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\ConsoleApp1\\Crypto\\CryptoHelper.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Crypto\\CryptoHelper.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\ConsoleApp1\\Crypto\\CryptoHelper.cs",
-              "RelativeToolTip": "ConsoleApp1\\Crypto\\CryptoHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABYAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HandleCommands.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
+              "RelativeDocumentMoniker": "Client\\Commands\\HandleCommands.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Commands\\HandleCommands.cs",
+              "RelativeToolTip": "Client\\Commands\\HandleCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T12:52:30.271Z",
+              "WhenOpened": "2025-04-16T22:18:27.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CryptoHelper.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Crypto\\CryptoHelper.cs",
-              "RelativeDocumentMoniker": "Client\\Crypto\\CryptoHelper.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Crypto\\CryptoHelper.cs",
-              "RelativeToolTip": "Client\\Crypto\\CryptoHelper.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAmwEMAAABYAAAAAAAAAA==",
+              "Title": "Keylogger.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Keylogger.cs",
+              "RelativeDocumentMoniker": "Client\\Keylogger.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Keylogger.cs",
+              "RelativeToolTip": "Client\\Keylogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T12:49:53.232Z",
+              "WhenOpened": "2025-04-12T10:00:27.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientSocket.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
+              "RelativeDocumentMoniker": "Client\\Conexion\\ClientSocket.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
+              "RelativeToolTip": "Client\\Conexion\\ClientSocket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T09:58:24.364Z",
               "EditorCaption": ""
             }
           ]
