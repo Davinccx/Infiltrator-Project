@@ -38,7 +38,6 @@ namespace Client
                 while (ClientSocket.isConnected())
                 {
 
-
                     try
                     {
                         byte[] buffer = new byte[1024];
