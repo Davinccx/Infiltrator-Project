@@ -63,19 +63,23 @@
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
             richTextBox1.ScrollBars = RichTextBoxScrollBars.Vertical;
-            richTextBox1.Size = new Size(552, 525);
+            richTextBox1.Size = new Size(591, 590);
             richTextBox1.TabIndex = 1;
             richTextBox1.Text = "";
             // 
             // button1
             // 
-            button1.ForeColor = Color.FromArgb(231, 76, 60);
-            button1.Location = new Point(197, 619);
+            button1.BackColor = Color.Red;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1155, 12);
             button1.Name = "button1";
-            button1.Size = new Size(107, 36);
+            button1.Size = new Size(19, 23);
             button1.TabIndex = 2;
-            button1.Text = "Stop";
-            button1.UseVisualStyleBackColor = true;
+            button1.Text = "X";
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // groupBox1
@@ -85,7 +89,6 @@
             groupBox1.Controls.Add(richTextBox3);
             groupBox1.Controls.Add(richTextBox2);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(richTextBox1);
             groupBox1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -96,16 +99,17 @@
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "Client Info";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label4.Location = new Point(6, 37);
+            label4.Location = new Point(186, 37);
             label4.Name = "label4";
-            label4.Size = new Size(175, 25);
+            label4.Size = new Size(114, 25);
             label4.TabIndex = 4;
-            label4.Text = "Teclas presionadas";
+            label4.Text = "Keylogging";
             // 
             // richTextBox3
             // 
@@ -131,7 +135,7 @@
             richTextBox2.Name = "richTextBox2";
             richTextBox2.ReadOnly = true;
             richTextBox2.ScrollBars = RichTextBoxScrollBars.Vertical;
-            richTextBox2.Size = new Size(500, 256);
+            richTextBox2.Size = new Size(500, 267);
             richTextBox2.TabIndex = 2;
             richTextBox2.Text = "";
             // 
@@ -174,6 +178,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(groupBox1);
+            Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;

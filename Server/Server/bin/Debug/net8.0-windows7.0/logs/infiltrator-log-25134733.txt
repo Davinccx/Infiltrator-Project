@@ -1,0 +1,9 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-06-06 13:47:33.340] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-06-06 13:47:36.474] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-06-06 13:48:40.604] - [INFO]: Cliente 1 conectado.
+[2025-06-06 13:48:48.777] - [INFO]: Recibiendo archivo infiltrator-20250606-134846-screenshot.png
+[2025-06-06 13:48:49.203] - [INFO]: Archivo 'infiltrator-20250606-134846-screenshot.png' recibido y guardado correctamente.
+[2025-06-06 13:53:49.022] - [INFO]: Cliente 1 desconectado.

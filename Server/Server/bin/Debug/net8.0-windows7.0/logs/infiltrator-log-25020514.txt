@@ -1,0 +1,13 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-07 02:05:14.682] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-07 02:05:17.742] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-07 02:05:43.068] - [INFO]: Cliente 1 conectado.
+[2025-07-07 02:06:27.521] - [ERROR]: Error cliente 1: Longitud inválida: 1634496360
+[2025-07-07 02:06:27.522] - [INFO]: Cliente 1 desconectado
+[2025-07-07 02:06:54.343] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-07 02:06:55.508] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-07-07 02:06:58.819] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-07 02:07:18.567] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-07 02:07:18.573] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

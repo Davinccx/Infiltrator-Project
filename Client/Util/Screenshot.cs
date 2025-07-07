@@ -1,7 +1,7 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using System.Windows.Forms; // Necesario para usar Screen y Size
 
 namespace Client.Util
 {
@@ -24,35 +24,28 @@ namespace Client.Util
 
         public static void CaptureScreen(string filename)
         {
-            // Obtener el tamaño de la pantalla
-            RECT rect;
-            IntPtr hWnd = GetDesktopWindow();
-            GetWindowRect(hWnd, out rect);
-
-            int width = rect.Right - rect.Left;
-            int height = rect.Bottom - rect.Top;
-
-            // Crear un bitmap del tamaño de la pantalla
-            using (Bitmap bitmap = new Bitmap(width, height))
+            try
             {
-                // Crear un objeto Graphics desde el bitmap
-                using (Graphics g = Graphics.FromImage(bitmap))
-                {
-                    // Copiar la pantalla en el bitmap
-                    g.CopyFromScreen(0, 0, 0, 0, new Size(width, height));
-                }
+                // Captura toda la superficie de escritorio (incluso si hay varias pantallas)
+                Rectangle bounds = SystemInformation.VirtualScreen;
 
-                try
+                using (Bitmap bitmap = new Bitmap(bounds.Width, bounds.Height))
                 {
-                    // Guardar el bitmap en un archivo
+                    using (Graphics g = Graphics.FromImage(bitmap))
+                    {
+                        g.CopyFromScreen(bounds.X, bounds.Y, 0, 0, bounds.Size);
+                    }
+
                     bitmap.Save(filename, ImageFormat.Png);
-                    
-                }
-                catch (Exception ex)
-                {
-                    
                 }
             }
+            catch (Exception ex)
+            {
+                // Puedes registrar el error si lo deseas
+                Console.WriteLine("Error al capturar pantalla: " + ex.Message);
+            }
         }
+
+
     }
 }

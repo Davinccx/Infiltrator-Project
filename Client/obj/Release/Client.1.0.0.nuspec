@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Client</id>
+    <version>1.0.0</version>
+    <authors>Client</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="df7fd4711b7e5185e2120b726b289e49740b2ce3" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.AspNetCore.DataProtection" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SQLite" version="1.0.118" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="System.Management" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\Client.runtimeconfig.json" target="lib\net8.0\Client.runtimeconfig.json" />
+    <file src="C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\Client.dll" target="lib\net8.0\Client.dll" />
+  </files>
+</package>

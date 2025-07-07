@@ -201,7 +201,7 @@ namespace Client.Util
             StringBuilder systemInfo = new StringBuilder();
             string publicIP = await GetPublicIpAsync();
 
-            systemInfo.Append("SYSINFO:");
+         
             systemInfo.AppendLine($" Nombre del equipo: {MachineName,-34} ");
             systemInfo.AppendLine($" Usuario: {User,-34} ");
             systemInfo.AppendLine($" IP: {publicIP,-34} ");
@@ -211,7 +211,6 @@ namespace Client.Util
             systemInfo.AppendLine($" Memoria RAM: {GetRamAmount(),-34} ");
             systemInfo.AppendLine($" Procesador: {GetCpuName(),-34} ");
             systemInfo.AppendLine($" Tarjeta Gráfica: {GetGpuName(),-34} ");
-            systemInfo.Append("ENDSYSINFO:");
             return systemInfo.ToString();
         }
 

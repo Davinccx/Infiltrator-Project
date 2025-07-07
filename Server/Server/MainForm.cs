@@ -1,8 +1,8 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using Server.Conexion;
-using Server.Cliente;
-using System.Timers;
+
+
 
 namespace Server
 {
@@ -240,10 +240,39 @@ namespace Server
                 {
                     MessageBox.Show("Debe seleccionar un cliente conectado o válido.");
                 }
-            }else
+            }
+            else
             {
                 MessageBox.Show("[ERROR] No hay clientes conectados.");
             }
+        }
+
+        private void screenshotToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var clienteSeleccionado = dataGridView1.SelectedRows[0].DataBoundItem as Cliente.Cliente;
+                int idCliente = clienteSeleccionado.ID;
+                if (clienteSeleccionado != null && clienteSeleccionado.Estado != "Desconectado")
+                {
+                    Screenshot screenshotForm = new Screenshot(idCliente, ServerSocket.getClientById(idCliente));
+                    screenshotForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Debe seleccionar un cliente conectado o válido.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("[ERROR] No hay clientes conectados.");
+            }
+        }
+
+        private void builderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Builder clientBuilder = new Builder();
+            clientBuilder.Show();
         }
     }
 }

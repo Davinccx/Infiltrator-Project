@@ -1,4 +1,9 @@
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\Client.pdb
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\D3DCompiler_47_cor3.dll
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\PenImc_cor3.dll
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\PresentationNative_cor3.dll
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\vcruntime140_cor3.dll
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\wpfgfx_cor3.dll
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\sni.dll
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\SQLite.Interop.dll
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\publish\win-x64\Client.exe

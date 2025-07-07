@@ -1,0 +1,11 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-06-06 13:42:53.402] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-06-06 13:42:56.527] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-06-06 13:43:55.990] - [INFO]: Cliente 1 conectado.
+[2025-06-06 13:44:01.948] - [INFO]: Recibiendo captura de pantalla: infiltrator-20250606-134402-screenshot.png
+[2025-06-06 13:44:54.071] - [INFO]: Captura de pantalla guardada en: C:\Users\dextg\source\repos\Server\Server\bin\Debug\net8.0-windows7.0\screenshots\screenshot_20250606_134454.png
+[2025-06-06 13:44:54.093] - [INFO]: Cliente 1 desconectado.
+[2025-06-06 13:44:57.148] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-06-06 13:44:57.155] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

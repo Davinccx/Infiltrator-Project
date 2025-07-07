@@ -19,3 +19,5 @@ C:\Users\dextg\source\repos\Server\Server\obj\Debug\net8.0-windows7.0\Server.She
 C:\Users\dextg\source\repos\Server\Server\obj\Debug\net8.0-windows7.0\Server.Keylogger.resources
 C:\Users\dextg\source\repos\Server\Server\obj\Debug\net8.0-windows7.0\Server.MainForm.resources
 C:\Users\dextg\source\repos\Server\Server\obj\Debug\net8.0-windows7.0\Server.ClientInfo.resources
+C:\Users\dextg\source\repos\Server\Server\obj\Debug\net8.0-windows7.0\Server.Screenshot.resources
+C:\Users\dextg\source\repos\Server\Server\obj\Debug\net8.0-windows7.0\Server.Builder.resources

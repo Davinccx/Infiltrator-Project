@@ -8,8 +8,8 @@ namespace Client.Conexion
         private static TcpClient client;
         private static NetworkStream stream;
         private static bool connected = true;
-        private static readonly string serverAddr = "4.tcp.eu.ngrok.io";
-        private static readonly int serverPort = 15803;
+        private static readonly string serverAddr = "0.tcp.eu.ngrok.io";
+        private static readonly int serverPort = 11206;
 
 
         public static void connect()
@@ -46,10 +46,12 @@ namespace Client.Conexion
             }
         }
 
-        public static void SendResponse(string response)
+      
+
+        public static void SendResponse(string response, Channel ch)
         {
             byte[] data = Encoding.UTF8.GetBytes(response);
-            stream.Write(data, 0, data.Length);
+            Protocol.Send(stream, ch, data);
         }
 
 
@@ -102,9 +104,6 @@ namespace Client.Conexion
             }
         }
 
-        internal static void SendResponse(Task<string> task)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

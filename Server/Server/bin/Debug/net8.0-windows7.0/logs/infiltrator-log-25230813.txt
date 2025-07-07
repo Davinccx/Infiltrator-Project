@@ -1,0 +1,8 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-06-19 23:08:13.567] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-06-19 23:08:16.694] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-06-19 23:08:45.855] - [INFO]: Ngrok IP: 7.tcp.eu.ngrok.io, Puerto: 11077
+[2025-06-19 23:08:50.873] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-06-19 23:08:50.879] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

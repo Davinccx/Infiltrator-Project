@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\dextg\\source\\repos\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\source\\repos\\Server\\server\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\clientinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\clientinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\conexion\\serversocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\conexion\\serversocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\source\\repos\\Server\\server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\conexion\\ngrok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\conexion\\ngrok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +42,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClientInfo.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.Designer.cs",
-              "RelativeDocumentMoniker": "Server\\ClientInfo.Designer.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.Designer.cs",
-              "RelativeToolTip": "Server\\ClientInfo.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T08:41:07.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClientInfo.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.cs",
-              "RelativeDocumentMoniker": "Server\\ClientInfo.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.cs",
-              "RelativeToolTip": "Server\\ClientInfo.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCwAAAAAAAAAAAAAAA==",
+              "Title": "Keylogger.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Keylogger.cs",
+              "RelativeDocumentMoniker": "Server\\Keylogger.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Keylogger.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Server\\Keylogger.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T08:03:54.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T23:41:19.425Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientInfo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.cs",
-              "RelativeDocumentMoniker": "Server\\ClientInfo.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\ClientInfo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Server\\ClientInfo.cs [Dise\u00F1o]",
+              "Title": "Keylogger.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Keylogger.cs",
+              "RelativeDocumentMoniker": "Server\\Keylogger.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Keylogger.cs",
+              "RelativeToolTip": "Server\\Keylogger.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAQwGcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T22:41:06.25Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-06T23:37:57.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ngrok.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Conexion\\Ngrok.cs",
+              "RelativeDocumentMoniker": "Server\\Conexion\\Ngrok.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Conexion\\Ngrok.cs",
+              "RelativeToolTip": "Server\\Conexion\\Ngrok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T23:39:22.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Shell.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs",
+              "RelativeDocumentMoniker": "Server\\Shell.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs",
+              "RelativeToolTip": "Server\\Shell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T23:39:15.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -83,20 +100,21 @@
               "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs [Dise\u00F1o]",
               "RelativeToolTip": "Server\\Shell.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T22:15:23.24Z",
+              "WhenOpened": "2025-07-06T22:00:38.733Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\MainForm.cs",
-              "RelativeDocumentMoniker": "Server\\MainForm.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\MainForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Server\\MainForm.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "ServerSocket.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Conexion\\ServerSocket.cs",
+              "RelativeDocumentMoniker": "Server\\Conexion\\ServerSocket.cs",
+              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Conexion\\ServerSocket.cs",
+              "RelativeToolTip": "Server\\Conexion\\ServerSocket.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAiwLsAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T21:46:23.221Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-06T21:59:53.134Z",
+              "EditorCaption": ""
             }
           ]
         }

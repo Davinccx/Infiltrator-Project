@@ -52,9 +52,9 @@
             // 
             panel1.BackColor = Color.DodgerBlue;
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(-2, 0);
+            panel1.Location = new Point(-1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(508, 80);
+            panel1.Size = new Size(512, 80);
             panel1.TabIndex = 1;
             // 
             // progressBar1
@@ -69,7 +69,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.FromArgb(154, 169, 181);
-            label2.Location = new Point(175, 205);
+            label2.Location = new Point(171, 205);
             label2.Name = "label2";
             label2.Size = new Size(163, 15);
             label2.TabIndex = 3;
