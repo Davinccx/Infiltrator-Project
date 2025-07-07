@@ -54,8 +54,7 @@
               "RelativeToolTip": "Client\\Util\\Functions.cs",
               "ViewState": "AgIAANUAAAAAAAAAAIAwwOcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T18:19:11.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T18:19:11.868Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "Client\\Util\\FileManager.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T17:53:57.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T17:53:57.205Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "Client\\Conexion\\Protocol.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T17:10:36.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T17:10:36.902Z"
             },
             {
               "$type": "Document",
@@ -91,7 +88,7 @@
               "RelativeDocumentMoniker": "Client\\Conexion\\ClientSocket.cs",
               "ToolTip": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
               "RelativeToolTip": "Client\\Conexion\\ClientSocket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T17:06:53.507Z",
               "EditorCaption": ""
@@ -106,8 +103,7 @@
               "RelativeToolTip": "Client\\ClienteRAT.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAwwHsAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T16:59:56.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T16:59:56.591Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "Client\\Util\\Screenshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T16:58:17.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T16:58:17.693Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "Client\\Commands\\HandleCommands.cs",
               "ViewState": "AgIAAIwAAAAAAAAAAIAwwJsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T16:42:23.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T16:42:23.465Z"
             }
           ]
         }

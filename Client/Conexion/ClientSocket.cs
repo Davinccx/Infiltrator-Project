@@ -8,8 +8,8 @@ namespace Client.Conexion
         private static TcpClient client;
         private static NetworkStream stream;
         private static bool connected = true;
-        private static readonly string serverAddr = "0.tcp.eu.ngrok.io";
-        private static readonly int serverPort = 14086;
+        private static readonly string serverAddr = "4.tcp.eu.ngrok.io";
+        private static readonly int serverPort = 16148;
 
 
         public static void connect()
