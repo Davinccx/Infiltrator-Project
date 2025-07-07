@@ -1,0 +1,10 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-07 18:46:32.220] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-07 18:46:35.400] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-07 18:47:05.930] - [INFO]: Cliente 1 conectado.
+[2025-07-07 18:49:14.330] - [ERROR]: Error cliente 1: Object reference not set to an instance of an object.
+[2025-07-07 18:49:14.338] - [INFO]: Cliente 1 desconectado
+[2025-07-07 18:49:18.059] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-07 18:49:18.076] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

@@ -9,7 +9,7 @@ namespace Client.Conexion
         private static NetworkStream stream;
         private static bool connected = true;
         private static readonly string serverAddr = "0.tcp.eu.ngrok.io";
-        private static readonly int serverPort = 11206;
+        private static readonly int serverPort = 14086;
 
 
         public static void connect()

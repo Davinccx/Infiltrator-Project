@@ -1,0 +1,46 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-07 19:34:52.403] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-07 19:34:55.550] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-07 19:35:00.680] - [INFO]: Cliente 1 conectado.
+[2025-07-07 19:35:00.802] - [INFO]: Cliente 2 conectado.
+[2025-07-07 19:35:00.873] - [INFO]: Cliente 3 conectado.
+[2025-07-07 19:35:00.910] - [INFO]: Cliente 4 conectado.
+[2025-07-07 19:35:00.918] - [INFO]: Cliente 5 conectado.
+[2025-07-07 19:35:00.939] - [INFO]: Cliente 6 conectado.
+[2025-07-07 19:35:01.451] - [INFO]: Cliente 7 conectado.
+[2025-07-07 19:35:02.062] - [INFO]: Cliente 8 conectado.
+[2025-07-07 19:35:02.619] - [INFO]: Cliente 9 conectado.
+[2025-07-07 19:35:02.671] - [INFO]: Cliente 10 conectado.
+[2025-07-07 19:35:02.690] - [INFO]: Cliente 11 conectado.
+[2025-07-07 19:35:02.723] - [INFO]: Cliente 12 conectado.
+[2025-07-07 19:35:03.627] - [INFO]: Cliente 13 conectado.
+[2025-07-07 19:35:03.649] - [INFO]: Cliente 14 conectado.
+[2025-07-07 19:35:03.827] - [INFO]: Cliente 15 conectado.
+[2025-07-07 19:35:03.919] - [INFO]: Cliente 16 conectado.
+[2025-07-07 19:35:04.530] - [INFO]: Cliente 17 conectado.
+[2025-07-07 19:35:04.604] - [INFO]: Cliente 18 conectado.
+[2025-07-07 19:35:04.614] - [INFO]: Cliente 19 conectado.
+[2025-07-07 19:35:04.665] - [INFO]: Cliente 20 conectado.
+[2025-07-07 19:35:04.758] - [INFO]: Cliente 21 conectado.
+[2025-07-07 19:35:05.162] - [INFO]: Cliente 22 conectado.
+[2025-07-07 19:35:05.258] - [INFO]: Cliente 23 conectado.
+[2025-07-07 19:35:05.304] - [INFO]: Cliente 24 conectado.
+[2025-07-07 19:35:05.328] - [INFO]: Cliente 25 conectado.
+[2025-07-07 19:35:05.509] - [INFO]: Cliente 26 conectado.
+[2025-07-07 19:35:16.726] - [INFO]: Cliente 27 conectado.
+[2025-07-07 19:35:24.058] - [INFO]: Captura de pantalla guardada en: C:\Users\dfernandezsa\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-windows7.0\screenshots\screenshot_20250707_193523.png
+[2025-07-07 19:35:33.387] - [INFO]: Captura de pantalla guardada en: C:\Users\dfernandezsa\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-windows7.0\screenshots\screenshot_20250707_193533.png
+[2025-07-07 19:35:37.906] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
+[2025-07-07 19:35:37.906] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-07 19:35:37.992] - [ERROR]: Error cliente 8: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-07 19:35:38.002] - [INFO]: Cliente 8 desconectado
+[2025-07-07 19:35:38.015] - [ERROR]: Error cliente 9: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-07 19:35:38.020] - [ERROR]: Error cliente 20: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-07 19:35:38.025] - [INFO]: Cliente 9 desconectado
+[2025-07-07 19:35:38.038] - [ERROR]: Error cliente 3: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-07 19:35:38.038] - [ERROR]: Error cliente 10: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-07 19:35:38.055] - [INFO]: Cliente 3 desconectado
+[2025-07-07 19:35:38.074] - [ERROR]: Error cliente 6: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-07 19:35:38.081] - [ERROR]: Error cliente 1: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..

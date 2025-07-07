@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dextg\\source\\repos\\Server\\",
+  "WorkspaceRootPath": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\conexion\\serversocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dfernandezsa\\desktop\\infiltrator-project\\server\\server\\conexion\\serversocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\conexion\\serversocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\conexion\\ngrok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\conexion\\ngrok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dfernandezsa\\desktop\\infiltrator-project\\server\\server\\filetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\filetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dfernandezsa\\desktop\\infiltrator-project\\server\\server\\filetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\filetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\source\\repos\\server\\server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dfernandezsa\\desktop\\infiltrator-project\\server\\server\\conexion\\protocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\conexion\\protocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,79 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Keylogger.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Keylogger.cs",
-              "RelativeDocumentMoniker": "Server\\Keylogger.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Keylogger.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Server\\Keylogger.cs [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "Protocol.cs",
+              "DocumentMoniker": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\Protocol.cs",
+              "RelativeDocumentMoniker": "Server\\Conexion\\Protocol.cs",
+              "ToolTip": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\Protocol.cs",
+              "RelativeToolTip": "Server\\Conexion\\Protocol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T23:41:19.425Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-07T18:25:48.125Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Keylogger.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Keylogger.cs",
-              "RelativeDocumentMoniker": "Server\\Keylogger.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Keylogger.cs",
-              "RelativeToolTip": "Server\\Keylogger.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAQwGcAAAAQAAAAAAAAAA==",
+              "Title": "ServerSocket.cs",
+              "DocumentMoniker": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\ServerSocket.cs",
+              "RelativeDocumentMoniker": "Server\\Conexion\\ServerSocket.cs",
+              "ToolTip": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\ServerSocket.cs",
+              "RelativeToolTip": "Server\\Conexion\\ServerSocket.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAiwP8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T23:37:57.337Z",
+              "WhenOpened": "2025-07-07T18:11:49.917Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Ngrok.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Conexion\\Ngrok.cs",
-              "RelativeDocumentMoniker": "Server\\Conexion\\Ngrok.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Conexion\\Ngrok.cs",
-              "RelativeToolTip": "Server\\Conexion\\Ngrok.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T23:39:22.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Shell.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs",
-              "RelativeDocumentMoniker": "Server\\Shell.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs",
-              "RelativeToolTip": "Server\\Shell.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T23:39:15.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Shell.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs",
-              "RelativeDocumentMoniker": "Server\\Shell.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Shell.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Server\\Shell.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T22:00:38.733Z",
-              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServerSocket.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Conexion\\ServerSocket.cs",
-              "RelativeDocumentMoniker": "Server\\Conexion\\ServerSocket.cs",
-              "ToolTip": "C:\\Users\\dextg\\source\\repos\\Server\\Server\\Conexion\\ServerSocket.cs",
-              "RelativeToolTip": "Server\\Conexion\\ServerSocket.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAiwLsAAABTAAAAAAAAAA==",
+              "Title": "FileTree.cs",
+              "DocumentMoniker": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\Server\\FileTree.cs",
+              "RelativeDocumentMoniker": "Server\\FileTree.cs",
+              "ToolTip": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\Server\\FileTree.cs",
+              "RelativeToolTip": "Server\\FileTree.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwBoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T21:59:53.134Z",
+              "WhenOpened": "2025-07-07T18:09:12.457Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileTree.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\Server\\FileTree.cs",
+              "RelativeDocumentMoniker": "Server\\FileTree.cs",
+              "ToolTip": "C:\\Users\\dfernandezsa\\Desktop\\Infiltrator-Project\\Server\\Server\\FileTree.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Server\\FileTree.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T18:08:45.232Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

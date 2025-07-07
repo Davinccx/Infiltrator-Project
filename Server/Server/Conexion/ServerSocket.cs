@@ -171,13 +171,11 @@ namespace Server.Conexion
                         // 2) multiplexado: 4 bytes de longitud + payload
                         ReadExact(stream, buffer, 0, 4);
                         int len = BitConverter.ToInt32(buffer, 0);
-                        if (len < 0 || len > Config.BufferLength)
+                        if (len <= 0 || len > 100_000_000) // aceptamos hasta 100 MB, ajustable
                             throw new Exception($"Longitud inválida: {len}");
 
-                        ReadExact(stream, buffer, 0, len);
                         byte[] payload = new byte[len];
-                        Array.Copy(buffer, 0, payload, 0, len);
-
+                        ReadExact(stream, payload, 0, len);
                         // 3) despachar por canal
                         switch (ch)
                         {
@@ -212,11 +210,6 @@ namespace Server.Conexion
 
                             case Channel.Screenshot:
                                 SaveScreenshot(payload);
-                                
-                                break;
-
-                            case Channel.Streaming:
-                                
                                 break;
 
                             case Channel.File:
@@ -260,7 +253,13 @@ namespace Server.Conexion
                                 Shell.Instance.AppendCommandOutput(output);
                                 ServerSocket.setWaiting(false);
                                 break;
-                        
+
+                            case Channel.FileManager:
+                                _logger.Log("Recibido listado para: " + Encoding.UTF8.GetString(payload), LogLevel.INFO);
+
+                                FileTree.UpdateDirectoryTree(Encoding.UTF8.GetString(payload), clientId);
+                                break;
+
                             case Channel.Main:
                                 
                                 string command = Encoding.UTF8.GetString(payload);
@@ -292,11 +291,12 @@ namespace Server.Conexion
 
         private static void ReadExact(NetworkStream stream, byte[] buffer, int offset, int count)
         {
-            int read, total = 0;
+            int total = 0;
             while (total < count)
             {
-                read = stream.Read(buffer, offset + total, count - total);
-                if (read == 0) throw new IOException("Conexión cerrada");
+                int read = stream.Read(buffer, offset + total, count - total);
+                if (read == 0)
+                    throw new IOException("Conexión cerrada por el cliente.");
                 total += read;
             }
         }

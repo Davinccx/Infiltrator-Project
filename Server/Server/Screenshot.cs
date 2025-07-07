@@ -53,7 +53,6 @@ namespace Server
         public void DisplayScreenshot(string imagePath)
         {
 
-
             if (InvokeRequired)
             {
                 Invoke(new Action<string>(DisplayScreenshot), imagePath);
@@ -66,8 +65,11 @@ namespace Server
                 {
                     using (FileStream stream = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
                     {
-                        pictureBox1.Image = Image.FromStream(stream);
+                        Image img = Image.FromStream(stream);
+                        pictureBox1.Image = new Bitmap(img); // Copia para liberar el stream
                     }
+
+                    pictureBox1.SizeMode = PictureBoxSizeMode.Zoom; // Asegura que la imagen se ajuste
                 }
             }
             catch (Exception ex)

@@ -274,5 +274,28 @@ namespace Server
             Builder clientBuilder = new Builder();
             clientBuilder.Show();
         }
+
+        private void eToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var clienteSeleccionado = dataGridView1.SelectedRows[0].DataBoundItem as Cliente.Cliente;
+                int idCliente = clienteSeleccionado.ID;
+                if (clienteSeleccionado != null && clienteSeleccionado.Estado != "Desconectado")
+                {
+                    FileTree FileTreeForm = new FileTree(idCliente, ServerSocket.getClientById(idCliente));
+                    FileTreeForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Debe seleccionar un cliente conectado o válido.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("[ERROR] No hay clientes conectados.");
+            }
+        }
     }
 }

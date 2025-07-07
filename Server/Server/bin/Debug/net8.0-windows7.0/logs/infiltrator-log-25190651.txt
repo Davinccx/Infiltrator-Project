@@ -1,0 +1,10 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-07 19:06:52.021] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-07 19:06:55.267] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-07 19:07:47.766] - [INFO]: Cliente 1 conectado.
+[2025-07-07 19:08:00.216] - [ERROR]: Error cliente 1: Longitud inválida: 1268418
+[2025-07-07 19:08:00.224] - [INFO]: Cliente 1 desconectado
+[2025-07-07 19:08:23.801] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-07 19:08:23.822] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

@@ -73,6 +73,16 @@ namespace Server.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_Jul_7__2025__07_34_26_PM {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image Jul 7, 2025, 07_34_26 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap codigo {
             get {
                 object obj = ResourceManager.GetObject("codigo", resourceCulture);

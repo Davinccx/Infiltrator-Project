@@ -22,28 +22,20 @@ namespace Client.Util
             public int Bottom;
         }
 
-        public static void CaptureScreen(string filename)
+        public static byte[] CaptureScreen()
         {
-            try
-            {
-                // Captura toda la superficie de escritorio (incluso si hay varias pantallas)
-                Rectangle bounds = SystemInformation.VirtualScreen;
 
-                using (Bitmap bitmap = new Bitmap(bounds.Width, bounds.Height))
-                {
-                    using (Graphics g = Graphics.FromImage(bitmap))
-                    {
-                        g.CopyFromScreen(bounds.X, bounds.Y, 0, 0, bounds.Size);
-                    }
-
-                    bitmap.Save(filename, ImageFormat.Png);
-                }
-            }
-            catch (Exception ex)
+            var bounds = Screen.PrimaryScreen.Bounds;
+            using var bitmap = new Bitmap(bounds.Width, bounds.Height);
+            using (var g = Graphics.FromImage(bitmap))
             {
-                // Puedes registrar el error si lo deseas
-                Console.WriteLine("Error al capturar pantalla: " + ex.Message);
+                g.CopyFromScreen(Point.Empty, Point.Empty, bounds.Size);
             }
+
+            using var ms = new MemoryStream();
+            bitmap.Save(ms, ImageFormat.Jpeg); // JPEG ocupa menos que PNG
+            return ms.ToArray();
+
         }
 
 

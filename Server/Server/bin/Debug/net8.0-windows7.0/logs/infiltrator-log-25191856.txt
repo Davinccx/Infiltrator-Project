@@ -1,0 +1,10 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-07 19:18:56.683] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-07 19:18:59.892] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-07 19:19:52.145] - [INFO]: Cliente 1 conectado.
+[2025-07-07 19:20:05.835] - [ERROR]: Error cliente 1: Source array was not long enough. Check the source index, length, and the array's lower bounds. (Parameter 'sourceArray')
+[2025-07-07 19:20:05.845] - [INFO]: Cliente 1 desconectado
+[2025-07-07 19:20:10.080] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-07 19:20:10.097] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
