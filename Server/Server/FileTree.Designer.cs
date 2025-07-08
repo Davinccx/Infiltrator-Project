@@ -52,9 +52,10 @@
             // 
             // treeViewArchivos
             // 
-            treeViewArchivos.Location = new Point(29, 148);
+            treeViewArchivos.Location = new Point(25, 111);
+            treeViewArchivos.Margin = new Padding(3, 2, 3, 2);
             treeViewArchivos.Name = "treeViewArchivos";
-            treeViewArchivos.Size = new Size(425, 492);
+            treeViewArchivos.Size = new Size(372, 370);
             treeViewArchivos.TabIndex = 0;
             treeViewArchivos.AfterSelect += treeView1_AfterSelect;
             // 
@@ -64,8 +65,9 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-2, -1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(933, 77);
+            panel1.Size = new Size(816, 58);
             panel1.TabIndex = 1;
             // 
             // button1
@@ -74,10 +76,12 @@
             button1.FlatAppearance.BorderColor = Color.Red;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.Control;
-            button1.Location = new Point(886, 10);
+            button1.Location = new Point(775, 8);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(35, 29);
+            button1.Size = new Size(31, 22);
             button1.TabIndex = 1;
             button1.Text = "X";
             button1.TextAlign = ContentAlignment.TopCenter;
@@ -89,9 +93,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(3, 10);
+            label1.Location = new Point(3, 8);
             label1.Name = "label1";
-            label1.Size = new Size(519, 54);
+            label1.Size = new Size(415, 45);
             label1.TabIndex = 0;
             label1.Text = ">_ Infiltrator File Manager";
             // 
@@ -100,12 +104,12 @@
             contextMenuStrip1.ImageScalingSize = new Size(20, 20);
             contextMenuStrip1.Items.AddRange(new ToolStripItem[] { descargarToolStripMenuItem });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(146, 28);
+            contextMenuStrip1.Size = new Size(127, 26);
             // 
             // descargarToolStripMenuItem
             // 
             descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            descargarToolStripMenuItem.Size = new Size(145, 24);
+            descargarToolStripMenuItem.Size = new Size(126, 22);
             descargarToolStripMenuItem.Text = "Descargar";
             descargarToolStripMenuItem.Click += descargarToolStripMenuItem_Click;
             // 
@@ -114,18 +118,19 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(29, 100);
+            label2.Location = new Point(25, 75);
             label2.Name = "label2";
-            label2.Size = new Size(79, 31);
+            label2.Size = new Size(65, 25);
             label2.TabIndex = 2;
             label2.Text = "label2";
             // 
             // button2
             // 
             button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(402, 93);
+            button2.Location = new Point(346, 164);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(29, 29);
+            button2.Size = new Size(25, 22);
             button2.TabIndex = 4;
             button2.Text = "...";
             button2.UseVisualStyleBackColor = true;
@@ -135,10 +140,11 @@
             // 
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(54, 97);
+            textBox1.Location = new Point(56, 73);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(342, 25);
+            textBox1.Size = new Size(315, 21);
             textBox1.TabIndex = 5;
             // 
             // label4
@@ -146,9 +152,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(130, 40);
+            label4.Location = new Point(131, 30);
             label4.Name = "label4";
-            label4.Size = new Size(187, 31);
+            label4.Size = new Size(155, 25);
             label4.TabIndex = 6;
             label4.Text = "Archivo a enviar";
             // 
@@ -157,9 +163,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.Control;
-            label5.Location = new Point(6, 97);
+            label5.Location = new Point(5, 73);
             label5.Name = "label5";
-            label5.Size = new Size(42, 20);
+            label5.Size = new Size(33, 15);
             label5.TabIndex = 7;
             label5.Text = "Ruta";
             // 
@@ -172,9 +178,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.Control;
-            label6.Location = new Point(6, 154);
+            label6.Location = new Point(5, 116);
             label6.Name = "label6";
-            label6.Size = new Size(94, 20);
+            label6.Size = new Size(75, 15);
             label6.TabIndex = 8;
             label6.Text = "Ruta Cliente";
             // 
@@ -182,9 +188,10 @@
             // 
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(106, 152);
+            textBox2.Location = new Point(86, 116);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(325, 25);
+            textBox2.Size = new Size(285, 21);
             textBox2.TabIndex = 9;
             // 
             // groupBox1
@@ -198,9 +205,11 @@
             groupBox1.Controls.Add(label5);
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = SystemColors.Control;
-            groupBox1.Location = new Point(482, 204);
+            groupBox1.Location = new Point(422, 153);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(437, 285);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(382, 214);
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             groupBox1.Text = "Enviar Archivos";
@@ -208,9 +217,10 @@
             // button3
             // 
             button3.ForeColor = SystemColors.ActiveCaptionText;
-            button3.Location = new Point(167, 219);
+            button3.Location = new Point(38, 164);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(82, 22);
             button3.TabIndex = 10;
             button3.Text = "Send";
             button3.UseVisualStyleBackColor = true;
@@ -218,15 +228,16 @@
             // 
             // FileTree
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 42, 56);
-            ClientSize = new Size(928, 662);
+            ClientSize = new Size(812, 496);
             Controls.Add(groupBox1);
             Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(treeViewArchivos);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FileTree";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FileTree";

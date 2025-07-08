@@ -38,8 +38,10 @@
             label3 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
+            panel1 = new Panel();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -47,7 +49,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(476, 15);
+            label1.Location = new Point(466, 8);
             label1.Name = "label1";
             label1.Size = new Size(329, 45);
             label1.TabIndex = 0;
@@ -74,7 +76,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(1155, 12);
+            button1.Location = new Point(1154, 8);
             button1.Name = "button1";
             button1.Size = new Size(19, 23);
             button1.TabIndex = 2;
@@ -163,11 +165,22 @@
             // 
             pictureBox1.BackgroundImage = Properties.Resources.icons8_teclado_50;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(339, 3);
+            pictureBox1.Location = new Point(345, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(191, 63);
+            pictureBox1.Size = new Size(135, 63);
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DodgerBlue;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(button1);
+            panel1.Location = new Point(1, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1188, 65);
+            panel1.TabIndex = 5;
             // 
             // Keylogger
             // 
@@ -175,10 +188,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 42, 56);
             ClientSize = new Size(1186, 773);
-            Controls.Add(label1);
-            Controls.Add(pictureBox1);
+            Controls.Add(panel1);
             Controls.Add(groupBox1);
-            Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -190,8 +201,9 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -206,5 +218,6 @@
         private RichTextBox richTextBox2;
         private PictureBox pictureBox1;
         private Label label4;
+        private Panel panel1;
     }
 }

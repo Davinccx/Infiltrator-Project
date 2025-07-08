@@ -34,7 +34,10 @@
             label1 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // richTextBox1
@@ -43,7 +46,7 @@
             richTextBox1.BorderStyle = BorderStyle.None;
             richTextBox1.Font = new Font("Consolas", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             richTextBox1.ForeColor = Color.FromArgb(224, 224, 224);
-            richTextBox1.Location = new Point(12, 62);
+            richTextBox1.Location = new Point(1, 110);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
             richTextBox1.ScrollBars = RichTextBoxScrollBars.Vertical;
@@ -56,7 +59,7 @@
             textBox1.BackColor = Color.FromArgb(44, 62, 80);
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(127, 442);
+            textBox1.Location = new Point(61, 502);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(393, 23);
             textBox1.TabIndex = 1;
@@ -69,7 +72,7 @@
             button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 255, 128);
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(548, 438);
+            button1.Location = new Point(494, 502);
             button1.Name = "button1";
             button1.Size = new Size(122, 30);
             button1.TabIndex = 2;
@@ -82,7 +85,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(61, 22);
+            label1.Location = new Point(79, 22);
             label1.Name = "label1";
             label1.Size = new Size(359, 37);
             label1.TabIndex = 3;
@@ -93,7 +96,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Consolas", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(211, 220, 230);
-            label2.Location = new Point(103, 436);
+            label2.Location = new Point(26, 496);
             label2.Name = "label2";
             label2.Size = new Size(29, 32);
             label2.TabIndex = 4;
@@ -103,25 +106,52 @@
             // 
             pictureBox1.BackgroundImage = Properties.Resources.codigo;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(1, 12);
+            pictureBox1.Location = new Point(11, 13);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(62, 54);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DodgerBlue;
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(1, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(798, 85);
+            panel1.TabIndex = 6;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Red;
+            button2.FlatAppearance.BorderColor = Color.White;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 255, 128);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(759, 11);
+            button2.Name = "button2";
+            button2.Size = new Size(24, 23);
+            button2.TabIndex = 7;
+            button2.Text = "X";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Shell
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 42, 56);
-            ClientSize = new Size(740, 480);
-            Controls.Add(label1);
+            ClientSize = new Size(796, 565);
+            Controls.Add(panel1);
             Controls.Add(richTextBox1);
-            Controls.Add(pictureBox1);
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(button1);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Shell";
@@ -129,6 +159,8 @@
             Text = "Shell";
             Load += Shell_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -141,5 +173,7 @@
         private Label label1;
         private Label label2;
         private PictureBox pictureBox1;
+        private Panel panel1;
+        private Button button2;
     }
 }
