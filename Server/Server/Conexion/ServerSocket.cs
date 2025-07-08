@@ -214,7 +214,33 @@ namespace Server.Conexion
 
                             case Channel.File:
                                 // Aquí se maneja el canal de archivos
+                                using (var ms = new MemoryStream(payload))
+                                using (var reader = new BinaryReader(ms))
+                                {
+                                    string fileName = "";
+                                    List<byte> content = new List<byte>();
+
+                                    // Leemos hasta encontrar el \n (nombre del archivo)
+                                    while (ms.Position < ms.Length)
+                                    {
+                                        byte foo = reader.ReadByte();
+                                        if (foo == (byte)'\n') break;
+                                        fileName += (char)foo;
+                                    }
+
+                                    content.AddRange(reader.ReadBytes((int)(ms.Length - ms.Position)));
+
+                                    string clientDir = Path.Combine("downloads", $"client_{clientId}");
+                                    Directory.CreateDirectory(clientDir);
+
+                                    string fullPath = Path.Combine(clientDir, fileName);
+
+                                    File.WriteAllBytes(fullPath, content.ToArray());
+                                    _logger.Log($"Archivo guardado: {fullPath}", LogLevel.INFO);
+                                }
+
                                 break;
+                                
                             case Channel.SystemInfo:
                                 // Aquí se maneja el canal de archivos
                                 Cliente.Cliente cliente = new Cliente.Cliente();

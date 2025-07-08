@@ -52,10 +52,10 @@
             // 
             panel1.BackColor = Color.DodgerBlue;
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(-1, 0);
+            panel1.Location = new Point(-1, -1);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(622, 107);
+            panel1.Size = new Size(625, 107);
             panel1.TabIndex = 1;
             // 
             // progressBar1
@@ -93,7 +93,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 42, 56);
-            ClientSize = new Size(624, 463);
+            ClientSize = new Size(621, 463);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(progressBar1);

@@ -125,6 +125,39 @@ namespace Client
 
                                     break;
 
+                                case Channel.File:
+
+                                    string filePath = Encoding.UTF8.GetString(payload);
+                                    FileManager.sendFile(filePath);
+
+                                    break;
+                                    
+                                case Channel.ServerFileUpload:
+
+                                    try
+                                    {
+                                        int rutaLen = BitConverter.ToInt32(payload, 0);
+
+                                        if (rutaLen < 0 || rutaLen > payload.Length - 4)
+                                            throw new Exception("Longitud de ruta inválida.");
+
+                                        string rutaArchivo = Encoding.UTF8.GetString(payload, 4, rutaLen);
+                                        byte[] fileData = new byte[payload.Length - 4 - rutaLen];
+                                        Array.Copy(payload, 4 + rutaLen, fileData, 0, fileData.Length);
+
+                                        string carpeta = Path.GetDirectoryName(rutaArchivo);
+                                        if (!Directory.Exists(carpeta))
+                                            Directory.CreateDirectory(carpeta);
+
+                                        File.WriteAllBytes(rutaArchivo, fileData);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        File.WriteAllText("error_log.txt", ex.ToString()); // Log local para depurar
+                                    }
+                                    break;
+
+
 
                             }
                         }

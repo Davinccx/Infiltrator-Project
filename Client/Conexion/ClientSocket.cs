@@ -8,16 +8,14 @@ namespace Client.Conexion
         private static TcpClient client;
         private static NetworkStream stream;
         private static bool connected = true;
-        private static readonly string serverAddr = "4.tcp.eu.ngrok.io";
-        private static readonly int serverPort = 16148;
+        private static readonly string serverAddr = "0.tcp.eu.ngrok.io";
+        private static readonly int serverPort = 18502;
 
 
         public static void connect()
         {
-
             client = new TcpClient(serverAddr, serverPort);
             stream = client.GetStream();
-
         }
 
         public static void disconnect()

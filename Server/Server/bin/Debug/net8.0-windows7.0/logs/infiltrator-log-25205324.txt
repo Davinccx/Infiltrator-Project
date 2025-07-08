@@ -1,0 +1,57 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-08 20:53:24.748] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-08 20:53:27.928] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-08 20:53:51.037] - [INFO]: Cliente 1 conectado.
+[2025-07-08 20:53:58.627] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/$WinREAgent
+[DIR]C:/0d91930caadbc0c557be9eb3ad7b
+[DIR]C:/Archivos de programa
+[DIR]C:/cygwin64
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-08 20:54:19.333] - [INFO]: Cliente 1 desconectado
+[2025-07-08 20:54:28.673] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-08 20:54:29.216] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-08 20:54:29.503] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-08 20:55:23.096] - [INFO]: Cliente 2 conectado.
+[2025-07-08 20:55:27.895] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/$WinREAgent
+[DIR]C:/0d91930caadbc0c557be9eb3ad7b
+[DIR]C:/Archivos de programa
+[DIR]C:/cygwin64
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-08 20:55:43.792] - [INFO]: Cliente 2 desconectado
+[2025-07-08 20:55:52.511] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-08 20:55:52.887] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-08 20:55:53.143] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-08 20:55:56.553] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-08 20:55:56.569] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

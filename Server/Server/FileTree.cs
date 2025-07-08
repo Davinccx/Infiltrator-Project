@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.Sockets;
+﻿using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Server.Conexion;
 
 namespace Server
@@ -17,18 +9,52 @@ namespace Server
         public static FileTree Instance { get; private set; }
         private TcpClient _cliente;
         private int _idCliente;
+        private TreeNode _clickedNode = null;
+        private string serverFilePath;
+
         public FileTree(int id, TcpClient cliente)
         {
             InitializeComponent();
             Instance = this;
             _cliente = cliente;
             _idCliente = id;
+            // Buscar el cliente por su ID
+            var clienteInfo = ServerSocket.clientesConectados.FirstOrDefault(c => c.ID == _idCliente);
+            if (clienteInfo != null)
+            {
+                label2.Text = $"{clienteInfo.Equipo} - {clienteInfo.Usuario} Directory Tree";
+            }
+            else
+            {
+                label2.Text = $"Cliente {_idCliente} - Directory Tree";
+            }
             this.treeViewArchivos.BeforeExpand += new TreeViewCancelEventHandler(treeviewArchivos_BeforeExpand);
+            this.treeViewArchivos.MouseDown += treeviewArchivos_MouseDown;
+            treeViewArchivos.ContextMenuStrip = contextMenuStrip1;
+
+
         }
+
+        private void treeviewArchivos_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                TreeNode clicked = treeViewArchivos.GetNodeAt(e.X, e.Y);
+                if (clicked != null)
+                {
+                    treeViewArchivos.SelectedNode = clicked;
+                    _clickedNode = clicked;
+
+                    // Mostrar menú manualmente
+                    if (_clickedNode.ForeColor == Color.Gray) // solo archivos
+                        contextMenuStrip1.Show(treeViewArchivos, e.Location);
+                }
+            }
+        }
+
 
         private void FileTree_Load(object sender, EventArgs e)
         {
-
 
             treeViewArchivos.Nodes.Clear();
 
@@ -122,6 +148,65 @@ namespace Server
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void descargarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_clickedNode == null || _clickedNode.ForeColor != Color.Gray || _clickedNode.Tag == null)
+            {
+                MessageBox.Show("Selecciona un archivo válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string rutaArchivo = _clickedNode.Tag.ToString(); // ruta completa
+            MessageBox.Show($"El archivo {rutaArchivo} ha sido descargado con éxito!.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ServerSocket.SendCommand(_idCliente, rutaArchivo, Channel.File);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                serverFilePath = ofd.FileName;
+                textBox1.Text = ofd.FileName;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(serverFilePath) || !File.Exists(serverFilePath))
+                {
+                    MessageBox.Show("Archivo no encontrado.");
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(textBox2.Text))
+                {
+                    MessageBox.Show("Ruta de destino vacía.");
+                    return;
+                }
+
+                byte[] sendFile = File.ReadAllBytes(serverFilePath);
+
+                // Asegúrate de usar "/" como separador para evitar problemas de codificación
+                string pathDestino = textBox2.Text.Replace("\\", "/").TrimEnd('/') + "/" + Path.GetFileName(serverFilePath);
+                byte[] pathBytes = Encoding.UTF8.GetBytes(pathDestino);
+                byte[] pathLength = BitConverter.GetBytes(pathBytes.Length);
+
+                byte[] payload = pathLength
+                    .Concat(pathBytes)
+                    .Concat(sendFile)
+                    .ToArray();
+
+                Protocol.Send(ServerSocket.getClientById(_idCliente).GetStream(), Channel.ServerFileUpload, payload);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al enviar archivo: " + ex.Message);
+            }
         }
     }
 }

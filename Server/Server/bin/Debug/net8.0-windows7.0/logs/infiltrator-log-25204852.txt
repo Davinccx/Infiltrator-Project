@@ -1,0 +1,79 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-08 20:48:52.062] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-08 20:48:55.197] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-08 20:49:19.708] - [INFO]: Cliente 1 conectado.
+[2025-07-08 20:49:25.684] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/$WinREAgent
+[DIR]C:/0d91930caadbc0c557be9eb3ad7b
+[DIR]C:/Archivos de programa
+[DIR]C:/cygwin64
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-08 20:49:27.753] - [INFO]: Recibido listado para: C:/Users
+[DIR]C:/Users\All Users
+[DIR]C:/Users\David
+[DIR]C:/Users\Default
+[DIR]C:/Users\Default User
+[DIR]C:/Users\Public
+[FILE]C:/Users\desktop.ini
+
+[2025-07-08 20:49:29.685] - [INFO]: Recibido listado para: C:/Users\David
+[DIR]C:/Users\David\3D Objects
+[DIR]C:/Users\David\AppData
+[DIR]C:/Users\David\Configuración local
+[DIR]C:/Users\David\Contacts
+[DIR]C:/Users\David\Cookies
+[DIR]C:/Users\David\Datos de programa
+[DIR]C:/Users\David\Desktop
+[DIR]C:/Users\David\Documents
+[DIR]C:/Users\David\Downloads
+[DIR]C:/Users\David\Entorno de red
+[DIR]C:/Users\David\Favorites
+[DIR]C:/Users\David\Impresoras
+[DIR]C:/Users\David\Links
+[DIR]C:/Users\David\Menú Inicio
+[DIR]C:/Users\David\Mis documentos
+[DIR]C:/Users\David\Music
+[DIR]C:/Users\David\OneDrive
+[DIR]C:/Users\David\Pictures
+[DIR]C:/Users\David\Plantillas
+[DIR]C:/Users\David\Reciente
+[DIR]C:/Users\David\Saved Games
+[DIR]C:/Users\David\Searches
+[DIR]C:/Users\David\SendTo
+[DIR]C:/Users\David\Videos
+[FILE]C:/Users\David\.python_history
+[FILE]C:/Users\David\DesktopNuevo Documento de texto.txt
+[FILE]C:/Users\David\DocumentsHola desde el serbidor.txt
+[FILE]C:/Users\David\Documentsjeje.py
+[FILE]C:/Users\David\DocumentsNuevo Documento de texto.txt
+[FILE]C:/Users\David\NTUSER.DAT
+[FILE]C:/Users\David\ntuser.dat.LOG1
+[FILE]C:/Users\David\ntuser.dat.LOG2
+[FILE]C:/Users\David\NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.0.regtrans-ms
+[FILE]C:/Users\David\NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.1.regtrans-ms
+[FILE]C:/Users\David\NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.2.regtrans-ms
+[FILE]C:/Users\David\NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.blf
+[FILE]C:/Users\David\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+[FILE]C:/Users\David\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+[FILE]C:/Users\David\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+[FILE]C:/Users\David\ntuser.ini
+
+[2025-07-08 20:50:21.808] - [INFO]: Cliente 1 desconectado
+[2025-07-08 20:51:39.482] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-08 20:51:39.496] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

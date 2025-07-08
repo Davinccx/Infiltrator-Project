@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Server.Conexion
 {
@@ -17,7 +13,8 @@ namespace Server.Conexion
         File = 6,
         SystemInfo = 7,
         CommandOutput = 8,
-        FileManager = 9
+        FileManager = 9,
+        ServerFileUpload=10,
 
     }
     public static class Protocol

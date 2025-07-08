@@ -1,0 +1,241 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-08 20:34:39.774] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-08 20:34:42.935] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-08 20:35:08.430] - [INFO]: Cliente 1 conectado.
+[2025-07-08 20:35:15.269] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/$WinREAgent
+[DIR]C:/0d91930caadbc0c557be9eb3ad7b
+[DIR]C:/Archivos de programa
+[DIR]C:/cygwin64
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-08 20:36:00.045] - [INFO]: Recibido listado para: C:/Users
+[DIR]C:/Users\All Users
+[DIR]C:/Users\David
+[DIR]C:/Users\Default
+[DIR]C:/Users\Default User
+[DIR]C:/Users\Public
+[FILE]C:/Users\desktop.ini
+
+[2025-07-08 20:36:01.018] - [INFO]: Recibido listado para: C:/Users\David
+[DIR]C:/Users\David\3D Objects
+[DIR]C:/Users\David\AppData
+[DIR]C:/Users\David\Configuración local
+[DIR]C:/Users\David\Contacts
+[DIR]C:/Users\David\Cookies
+[DIR]C:/Users\David\Datos de programa
+[DIR]C:/Users\David\Desktop
+[DIR]C:/Users\David\Documents
+[DIR]C:/Users\David\Downloads
+[DIR]C:/Users\David\Entorno de red
+[DIR]C:/Users\David\Favorites
+[DIR]C:/Users\David\Impresoras
+[DIR]C:/Users\David\Links
+[DIR]C:/Users\David\Menú Inicio
+[DIR]C:/Users\David\Mis documentos
+[DIR]C:/Users\David\Music
+[DIR]C:/Users\David\OneDrive
+[DIR]C:/Users\David\Pictures
+[DIR]C:/Users\David\Plantillas
+[DIR]C:/Users\David\Reciente
+[DIR]C:/Users\David\Saved Games
+[DIR]C:/Users\David\Searches
+[DIR]C:/Users\David\SendTo
+[DIR]C:/Users\David\Videos
+[FILE]C:/Users\David\.python_history
+[FILE]C:/Users\David\DesktopNuevo Documento de texto.txt
+[FILE]C:/Users\David\NTUSER.DAT
+[FILE]C:/Users\David\ntuser.dat.LOG1
+[FILE]C:/Users\David\ntuser.dat.LOG2
+[FILE]C:/Users\David\NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.0.regtrans-ms
+[FILE]C:/Users\David\NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.1.regtrans-ms
+[FILE]C:/Users\David\NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.2.regtrans-ms
+[FILE]C:/Users\David\NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.blf
+[FILE]C:/Users\David\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+[FILE]C:/Users\David\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+[FILE]C:/Users\David\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+[FILE]C:/Users\David\ntuser.ini
+
+[2025-07-08 20:36:37.162] - [INFO]: Recibido listado para: C:/Users\David\Documents
+[DIR]C:/Users\David\Documents\Mi música
+[DIR]C:/Users\David\Documents\Mis imágenes
+[DIR]C:/Users\David\Documents\Mis vídeos
+[FILE]C:/Users\David\Documents\desktop.ini
+
+[2025-07-08 20:36:39.705] - [INFO]: Recibido listado para: C:/Users\David\Documents\Mis vídeos
+[ERROR] Access to the path 'C:\Users\David\Documents\Mis vídeos' is denied.
+
+[2025-07-08 20:37:06.227] - [INFO]: Recibido listado para: C:/Users\David\Documents\Mis imágenes
+[ERROR] Access to the path 'C:\Users\David\Documents\Mis imágenes' is denied.
+
+[2025-07-08 20:37:07.247] - [INFO]: Recibido listado para: C:/Users\David\Documents\Mi música
+[ERROR] Access to the path 'C:\Users\David\Documents\Mi música' is denied.
+
+[2025-07-08 20:37:14.184] - [INFO]: Recibido listado para: C:/Users\David\Downloads
+[DIR]C:/Users\David\Downloads\http%3a%2f%2fmirrors.163.com%2fcygwin%2f
+[FILE]C:/Users\David\Downloads\app-peid-master.zip
+[FILE]C:/Users\David\Downloads\Autoruns.zip
+[FILE]C:/Users\David\Downloads\bintext303.zip
+[FILE]C:/Users\David\Downloads\desktop.ini
+[FILE]C:/Users\David\Downloads\flare-fakenet-ng-master.zip
+[FILE]C:/Users\David\Downloads\inetsim-1.3.2.tar.gz
+[FILE]C:/Users\David\Downloads\NDP481-Web.exe
+[FILE]C:/Users\David\Downloads\pafish-master.zip
+[FILE]C:/Users\David\Downloads\processhacker-2.39-setup.exe
+[FILE]C:/Users\David\Downloads\ProcessMonitor.zip
+[FILE]C:/Users\David\Downloads\python-3.13.5-amd64.exe
+[FILE]C:/Users\David\Downloads\Regshot-1.9.0.7z
+[FILE]C:/Users\David\Downloads\Regshot-master.zip
+[FILE]C:/Users\David\Downloads\setup-x86_64.exe
+[FILE]C:/Users\David\Downloads\winrar-x64-712es.exe
+[FILE]C:/Users\David\Downloads\Wireshark-4.4.7-x64.exe
+
+[2025-07-08 20:39:06.364] - [INFO]: Cliente 1 desconectado
+[2025-07-08 20:39:26.088] - [INFO]: Cliente 2 conectado.
+[2025-07-08 20:39:32.030] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/$WinREAgent
+[DIR]C:/0d91930caadbc0c557be9eb3ad7b
+[DIR]C:/Archivos de programa
+[DIR]C:/cygwin64
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-08 20:39:53.320] - [INFO]: Recibido listado para: C:/Windows
+[DIR]C:/Windows\addins
+[DIR]C:/Windows\appcompat
+[DIR]C:/Windows\apppatch
+[DIR]C:/Windows\AppReadiness
+[DIR]C:/Windows\assembly
+[DIR]C:/Windows\bcastdvr
+[DIR]C:/Windows\BitLockerDiscoveryVolumeContents
+[DIR]C:/Windows\Boot
+[DIR]C:/Windows\Branding
+[DIR]C:/Windows\CbsTemp
+[DIR]C:/Windows\Containers
+[DIR]C:/Windows\CSC
+[DIR]C:/Windows\Cursors
+[DIR]C:/Windows\debug
+[DIR]C:/Windows\diagnostics
+[DIR]C:/Windows\DiagTrack
+[DIR]C:/Windows\DigitalLocker
+[DIR]C:/Windows\Downloaded Program Files
+[DIR]C:/Windows\ELAMBKUP
+[DIR]C:/Windows\en-US
+[DIR]C:/Windows\es-ES
+[DIR]C:/Windows\Fonts
+[DIR]C:/Windows\GameBarPresenceWriter
+[DIR]C:/Windows\Globalization
+[DIR]C:/Windows\Help
+[DIR]C:/Windows\IdentityCRL
+[DIR]C:/Windows\IME
+[DIR]C:/Windows\ImmersiveControlPanel
+[DIR]C:/Windows\InboxApps
+[DIR]C:/Windows\INF
+[DIR]C:/Windows\InputMethod
+[DIR]C:/Windows\Installer
+[DIR]C:/Windows\L2Schemas
+[DIR]C:/Windows\LanguageOverlayCache
+[DIR]C:/Windows\LiveKernelReports
+[DIR]C:/Windows\Logs
+[DIR]C:/Windows\Media
+[DIR]C:/Windows\Microsoft.NET
+[DIR]C:/Windows\Migration
+[DIR]C:/Windows\ModemLogs
+[DIR]C:/Windows\OCR
+[DIR]C:/Windows\Offline Web Pages
+[DIR]C:/Windows\Panther
+[DIR]C:/Windows\Performance
+[DIR]C:/Windows\PLA
+[DIR]C:/Windows\PolicyDefinitions
+[DIR]C:/Windows\Prefetch
+[DIR]C:/Windows\PrintDialog
+[DIR]C:/Windows\Provisioning
+[DIR]C:/Windows\Registration
+[DIR]C:/Windows\RemotePackages
+[DIR]C:/Windows\rescache
+[DIR]C:/Windows\Resources
+[DIR]C:/Windows\SchCache
+[DIR]C:/Windows\schemas
+[DIR]C:/Windows\security
+[DIR]C:/Windows\ServiceProfiles
+[DIR]C:/Windows\ServiceState
+[DIR]C:/Windows\servicing
+[DIR]C:/Windows\Setup
+[DIR]C:/Windows\ShellComponents
+[DIR]C:/Windows\ShellExperiences
+[DIR]C:/Windows\SKB
+[DIR]C:/Windows\SoftwareDistribution
+[DIR]C:/Windows\Speech
+[DIR]C:/Windows\Speech_OneCore
+[DIR]C:/Windows\System
+[DIR]C:/Windows\System32
+[DIR]C:/Windows\SystemApps
+[DIR]C:/Windows\SystemResources
+[DIR]C:/Windows\SystemTemp
+[DIR]C:/Windows\SysWOW64
+[DIR]C:/Windows\TAPI
+[DIR]C:/Windows\Tasks
+[DIR]C:/Windows\Temp
+[DIR]C:/Windows\tracing
+[DIR]C:/Windows\twain_32
+[DIR]C:/Windows\Vss
+[DIR]C:/Windows\WaaS
+[DIR]C:/Windows\Web
+[DIR]C:/Windows\WinSxS
+[FILE]C:/Windows\bfsvc.exe
+[FILE]C:/Windows\bootstat.dat
+[FILE]C:/Windows\DtcInstall.log
+[FILE]C:/Windows\EnterpriseEval.xml
+[FILE]C:/Windows\explorer.exe
+[FILE]C:/Windows\HelpPane.exe
+[FILE]C:/Windows\hh.exe
+[FILE]C:/Windows\lsasetup.log
+[FILE]C:/Windows\mib.bin
+[FILE]C:/Windows\notepad.exe
+[FILE]C:/Windows\PFRO.log
+[FILE]C:/Windows\py.exe
+[FILE]C:/Windows\pyshellext.amd64.dll
+[FILE]C:/Windows\pyw.exe
+[FILE]C:/Windows\regedit.exe
+[FILE]C:/Windows\setupact.log
+[FILE]C:/Windows\setuperr.log
+[FILE]C:/Windows\splwow64.exe
+[FILE]C:/Windows\system.ini
+[FILE]C:/Windows\twain_32.dll
+[FILE]C:/Windows\win.ini
+[FILE]C:/Windows\WindowsShell.Manifest
+[FILE]C:/Windows\WindowsUpdate.log
+[FILE]C:/Windows\winhlp32.exe
+[FILE]C:/Windows\WMSysPr9.prx
+[FILE]C:/Windows\write.exe
+
+[2025-07-08 20:39:54.351] - [INFO]: Cliente 2 desconectado
+[2025-07-08 20:41:03.536] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-08 20:41:03.550] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
