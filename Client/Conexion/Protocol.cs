@@ -14,7 +14,8 @@ namespace Client.Conexion
         SystemInfo = 7, 
         CommandOutput = 8,
         FileManager = 9,
-        ServerFileUpload = 10
+        ServerFileUpload = 10,
+        KeyExchange = 11
 
     }
     public static class Protocol

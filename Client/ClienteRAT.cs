@@ -3,10 +3,11 @@ using System.Diagnostics;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using Client.Native;
 using Client.Commands;
-using Client.Util;
 using Client.Conexion;
+using Client.Crypto;
+using Client.Native;
+using Client.Util;
 using Microsoft.Extensions.Logging;
 
 namespace Client
@@ -155,6 +156,25 @@ namespace Client
                                     {
                                         File.WriteAllText("error_log.txt", ex.ToString()); // Log local para depurar
                                     }
+                                    break;
+
+                                case Channel.KeyExchange:
+
+                                    string publicKeyXml = Encoding.UTF8.GetString(payload);
+
+                                    // 1. Generar clave AES y IV
+                                    byte[] aesKey = AesHelper.GenerateKey();
+                                    byte[] aesIV = AesHelper.GenerateIV();
+
+                                    // 2. Combinar clave + IV
+                                    byte[] aesKeyAndIV = aesKey.Concat(aesIV).ToArray();
+
+                                    // 3. Cifrar con la clave pública RSA recibida
+                                    byte[] encryptedAesKey = RSAHelper.EncryptWithPublicKey(publicKeyXml, aesKeyAndIV);
+
+                                    // 4. Enviar al servidor la clave AES cifrada
+                                    Protocol.Send(ClientSocket.getClientStream(), Channel.KeyExchange, encryptedAesKey);
+
                                     break;
 
 

