@@ -255,8 +255,16 @@ namespace Server
                 int idCliente = clienteSeleccionado.ID;
                 if (clienteSeleccionado != null && clienteSeleccionado.Estado != "Desconectado")
                 {
-                    Screenshot screenshotForm = new Screenshot(idCliente, ServerSocket.getClientById(idCliente));
-                    screenshotForm.Show();
+                    try
+                    {
+
+                        ServerSocket.SendCommand(idCliente, "screenshot", Channel.Screenshot);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al capturar la pantalla: " + ex.Message);
+                    }
                 }
                 else
                 {

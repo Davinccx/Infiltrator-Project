@@ -1,0 +1,183 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-11 00:58:31.739] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-11 00:58:34.864] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-11 00:58:59.427] - [INFO]: Cliente 1 conectado.
+[2025-07-11 00:59:01.997] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-11 00:59:08.064] - [INFO]: Captura de pantalla guardada en: C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-windows7.0\screenshots\screenshot_20250711_005908.png
+[2025-07-11 00:59:14.497] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/Archivos de programa
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/OneDriveTemp
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-11 00:59:15.525] - [INFO]: Recibido listado para: C:/Documents and Settings
+[ERROR] Access to the path 'C:\Documents and Settings' is denied.
+
+[2025-07-11 00:59:16.752] - [INFO]: Recibido listado para: C:/PerfLogs
+[ERROR] Access to the path 'C:\PerfLogs' is denied.
+
+[2025-07-11 00:59:17.373] - [INFO]: Recibido listado para: C:/Program Files
+[DIR]C:/Program Files\Archivos comunes
+[DIR]C:/Program Files\Common Files
+[DIR]C:/Program Files\dotnet
+[DIR]C:/Program Files\Google
+[DIR]C:/Program Files\Internet Explorer
+[DIR]C:/Program Files\ModifiableWindowsApps
+[DIR]C:/Program Files\Oracle
+[DIR]C:/Program Files\Uninstall Information
+[DIR]C:/Program Files\Windows Defender
+[DIR]C:/Program Files\Windows Mail
+[DIR]C:/Program Files\Windows Media Player
+[DIR]C:/Program Files\Windows NT
+[DIR]C:/Program Files\Windows Photo Viewer
+[DIR]C:/Program Files\Windows Sidebar
+[DIR]C:/Program Files\WindowsApps
+[DIR]C:/Program Files\WindowsPowerShell
+[FILE]C:/Program Files\desktop.ini
+
+[2025-07-11 00:59:20.889] - [INFO]: Recibido listado para: C:/Users
+[DIR]C:/Users\All Users
+[DIR]C:/Users\Default
+[DIR]C:/Users\Default User
+[DIR]C:/Users\Public
+[DIR]C:/Users\win11
+[FILE]C:/Users\desktop.ini
+
+[2025-07-11 00:59:22.705] - [INFO]: Recibido listado para: C:/Users\Default User
+[ERROR] Access to the path 'C:\Users\Default User' is denied.
+
+[2025-07-11 00:59:23.804] - [INFO]: Recibido listado para: C:/Users\Default
+[DIR]C:/Users\Default\AppData
+[DIR]C:/Users\Default\Configuración local
+[DIR]C:/Users\Default\Cookies
+[DIR]C:/Users\Default\Datos de programa
+[DIR]C:/Users\Default\Desktop
+[DIR]C:/Users\Default\Documents
+[DIR]C:/Users\Default\Downloads
+[DIR]C:/Users\Default\Entorno de red
+[DIR]C:/Users\Default\Favorites
+[DIR]C:/Users\Default\Impresoras
+[DIR]C:/Users\Default\Links
+[DIR]C:/Users\Default\Menú Inicio
+[DIR]C:/Users\Default\Mis documentos
+[DIR]C:/Users\Default\Music
+[DIR]C:/Users\Default\Pictures
+[DIR]C:/Users\Default\Plantillas
+[DIR]C:/Users\Default\Reciente
+[DIR]C:/Users\Default\Saved Games
+[DIR]C:/Users\Default\SendTo
+[DIR]C:/Users\Default\Videos
+[FILE]C:/Users\Default\NTUSER.DAT
+[FILE]C:/Users\Default\NTUSER.DAT.LOG1
+[FILE]C:/Users\Default\NTUSER.DAT.LOG2
+[FILE]C:/Users\Default\NTUSER.DAT{1fba998e-0c09-11f0-8687-080027e2e98c}.TM.blf
+[FILE]C:/Users\Default\NTUSER.DAT{1fba998e-0c09-11f0-8687-080027e2e98c}.TMContainer00000000000000000001.regtrans-ms
+[FILE]C:/Users\Default\NTUSER.DAT{1fba998e-0c09-11f0-8687-080027e2e98c}.TMContainer00000000000000000002.regtrans-ms
+[FILE]C:/Users\Default\NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TM.blf
+[FILE]C:/Users\Default\NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TMContainer00000000000000000001.regtrans-ms
+[FILE]C:/Users\Default\NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TMContainer00000000000000000002.regtrans-ms
+
+[2025-07-11 00:59:26.296] - [INFO]: Recibido listado para: C:/Users\win11
+[DIR]C:/Users\win11\AppData
+[DIR]C:/Users\win11\Configuración local
+[DIR]C:/Users\win11\Contacts
+[DIR]C:/Users\win11\Cookies
+[DIR]C:/Users\win11\Datos de programa
+[DIR]C:/Users\win11\Desktop
+[DIR]C:/Users\win11\Documents
+[DIR]C:/Users\win11\Downloads
+[DIR]C:/Users\win11\Entorno de red
+[DIR]C:/Users\win11\Favorites
+[DIR]C:/Users\win11\Impresoras
+[DIR]C:/Users\win11\Links
+[DIR]C:/Users\win11\Menú Inicio
+[DIR]C:/Users\win11\Mis documentos
+[DIR]C:/Users\win11\Music
+[DIR]C:/Users\win11\OneDrive
+[DIR]C:/Users\win11\Pictures
+[DIR]C:/Users\win11\Plantillas
+[DIR]C:/Users\win11\Reciente
+[DIR]C:/Users\win11\Saved Games
+[DIR]C:/Users\win11\Searches
+[DIR]C:/Users\win11\SendTo
+[DIR]C:/Users\win11\Videos
+[FILE]C:/Users\win11\NTUSER.DAT
+[FILE]C:/Users\win11\ntuser.dat.LOG1
+[FILE]C:/Users\win11\ntuser.dat.LOG2
+[FILE]C:/Users\win11\NTUSER.DAT{1fba998d-0c09-11f0-8687-080027e2e98c}.TxR.0.regtrans-ms
+[FILE]C:/Users\win11\NTUSER.DAT{1fba998d-0c09-11f0-8687-080027e2e98c}.TxR.1.regtrans-ms
+[FILE]C:/Users\win11\NTUSER.DAT{1fba998d-0c09-11f0-8687-080027e2e98c}.TxR.2.regtrans-ms
+[FILE]C:/Users\win11\NTUSER.DAT{1fba998d-0c09-11f0-8687-080027e2e98c}.TxR.blf
+[FILE]C:/Users\win11\NTUSER.DAT{1fba998e-0c09-11f0-8687-080027e2e98c}.TM.blf
+[FILE]C:/Users\win11\NTUSER.DAT{1fba998e-0c09-11f0-8687-080027e2e98c}.TMContainer00000000000000000001.regtrans-ms
+[FILE]C:/Users\win11\NTUSER.DAT{1fba998e-0c09-11f0-8687-080027e2e98c}.TMContainer00000000000000000002.regtrans-ms
+[FILE]C:/Users\win11\ntuser.ini
+
+[2025-07-11 00:59:27.860] - [INFO]: Recibido listado para: C:/Users\win11\Reciente
+[ERROR] Access to the path 'C:\Users\win11\Reciente' is denied.
+
+[2025-07-11 00:59:28.634] - [INFO]: Recibido listado para: C:/Users\win11\Plantillas
+[ERROR] Access to the path 'C:\Users\win11\Plantillas' is denied.
+
+[2025-07-11 00:59:29.072] - [INFO]: Recibido listado para: C:/Users\win11\Pictures
+[FILE]C:/Users\win11\Pictures\desktop.ini
+
+[2025-07-11 00:59:29.872] - [INFO]: Recibido listado para: C:/Users\win11\OneDrive
+[DIR]C:/Users\win11\OneDrive\Documentos
+[DIR]C:/Users\win11\OneDrive\Imágenes
+[FILE]C:/Users\win11\OneDrive\.849C9593-D756-4E56-8D6E-42412F2A707B
+[FILE]C:/Users\win11\OneDrive\desktop.ini
+[FILE]C:/Users\win11\OneDrive\Introducción a OneDrive.pdf
+[FILE]C:/Users\win11\OneDrive\Personal Vault.lnk
+
+[2025-07-11 00:59:31.259] - [INFO]: Recibido listado para: C:/Users\win11\Music
+[FILE]C:/Users\win11\Music\desktop.ini
+
+[2025-07-11 00:59:33.504] - [INFO]: Recibido listado para: C:/Users\win11\Datos de programa
+[ERROR] Access to the path 'C:\Users\win11\Datos de programa' is denied.
+
+[2025-07-11 00:59:34.419] - [INFO]: Recibido listado para: C:/Users\win11\Desktop
+[FILE]C:/Users\win11\Desktop\Client.exe
+[FILE]C:/Users\win11\Desktop\Client.pdb
+[FILE]C:/Users\win11\Desktop\D3DCompiler_47_cor3.dll
+[FILE]C:/Users\win11\Desktop\desktop.ini
+[FILE]C:/Users\win11\Desktop\PenImc_cor3.dll
+[FILE]C:/Users\win11\Desktop\PresentationNative_cor3.dll
+[FILE]C:/Users\win11\Desktop\prueba.txt
+[FILE]C:/Users\win11\Desktop\sni.dll
+[FILE]C:/Users\win11\Desktop\SQLite.Interop.dll
+[FILE]C:/Users\win11\Desktop\vcruntime140_cor3.dll
+[FILE]C:/Users\win11\Desktop\wpfgfx_cor3.dll
+
+[2025-07-11 00:59:40.968] - [INFO]: Recibido listado para: C:/Users\win11\Downloads
+[FILE]C:/Users\win11\Downloads\ChromeSetup.exe
+[FILE]C:/Users\win11\Downloads\desktop.ini
+[FILE]C:/Users\win11\Downloads\windowsdesktop-runtime-8.0.17-win-x64.exe
+
+[2025-07-11 00:59:43.362] - [INFO]: Recibido listado para: C:/Users\win11\Entorno de red
+[ERROR] Access to the path 'C:\Users\win11\Entorno de red' is denied.
+
+[2025-07-11 00:59:43.837] - [INFO]: Recibido listado para: C:/Users\win11\Favorites
+[DIR]C:/Users\win11\Favorites\Links
+[FILE]C:/Users\win11\Favorites\Bing.url
+[FILE]C:/Users\win11\Favorites\desktop.ini
+
+[2025-07-11 00:59:47.090] - [INFO]: Archivo guardado: downloads\client_1\desktop.ini
+[2025-07-11 01:00:06.543] - [INFO]: Cliente 1 desconectado
+[2025-07-11 01:00:15.712] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-07-11 01:00:21.118] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-11 01:00:21.124] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

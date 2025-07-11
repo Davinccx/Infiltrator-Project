@@ -1,0 +1,8 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-11 00:48:16.766] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-11 00:48:19.882] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-11 00:48:40.954] - [INFO]: Cliente 1 conectado.
+[2025-07-11 00:48:44.551] - [ERROR]: No se encontró clave AES para el cliente 1.
+[2025-07-11 00:48:45.313] - [INFO]: Clave AES recibida y descifrada para el cliente 1.

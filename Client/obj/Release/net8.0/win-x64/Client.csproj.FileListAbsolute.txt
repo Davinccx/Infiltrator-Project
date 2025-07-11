@@ -453,7 +453,6 @@ C:\Users\dextg\Desktop\Infiltrator-Project\Client\obj\Release\net8.0\win-x64\ref
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\obj\Release\net8.0\win-x64\Client.pdb
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\obj\Release\net8.0\win-x64\Client.genruntimeconfig.cache
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\obj\Release\net8.0\win-x64\ref\Client.dll
-C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.1625.21506.dll
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\win-x64\Accessibility.dll
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\win-x64\DirectWriteForwarder.dll
 C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\win-x64\Microsoft.VisualBasic.Forms.dll
@@ -1220,3 +1219,4 @@ C:\Users\dfernandezsa\Desktop\Infiltrator-Project\Client\obj\Release\net8.0\win-
 C:\Users\dfernandezsa\Desktop\Infiltrator-Project\Client\obj\Release\net8.0\win-x64\Client.pdb
 C:\Users\dfernandezsa\Desktop\Infiltrator-Project\Client\obj\Release\net8.0\win-x64\Client.genruntimeconfig.cache
 C:\Users\dfernandezsa\Desktop\Infiltrator-Project\Client\obj\Release\net8.0\win-x64\ref\Client.dll
+C:\Users\dextg\Desktop\Infiltrator-Project\Client\bin\Release\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.1825.31117.dll

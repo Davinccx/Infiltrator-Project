@@ -7,63 +7,40 @@ namespace Client.Crypto
 {
     public static class AesHelper
     {
-        public static byte[] GenerateKey()
+        public static byte[] EncryptWithAes(byte[] plainData, byte[] aesKey)
         {
-            using (var aes = Aes.Create())
+            using (Aes aes = Aes.Create())
             {
-                aes.KeySize = 256;
-                aes.GenerateKey();
-                return aes.Key;
-            }
-        }
-
-        public static byte[] GenerateIV()
-        {
-            using (var aes = Aes.Create())
-            {
+                aes.Key = aesKey;
                 aes.GenerateIV();
-                return aes.IV;
-            }
-        }
-
-        public static byte[] Encrypt(byte[] plainData, byte[] key, byte[] iv)
-        {
-            using (var aes = Aes.Create())
-            {
-                aes.Key = key;
-                aes.IV = iv;
-                aes.Padding = PaddingMode.PKCS7;
-                aes.Mode = CipherMode.CBC;
-
                 using (var encryptor = aes.CreateEncryptor())
-                using (var ms = new MemoryStream())
-                using (var cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))
                 {
-                    cs.Write(plainData, 0, plainData.Length);
-                    cs.FlushFinalBlock();
-                    return ms.ToArray();
+                    byte[] encrypted = encryptor.TransformFinalBlock(plainData, 0, plainData.Length);
+                    byte[] payload = new byte[aes.IV.Length + encrypted.Length];
+                    Buffer.BlockCopy(aes.IV, 0, payload, 0, aes.IV.Length);
+                    Buffer.BlockCopy(encrypted, 0, payload, aes.IV.Length, encrypted.Length);
+                    return payload;
                 }
             }
         }
 
-        public static byte[] Decrypt(byte[] cipherData, byte[] key, byte[] iv)
+        public static byte[] DecryptWithAes(byte[] payload, byte[] aesKey)
         {
-            using (var aes = Aes.Create())
-            {
-                aes.Key = key;
-                aes.IV = iv;
-                aes.Padding = PaddingMode.PKCS7;
-                aes.Mode = CipherMode.CBC;
+            byte[] iv = new byte[16];
+            Buffer.BlockCopy(payload, 0, iv, 0, 16);
+            byte[] encryptedData = new byte[payload.Length - 16];
+            Buffer.BlockCopy(payload, 16, encryptedData, 0, encryptedData.Length);
 
-                using (var decryptor = aes.CreateDecryptor())
-                using (var ms = new MemoryStream(cipherData))
-                using (var cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read))
-                using (var result = new MemoryStream())
+            using (Aes aes = Aes.Create())
+            {
+                aes.Key = aesKey;
+                aes.IV = iv;
+                using (ICryptoTransform decryptor = aes.CreateDecryptor())
                 {
-                    cs.CopyTo(result);
-                    return result.ToArray();
+                    return decryptor.TransformFinalBlock(encryptedData, 0, encryptedData.Length);
                 }
             }
         }
+
     }
 }

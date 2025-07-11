@@ -1,0 +1,15 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-11 01:00:55.773] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-11 01:00:58.879] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-11 01:01:21.036] - [INFO]: Cliente 1 conectado.
+[2025-07-11 01:01:22.779] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-11 01:01:26.170] - [INFO]: Cliente 1 desconectado
+[2025-07-11 01:01:29.361] - [INFO]: Cliente 2 conectado.
+[2025-07-11 01:01:31.101] - [INFO]: Clave AES recibida y descifrada para el cliente 2.
+[2025-07-11 01:01:41.390] - [ERROR]: Error cliente 2: Padding is invalid and cannot be removed.
+[2025-07-11 01:01:41.390] - [INFO]: Cliente 2 desconectado
+[2025-07-11 01:01:51.296] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-11 01:01:53.608] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-11 01:01:53.615] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

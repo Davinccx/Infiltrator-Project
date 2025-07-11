@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\conexion\\clientsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\conexion\\clientsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\crypto\\rsahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\crypto\\rsahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\clienterat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\crypto\\aeshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\crypto\\aeshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\client\\conexion\\protocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A55A00A7-B952-49D9-BE14-A2E9F461666E}|Client\\Client.csproj|solutionrelative:client\\conexion\\protocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Keylogger.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Keylogger.cs",
+              "RelativeDocumentMoniker": "Client\\Keylogger.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Keylogger.cs",
+              "RelativeToolTip": "Client\\Keylogger.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwH4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T22:49:11.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Protocol.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Conexion\\Protocol.cs",
+              "RelativeDocumentMoniker": "Client\\Conexion\\Protocol.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Conexion\\Protocol.cs",
+              "RelativeToolTip": "Client\\Conexion\\Protocol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T22:49:09.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClienteRAT.cs",
               "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\ClienteRAT.cs",
               "RelativeDocumentMoniker": "Client\\ClienteRAT.cs",
               "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\ClienteRAT.cs",
               "RelativeToolTip": "Client\\ClienteRAT.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T09:29:01.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ClientSocket.cs",
               "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
               "RelativeDocumentMoniker": "Client\\Conexion\\ClientSocket.cs",
               "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Conexion\\ClientSocket.cs",
               "RelativeToolTip": "Client\\Conexion\\ClientSocket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T09:28:59.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RSAHelper.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Crypto\\RSAHelper.cs",
-              "RelativeDocumentMoniker": "Client\\Crypto\\RSAHelper.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Crypto\\RSAHelper.cs",
-              "RelativeToolTip": "Client\\Crypto\\RSAHelper.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T09:28:02.771Z",
               "EditorCaption": ""
             },
             {
@@ -79,7 +96,7 @@
               "RelativeDocumentMoniker": "Client\\Crypto\\AesHelper.cs",
               "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Client\\Crypto\\AesHelper.cs",
               "RelativeToolTip": "Client\\Crypto\\AesHelper.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwC4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T09:00:53.899Z",
               "EditorCaption": ""

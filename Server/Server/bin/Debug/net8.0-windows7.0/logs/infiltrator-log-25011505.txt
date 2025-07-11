@@ -1,0 +1,19 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-11 01:15:05.400] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-11 01:15:08.518] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-11 01:15:32.884] - [INFO]: Cliente 1 conectado.
+[2025-07-11 01:15:34.451] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-11 01:15:38.774] - [INFO]: Captura de pantalla guardada en: C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-windows7.0\screenshots\screenshot_20250711_011538.png
+[2025-07-11 01:16:01.970] - [ERROR]: Error cliente 1: Padding is invalid and cannot be removed.
+[2025-07-11 01:16:01.971] - [INFO]: Cliente 1 desconectado
+[2025-07-11 01:16:09.742] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-11 01:16:13.106] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-11 01:16:35.392] - [INFO]: Cliente 2 conectado.
+[2025-07-11 01:16:36.402] - [INFO]: Clave AES recibida y descifrada para el cliente 2.
+[2025-07-11 01:16:40.969] - [INFO]: Captura de pantalla guardada en: C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-windows7.0\screenshots\screenshot_20250711_011640.png
+[2025-07-11 01:16:57.140] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-11 01:16:57.147] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
+[2025-07-11 01:16:57.167] - [ERROR]: Error cliente 2: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-11 01:16:57.167] - [INFO]: Cliente 2 desconectado

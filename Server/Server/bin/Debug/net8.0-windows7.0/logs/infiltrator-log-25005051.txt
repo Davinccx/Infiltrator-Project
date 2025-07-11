@@ -1,0 +1,69 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-11 00:50:51.291] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-11 00:50:54.408] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-11 00:51:18.556] - [INFO]: Cliente 1 conectado.
+[2025-07-11 00:51:20.303] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-11 00:51:38.354] - [ERROR]: Error cliente 1: The input data is not a complete block.
+[2025-07-11 00:51:38.356] - [INFO]: Cliente 1 desconectado
+[2025-07-11 00:51:49.151] - [INFO]: Cliente 2 conectado.
+[2025-07-11 00:51:50.875] - [INFO]: Clave AES recibida y descifrada para el cliente 2.
+[2025-07-11 00:52:12.557] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/Archivos de programa
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/OneDriveTemp
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-11 00:52:16.264] - [INFO]: Recibido listado para: C:/Users
+[DIR]C:/Users\All Users
+[DIR]C:/Users\Default
+[DIR]C:/Users\Default User
+[DIR]C:/Users\Public
+[DIR]C:/Users\win11
+[FILE]C:/Users\desktop.ini
+
+[2025-07-11 00:52:17.492] - [INFO]: Recibido listado para: C:/Users\Default User
+[ERROR] Access to the path 'C:\Users\Default User' is denied.
+
+[2025-07-11 00:52:18.115] - [INFO]: Recibido listado para: C:/Users\Public
+[DIR]C:/Users\Public\AccountPictures
+[DIR]C:/Users\Public\Desktop
+[DIR]C:/Users\Public\Documents
+[DIR]C:/Users\Public\Downloads
+[DIR]C:/Users\Public\Libraries
+[DIR]C:/Users\Public\Music
+[DIR]C:/Users\Public\Pictures
+[DIR]C:/Users\Public\Videos
+[FILE]C:/Users\Public\desktop.ini
+
+[2025-07-11 00:52:19.914] - [INFO]: Recibido listado para: C:/Users\Public\Downloads
+[FILE]C:/Users\Public\Downloads\desktop.ini
+
+[2025-07-11 00:52:28.069] - [INFO]: Recibido listado para: C:/Users\Public\Desktop
+[FILE]C:/Users\Public\Desktop\desktop.ini
+[FILE]C:/Users\Public\Desktop\Google Chrome.lnk
+[FILE]C:/Users\Public\Desktop\Microsoft Edge.lnk
+
+[2025-07-11 00:52:32.694] - [ERROR]: Error cliente 2: The input data is not a complete block.
+[2025-07-11 00:52:32.694] - [INFO]: Cliente 2 desconectado
+[2025-07-11 00:52:47.989] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-11 00:52:48.897] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-11 00:52:49.375] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-11 00:52:51.347] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-11 00:52:51.731] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-11 00:52:52.061] - [ERROR]: Cliente 2 no encontrado.
+[2025-07-11 00:53:10.218] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-11 00:53:10.225] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
