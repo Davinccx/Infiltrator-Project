@@ -1,0 +1,27 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-11 18:07:57.518] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-11 18:08:00.643] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-11 18:08:18.139] - [INFO]: Cliente 1 conectado.
+[2025-07-11 18:08:19.140] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-11 18:08:22.711] - [INFO]: Browsers: C:\Program Files\Google\Chrome\Application\chrome.exe   
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-11 18:08:22.730] - [ERROR]: Error cliente 1: Operación no válida a través de subprocesos: Se tuvo acceso al control 'BrowserModule' desde un subproceso distinto a aquel en que lo creó.
+[2025-07-11 18:08:22.731] - [INFO]: Cliente 1 desconectado
+[2025-07-11 18:08:29.937] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-07-11 18:08:29.952] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-11 18:09:02.270] - [INFO]: Cliente 2 conectado.
+[2025-07-11 18:09:03.285] - [INFO]: Clave AES recibida y descifrada para el cliente 2.
+[2025-07-11 18:09:07.922] - [INFO]: Browsers: C:\Program Files\Google\Chrome\Application\chrome.exe   
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-11 18:09:07.933] - [ERROR]: Error cliente 2: Operación no válida a través de subprocesos: Se tuvo acceso al control 'BrowserModule' desde un subproceso distinto a aquel en que lo creó.
+[2025-07-11 18:09:07.934] - [INFO]: Cliente 2 desconectado
+[2025-07-11 18:09:25.933] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-11 18:09:25.941] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

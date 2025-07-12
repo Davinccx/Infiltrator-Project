@@ -71,3 +71,4 @@ C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-window
 C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-windows7.0\Server.pdb
 C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\obj\Debug\net8.0-windows7.0\Server.genruntimeconfig.cache
 C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\obj\Debug\net8.0-windows7.0\ref\Server.dll
+C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\obj\Debug\net8.0-windows7.0\Server.BrowserModule.resources

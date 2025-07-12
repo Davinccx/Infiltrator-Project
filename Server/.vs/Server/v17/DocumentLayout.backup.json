@@ -3,56 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\screenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\screenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\server\\screenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\screenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\conexion\\serversocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\conexion\\serversocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\browsermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\browsermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\server\\loadingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\loadingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\browsermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\browsermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\log\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\log\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\server\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\conexion\\ngrok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\conexion\\ngrok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\keylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\conexion\\protocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\conexion\\protocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|c:\\users\\dextg\\desktop\\infiltrator-project\\server\\server\\cliente\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C5F1CB-001A-40C7-AD2C-EFC27244A392}|Server\\Server.csproj|solutionrelative:server\\cliente\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,162 +50,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "BrowserModule.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\BrowserModule.cs",
+              "RelativeDocumentMoniker": "Server\\BrowserModule.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\BrowserModule.cs",
+              "RelativeToolTip": "Server\\BrowserModule.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwD0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T16:05:40.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BrowserModule.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\BrowserModule.cs",
+              "RelativeDocumentMoniker": "Server\\BrowserModule.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\BrowserModule.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Server\\BrowserModule.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T16:03:04.608Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\MainForm.cs",
               "RelativeDocumentMoniker": "Server\\MainForm.cs",
               "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\MainForm.cs",
               "RelativeToolTip": "Server\\MainForm.cs",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAlwAMBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAYwBoBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T23:10:15.439Z",
+              "WhenOpened": "2025-07-11T15:58:29.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Screenshot.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Screenshot.cs",
-              "RelativeDocumentMoniker": "Server\\Screenshot.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Screenshot.cs",
-              "RelativeToolTip": "Server\\Screenshot.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAqwD8AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T23:09:59.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Logger.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Log\\Logger.cs",
-              "RelativeDocumentMoniker": "Server\\Log\\Logger.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Log\\Logger.cs",
-              "RelativeToolTip": "Server\\Log\\Logger.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBkAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:32:14.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Protocol.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\Protocol.cs",
-              "RelativeDocumentMoniker": "Server\\Conexion\\Protocol.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\Protocol.cs",
-              "RelativeToolTip": "Server\\Conexion\\Protocol.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:09:59.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Ngrok.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\Ngrok.cs",
-              "RelativeDocumentMoniker": "Server\\Conexion\\Ngrok.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\Ngrok.cs",
-              "RelativeToolTip": "Server\\Conexion\\Ngrok.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDQAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:05:36.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Shell.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Shell.cs",
-              "RelativeDocumentMoniker": "Server\\Shell.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Shell.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Server\\Shell.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:02:31.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Screenshot.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Screenshot.cs",
-              "RelativeDocumentMoniker": "Server\\Screenshot.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Screenshot.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Server\\Screenshot.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:02:25.478Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\MainForm.cs",
               "RelativeDocumentMoniker": "Server\\MainForm.cs",
               "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "Server\\MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:02:24.173Z",
+              "WhenOpened": "2025-07-11T15:58:20.748Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoadingForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\LoadingForm.cs",
-              "RelativeDocumentMoniker": "Server\\LoadingForm.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\LoadingForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Server\\LoadingForm.cs [Dise\u00F1o]",
+              "DocumentIndex": 6,
+              "Title": "Keylogger.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Keylogger.cs",
+              "RelativeDocumentMoniker": "Server\\Keylogger.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Keylogger.cs",
+              "RelativeToolTip": "Server\\Keylogger.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAUwGMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:02:13.476Z",
+              "WhenOpened": "2025-07-11T15:49:43.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Keylogger.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Keylogger.cs",
+              "RelativeDocumentMoniker": "Server\\Keylogger.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Keylogger.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Server\\Keylogger.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T15:49:41.744Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Cliente\\Cliente.cs",
-              "RelativeDocumentMoniker": "Server\\Cliente\\Cliente.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Cliente\\Cliente.cs",
-              "RelativeToolTip": "Server\\Cliente\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T09:24:27.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ServerSocket.cs",
               "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\ServerSocket.cs",
               "RelativeDocumentMoniker": "Server\\Conexion\\ServerSocket.cs",
               "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\ServerSocket.cs",
               "RelativeToolTip": "Server\\Conexion\\ServerSocket.cs",
-              "ViewState": "AgIAAKYBAAAAAAAAAAAqwM0BAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAIEBAAAAAAAAAAAAAJsBAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T09:02:31.016Z",
+              "WhenOpened": "2025-07-11T15:48:35.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Config.cs",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Config.cs",
-              "RelativeDocumentMoniker": "Server\\Config.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Config.cs",
-              "RelativeToolTip": "Server\\Config.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAANAAAAAAAAAA==",
+              "Title": "Protocol.cs",
+              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\Protocol.cs",
+              "RelativeDocumentMoniker": "Server\\Conexion\\Protocol.cs",
+              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Conexion\\Protocol.cs",
+              "RelativeToolTip": "Server\\Conexion\\Protocol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:40:54.749Z",
+              "WhenOpened": "2025-07-11T15:46:59.074Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Builder.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Builder.cs",
-              "RelativeDocumentMoniker": "Server\\Builder.cs",
-              "ToolTip": "C:\\Users\\dextg\\Desktop\\Infiltrator-Project\\Server\\Server\\Builder.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Server\\Builder.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T22:40:44.9Z"
             }
           ]
         }

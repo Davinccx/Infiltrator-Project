@@ -93,6 +93,26 @@ namespace Server.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Firefox_logo__2019 {
+            get {
+                object obj = ResourceManager.GetObject("Firefox_logo,_2019", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Google_Chrome_icon__February_2022_ {
+            get {
+                object obj = ResourceManager.GetObject("Google_Chrome_icon_(February_2022)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_teclado_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-teclado-50", resourceCulture);
@@ -106,6 +126,16 @@ namespace Server.Properties {
         internal static System.Drawing.Bitmap icons8_usuario_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-usuario-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Microsoft_Edge_logo__2019_ {
+            get {
+                object obj = ResourceManager.GetObject("Microsoft_Edge_logo_(2019)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

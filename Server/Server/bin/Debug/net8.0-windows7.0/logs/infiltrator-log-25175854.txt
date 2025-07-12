@@ -1,0 +1,15 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-11 17:58:54.658] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-11 17:58:57.775] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-11 17:59:21.910] - [INFO]: Cliente 1 conectado.
+[2025-07-11 17:59:22.926] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-11 17:59:32.974] - [INFO]: Captura de pantalla guardada en: C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-windows7.0\screenshots\screenshot_20250711_175932.png
+[2025-07-11 18:00:07.658] - [ERROR]: Error cliente 1: Cannot access a disposed object.
+Object name: 'System.Windows.Forms.TextBox'.
+[2025-07-11 18:00:07.659] - [INFO]: Cliente 1 desconectado
+[2025-07-11 18:00:13.027] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-07-11 18:00:13.030] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-11 18:00:45.587] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-11 18:00:45.595] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.

@@ -1,7 +1,5 @@
-﻿
+﻿using System.Security.Cryptography;
 
-using System.Security.Cryptography;
-using Client.Conexion;
 
 namespace Client.Crypto
 {

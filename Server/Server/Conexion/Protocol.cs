@@ -15,7 +15,8 @@ namespace Server.Conexion
         CommandOutput = 8,
         FileManager = 9,
         ServerFileUpload=10,
-        KeyExchange = 11
+        KeyExchange = 11,
+        BrowserModule = 12
 
     }
     public static class Protocol

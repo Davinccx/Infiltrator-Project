@@ -46,11 +46,11 @@
             richTextBox1.BorderStyle = BorderStyle.None;
             richTextBox1.Font = new Font("Consolas", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             richTextBox1.ForeColor = Color.FromArgb(224, 224, 224);
-            richTextBox1.Location = new Point(1, 110);
+            richTextBox1.Location = new Point(12, 110);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
             richTextBox1.ScrollBars = RichTextBoxScrollBars.Vertical;
-            richTextBox1.Size = new Size(714, 365);
+            richTextBox1.Size = new Size(772, 365);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             // 
@@ -59,7 +59,7 @@
             textBox1.BackColor = Color.FromArgb(44, 62, 80);
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(61, 502);
+            textBox1.Location = new Point(162, 505);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(393, 23);
             textBox1.TabIndex = 1;
@@ -72,7 +72,7 @@
             button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 255, 128);
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(494, 502);
+            button1.Location = new Point(594, 504);
             button1.Name = "button1";
             button1.Size = new Size(122, 30);
             button1.TabIndex = 2;
@@ -96,7 +96,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Consolas", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(211, 220, 230);
-            label2.Location = new Point(26, 496);
+            label2.Location = new Point(127, 499);
             label2.Name = "label2";
             label2.Size = new Size(29, 32);
             label2.TabIndex = 4;

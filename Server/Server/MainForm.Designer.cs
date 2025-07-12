@@ -48,6 +48,7 @@ namespace Server
             informaciónToolStripMenuItem1 = new ToolStripMenuItem();
             screenshotToolStripMenuItem = new ToolStripMenuItem();
             eToolStripMenuItem = new ToolStripMenuItem();
+            browsersToolStripMenuItem = new ToolStripMenuItem();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
@@ -60,9 +61,9 @@ namespace Server
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(65, 5);
+            label1.Location = new Point(57, 4);
             label1.Name = "label1";
-            label1.Size = new Size(379, 37);
+            label1.Size = new Size(288, 30);
             label1.TabIndex = 0;
             label1.Text = "Infiltrator Project Server 1.0";
             label1.Click += label1_Click;
@@ -72,20 +73,18 @@ namespace Server
             panel2.BackColor = Color.SteelBlue;
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(0, 609);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(0, 457);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1382, 65);
+            panel2.Size = new Size(1209, 49);
             panel2.TabIndex = 6;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(15, 5);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(13, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(48, 40);
+            pictureBox1.Size = new Size(42, 30);
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
@@ -97,8 +96,7 @@ namespace Server
             menuStrip1.Items.AddRange(new ToolStripItem[] { configuraciónToolStripMenuItem, ayudaToolStripMenuItem, builderToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(7, 3, 0, 3);
-            menuStrip1.Size = new Size(1365, 30);
+            menuStrip1.Size = new Size(1194, 28);
             menuStrip1.TabIndex = 7;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -107,13 +105,13 @@ namespace Server
             configuraciónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { informaciónToolStripMenuItem });
             configuraciónToolStripMenuItem.Image = (Image)resources.GetObject("configuraciónToolStripMenuItem.Image");
             configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
-            configuraciónToolStripMenuItem.Size = new Size(141, 24);
+            configuraciónToolStripMenuItem.Size = new Size(116, 24);
             configuraciónToolStripMenuItem.Text = "Configuración";
             // 
             // informaciónToolStripMenuItem
             // 
             informaciónToolStripMenuItem.Name = "informaciónToolStripMenuItem";
-            informaciónToolStripMenuItem.Size = new Size(151, 26);
+            informaciónToolStripMenuItem.Size = new Size(122, 22);
             informaciónToolStripMenuItem.Text = "Servidor";
             informaciónToolStripMenuItem.Click += informaciónToolStripMenuItem_Click;
             // 
@@ -121,7 +119,7 @@ namespace Server
             // 
             ayudaToolStripMenuItem.Image = (Image)resources.GetObject("ayudaToolStripMenuItem.Image");
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            ayudaToolStripMenuItem.Size = new Size(88, 24);
+            ayudaToolStripMenuItem.Size = new Size(73, 24);
             ayudaToolStripMenuItem.Text = "Ayuda";
             ayudaToolStripMenuItem.Click += ayudaToolStripMenuItem_Click;
             // 
@@ -129,7 +127,7 @@ namespace Server
             // 
             builderToolStripMenuItem.Image = (Image)resources.GetObject("builderToolStripMenuItem.Image");
             builderToolStripMenuItem.Name = "builderToolStripMenuItem";
-            builderToolStripMenuItem.Size = new Size(93, 24);
+            builderToolStripMenuItem.Size = new Size(79, 24);
             builderToolStripMenuItem.Text = "Builder";
             builderToolStripMenuItem.Click += builderToolStripMenuItem_Click;
             // 
@@ -145,8 +143,7 @@ namespace Server
             dataGridView1.ColumnHeadersHeight = 29;
             dataGridView1.ContextMenuStrip = contextMenuStrip1;
             dataGridView1.ImeMode = ImeMode.Disable;
-            dataGridView1.Location = new Point(-7, 31);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Location = new Point(-6, 23);
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -157,72 +154,78 @@ namespace Server
             dataGridView1.ShowCellToolTips = false;
             dataGridView1.ShowEditingIcon = false;
             dataGridView1.ShowRowErrors = false;
-            dataGridView1.Size = new Size(1377, 579);
+            dataGridView1.Size = new Size(1205, 434);
             dataGridView1.TabIndex = 8;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // contextMenuStrip1
             // 
             contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { pruebaToolStripMenuItem, xDToolStripMenuItem, keyloggerToolStripMenuItem, informaciónToolStripMenuItem1, screenshotToolStripMenuItem, eToolStripMenuItem });
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { pruebaToolStripMenuItem, xDToolStripMenuItem, keyloggerToolStripMenuItem, informaciónToolStripMenuItem1, screenshotToolStripMenuItem, eToolStripMenuItem, browsersToolStripMenuItem });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(211, 176);
+            contextMenuStrip1.Size = new Size(181, 180);
             // 
             // pruebaToolStripMenuItem
             // 
             pruebaToolStripMenuItem.Name = "pruebaToolStripMenuItem";
-            pruebaToolStripMenuItem.Size = new Size(210, 24);
+            pruebaToolStripMenuItem.Size = new Size(180, 22);
             pruebaToolStripMenuItem.Text = "Ejecutar comandos";
             pruebaToolStripMenuItem.Click += pruebaToolStripMenuItem_Click;
             // 
             // xDToolStripMenuItem
             // 
             xDToolStripMenuItem.Name = "xDToolStripMenuItem";
-            xDToolStripMenuItem.Size = new Size(210, 24);
+            xDToolStripMenuItem.Size = new Size(180, 22);
             xDToolStripMenuItem.Text = "Desconectar";
             xDToolStripMenuItem.Click += xDToolStripMenuItem_Click;
             // 
             // keyloggerToolStripMenuItem
             // 
             keyloggerToolStripMenuItem.Name = "keyloggerToolStripMenuItem";
-            keyloggerToolStripMenuItem.Size = new Size(210, 24);
+            keyloggerToolStripMenuItem.Size = new Size(180, 22);
             keyloggerToolStripMenuItem.Text = "Keylogger";
             keyloggerToolStripMenuItem.Click += keyloggerToolStripMenuItem_Click;
             // 
             // informaciónToolStripMenuItem1
             // 
             informaciónToolStripMenuItem1.Name = "informaciónToolStripMenuItem1";
-            informaciónToolStripMenuItem1.Size = new Size(210, 24);
+            informaciónToolStripMenuItem1.Size = new Size(180, 22);
             informaciónToolStripMenuItem1.Text = "Información";
             informaciónToolStripMenuItem1.Click += informaciónToolStripMenuItem1_Click;
             // 
             // screenshotToolStripMenuItem
             // 
             screenshotToolStripMenuItem.Name = "screenshotToolStripMenuItem";
-            screenshotToolStripMenuItem.Size = new Size(210, 24);
+            screenshotToolStripMenuItem.Size = new Size(180, 22);
             screenshotToolStripMenuItem.Text = "Screenshot";
             screenshotToolStripMenuItem.Click += screenshotToolStripMenuItem_Click;
             // 
             // eToolStripMenuItem
             // 
             eToolStripMenuItem.Name = "eToolStripMenuItem";
-            eToolStripMenuItem.Size = new Size(210, 24);
+            eToolStripMenuItem.Size = new Size(180, 22);
             eToolStripMenuItem.Text = "FileManager";
             eToolStripMenuItem.Click += eToolStripMenuItem_Click;
             // 
+            // browsersToolStripMenuItem
+            // 
+            browsersToolStripMenuItem.Name = "browsersToolStripMenuItem";
+            browsersToolStripMenuItem.Size = new Size(180, 22);
+            browsersToolStripMenuItem.Text = "Browsers";
+            browsersToolStripMenuItem.Click += browsersToolStripMenuItem_Click;
+            // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(1365, 671);
+            ClientSize = new Size(1194, 503);
             Controls.Add(panel2);
             Controls.Add(menuStrip1);
             Controls.Add(dataGridView1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
@@ -258,5 +261,6 @@ namespace Server
         private ToolStripMenuItem screenshotToolStripMenuItem;
         private ToolStripMenuItem builderToolStripMenuItem;
         private ToolStripMenuItem eToolStripMenuItem;
+        private ToolStripMenuItem browsersToolStripMenuItem;
     }
 }
