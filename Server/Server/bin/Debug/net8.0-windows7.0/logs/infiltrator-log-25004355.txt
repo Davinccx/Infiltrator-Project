@@ -1,0 +1,57 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-15 00:43:55.271] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-15 00:43:58.380] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-15 00:44:16.745] - [INFO]: Cliente 1 conectado.
+[2025-07-15 00:44:19.369] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-15 00:44:25.622] - [INFO]: Browsers: C:\Program Files\Google\Chrome\Application\chrome.exe   
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 00:44:51.048] - [INFO]: Cliente 2 conectado.
+[2025-07-15 00:44:52.058] - [INFO]: Clave AES recibida y descifrada para el cliente 2.
+[2025-07-15 00:44:56.665] - [INFO]: Browsers: C:\Program Files\Google\Chrome\Application\chrome.exe   
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 00:44:57.731] - [INFO]: Archivo guardado: downloads\client_2\chrome_ccs.csv
+[2025-07-15 00:45:01.615] - [INFO]: Archivo guardado: downloads\client_2\edge_ccs.csv
+[2025-07-15 00:45:15.403] - [INFO]: Archivo guardado: downloads\client_2\chrome_passwords.csv
+[2025-07-15 00:45:52.169] - [INFO]: Browsers: C:\Program Files\Google\Chrome\Application\chrome.exe   
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 00:45:53.422] - [INFO]: Archivo guardado: downloads\client_2\chrome_history.csv
+[2025-07-15 00:45:55.051] - [INFO]: Archivo guardado: downloads\client_2\edge_history.csv
+[2025-07-15 00:46:25.588] - [INFO]: Archivo guardado: downloads\client_2\chrome_history.csv
+[2025-07-15 00:46:45.313] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/Archivos de programa
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/OneDriveTemp
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-15 00:46:47.561] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
+[2025-07-15 00:46:47.561] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-15 00:46:47.593] - [ERROR]: Error cliente 2: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-15 00:46:47.593] - [ERROR]: Error cliente 1: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-15 00:46:47.593] - [INFO]: Cliente 2 desconectado
+[2025-07-15 00:46:47.593] - [INFO]: Cliente 1 desconectado

@@ -1,0 +1,37 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-15 01:11:40.201] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-15 01:11:43.335] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-15 01:12:10.394] - [INFO]: Cliente 1 conectado.
+[2025-07-15 01:12:11.402] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-15 01:12:16.562] - [INFO]: Browsers: C:\Users\win11\AppData\Local\Google\Chrome\Application\chrome.exe 
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 01:12:25.920] - [INFO]: Cliente 2 conectado.
+[2025-07-15 01:12:26.927] - [INFO]: Clave AES recibida y descifrada para el cliente 2.
+[2025-07-15 01:12:29.848] - [INFO]: Browsers: C:\Users\win11\AppData\Local\Google\Chrome\Application\chrome.exe 
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 01:12:31.495] - [INFO]: Archivo guardado: downloads\client_2\chrome_passwords.csv
+[2025-07-15 01:12:34.465] - [INFO]: Archivo guardado: downloads\client_2\chrome_history.csv
+[2025-07-15 01:13:02.406] - [INFO]: Archivo guardado: downloads\client_2\chrome_history.csv
+[2025-07-15 01:13:25.214] - [INFO]: Browsers: C:\Users\win11\AppData\Local\Google\Chrome\Application\chrome.exe 
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 01:13:26.229] - [INFO]: Archivo guardado: downloads\client_2\chrome_history.csv
+[2025-07-15 01:13:44.001] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-15 01:13:44.001] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
+[2025-07-15 01:13:44.030] - [ERROR]: Error cliente 1: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-15 01:13:44.030] - [ERROR]: Error cliente 2: Unable to read data from the transport connection: Se ha forzado la interrupción de una conexión existente por el host remoto..
+[2025-07-15 01:13:44.031] - [INFO]: Cliente 1 desconectado
+[2025-07-15 01:13:44.031] - [INFO]: Cliente 2 desconectado

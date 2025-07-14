@@ -408,7 +408,7 @@ namespace Server.Conexion
                                     string installedBrowsers = Encoding.UTF8.GetString(AesHelper.DecryptWithAes(payload, browserKey));
                                     _logger.Log($"Browsers: {installedBrowsers}.", LogLevel.INFO);
 
-                                    BrowserModule.Instance.AppendBrowsers(installedBrowsers);
+                                    BrowserModule.Instance.detectarNavegadores(installedBrowsers);
                                     
                                 }
                                 else

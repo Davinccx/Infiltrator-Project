@@ -1,14 +1,7 @@
 ﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Management;
-using System.Net.Sockets;
-using System.Net;
 using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
 using System.Net.NetworkInformation;
 
 namespace Client.Util
@@ -41,7 +34,7 @@ namespace Client.Util
             }
             catch
             {
-                // ignored
+               
             }
 
             return sData;

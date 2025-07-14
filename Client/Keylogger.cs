@@ -94,7 +94,6 @@ namespace Client
                 }
             }, null, 0, 5000);
         }
-
         public static void Stop()
         {
             if (_hookId != IntPtr.Zero)

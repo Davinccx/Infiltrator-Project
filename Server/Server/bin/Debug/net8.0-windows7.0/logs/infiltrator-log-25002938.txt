@@ -1,0 +1,60 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-15 00:29:38.065] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-15 00:29:41.180] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-15 00:30:02.612] - [INFO]: Cliente 1 conectado.
+[2025-07-15 00:30:03.636] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-15 00:30:10.509] - [INFO]: Browsers: C:\Program Files\Google\Chrome\Application\chrome.exe   
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 00:31:32.794] - [INFO]: Captura de pantalla guardada en: C:\Users\dextg\Desktop\Infiltrator-Project\Server\Server\bin\Debug\net8.0-windows7.0\screenshots\screenshot_20250715_003132.png
+[2025-07-15 00:31:41.185] - [INFO]: Recibido listado para: C:/
+[DIR]C:/$Recycle.Bin
+[DIR]C:/Archivos de programa
+[DIR]C:/Documents and Settings
+[DIR]C:/inetpub
+[DIR]C:/OneDriveTemp
+[DIR]C:/PerfLogs
+[DIR]C:/Program Files
+[DIR]C:/Program Files (x86)
+[DIR]C:/ProgramData
+[DIR]C:/Recovery
+[DIR]C:/System Volume Information
+[DIR]C:/Users
+[DIR]C:/Windows
+[FILE]C:/DumpStack.log.tmp
+[FILE]C:/pagefile.sys
+[FILE]C:/swapfile.sys
+
+[2025-07-15 00:31:42.607] - [INFO]: Recibido listado para: C:/Program Files
+[DIR]C:/Program Files\Archivos comunes
+[DIR]C:/Program Files\Common Files
+[DIR]C:/Program Files\dotnet
+[DIR]C:/Program Files\Google
+[DIR]C:/Program Files\Internet Explorer
+[DIR]C:/Program Files\ModifiableWindowsApps
+[DIR]C:/Program Files\Mozilla Firefox
+[DIR]C:/Program Files\Oracle
+[DIR]C:/Program Files\Uninstall Information
+[DIR]C:/Program Files\Windows Defender
+[DIR]C:/Program Files\Windows Mail
+[DIR]C:/Program Files\Windows Media Player
+[DIR]C:/Program Files\Windows NT
+[DIR]C:/Program Files\Windows Photo Viewer
+[DIR]C:/Program Files\Windows Sidebar
+[DIR]C:/Program Files\WindowsApps
+[DIR]C:/Program Files\WindowsPowerShell
+[FILE]C:/Program Files\desktop.ini
+
+[2025-07-15 00:31:56.981] - [INFO]: Browsers: C:\Program Files\Google\Chrome\Application\chrome.exe   
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 00:32:03.197] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
+[2025-07-15 00:32:03.197] - [INFO]: Deteniendo servidor Infiltrator...

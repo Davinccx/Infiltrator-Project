@@ -93,6 +93,16 @@ namespace Server.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap credit_cards {
+            get {
+                object obj = ResourceManager.GetObject("credit-cards", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Firefox_logo__2019 {
             get {
                 object obj = ResourceManager.GetObject("Firefox_logo,_2019", resourceCulture);

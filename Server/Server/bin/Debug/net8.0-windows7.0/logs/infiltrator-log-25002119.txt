@@ -1,0 +1,20 @@
+-----------------------------------------------
+------ Welcome to Infiltrator Log System ------
+-----------------------------------------------
+[2025-07-15 00:21:19.934] - [INFO]: Configuración del servidor cargada correctamente.
+[2025-07-15 00:21:23.082] - [INFO]: Servidor Infiltrator iniciado en 127.0.0.1:443
+[2025-07-15 00:22:30.837] - [INFO]: Cliente 1 conectado.
+[2025-07-15 00:22:32.554] - [INFO]: Clave AES recibida y descifrada para el cliente 1.
+[2025-07-15 00:22:37.048] - [INFO]: Browsers: C:\Program Files\Google\Chrome\Application\chrome.exe   
+C:\Program Files\Mozilla Firefox\firefox.exe            
+C:\Program Files\Internet Explorer\iexplore.exe         
+C:\Program Files (x86)\Internet Explorer\iexplore.exe   
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+.
+[2025-07-15 00:22:37.062] - [ERROR]: Error cliente 1: Operación no válida a través de subprocesos: Se tuvo acceso al control 'BrowserModule' desde un subproceso distinto a aquel en que lo creó.
+[2025-07-15 00:22:37.063] - [INFO]: Cliente 1 desconectado
+[2025-07-15 00:22:46.457] - [WARNING]: No se encontró TcpClient con ID 1.
+[2025-07-15 00:22:46.487] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-15 00:23:06.253] - [ERROR]: Cliente 1 no encontrado.
+[2025-07-15 00:23:06.769] - [INFO]: Deteniendo servidor Infiltrator...
+[2025-07-15 00:23:06.779] - [WARNING]: El servidor se ha detenido: Una operación de bloqueo fue interrumpida por una llamada a WSACancelBlockingCall.
